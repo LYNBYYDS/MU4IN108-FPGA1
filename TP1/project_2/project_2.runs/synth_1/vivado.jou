@@ -1,12 +1,12 @@
 #-----------------------------------------------------------
 # Vivado v2020.2 (64-bit)
-# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Tue Feb  7 12:05:08 2023
-# Process ID: 10060
-# Current directory: C:/Users/UserTP.PPI919.000/Desktop/project_2/project_2.runs/synth_1
-# Command line: vivado.exe -log Top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top.tcl
-# Log file: C:/Users/UserTP.PPI919.000/Desktop/project_2/project_2.runs/synth_1/Top.vds
-# Journal file: C:/Users/UserTP.PPI919.000/Desktop/project_2/project_2.runs/synth_1\vivado.jou
+# Start of session at: Tue Feb  7 15:46:35 2023
+# Process ID: 29332
+# Current directory: /users/enseig/li/Bureau/FPGA/TP1/project_2/project_2.runs/synth_1
+# Command line: vivado -log Top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top.tcl
+# Log file: /users/enseig/li/Bureau/FPGA/TP1/project_2/project_2.runs/synth_1/Top.vds
+# Journal file: /users/enseig/li/Bureau/FPGA/TP1/project_2/project_2.runs/synth_1/vivado.jou
 #-----------------------------------------------------------
 source Top.tcl -notrace

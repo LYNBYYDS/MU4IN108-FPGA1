@@ -16,6 +16,16 @@ set_property -dict { PACKAGE_PIN E19 IOSTANDARD LVCMOS33 }  [get_ports {LED[1]}]
 set_property -dict { PACKAGE_PIN U19 IOSTANDARD LVCMOS33 } [get_ports {LED[2]}]
 set_property -dict { PACKAGE_PIN V19 IOSTANDARD LVCMOS33 } [get_ports {LED[3]}]
 
+
+set_property -dict { PACKAGE_PIN V3 IOSTANDARD LVCMOS33 }  [get_ports {Count_out[0]}]
+set_property -dict { PACKAGE_PIN W3 IOSTANDARD LVCMOS33 }  [get_ports {Count_out[1]}]
+set_property -dict { PACKAGE_PIN U3 IOSTANDARD LVCMOS33 } [get_ports {Count_out[2]}]
+set_property -dict { PACKAGE_PIN P3 IOSTANDARD LVCMOS33 } [get_ports {Count_out[3]}]
+
+
+set_property -dict { PACKAGE_PIN P1 IOSTANDARD LVCMOS33 }  [get_ports {Mode_out[0]}]
+set_property -dict { PACKAGE_PIN L1 IOSTANDARD LVCMOS33 }  [get_ports {Mode_out[1]}]
+
 ##Buttons
 set_property -dict { PACKAGE_PIN U18 IOSTANDARD LVCMOS33 } [get_ports Button_C];
 set_property -dict { PACKAGE_PIN W19 IOSTANDARD LVCMOS33 } [get_ports Button_L]; #Sch=btnl

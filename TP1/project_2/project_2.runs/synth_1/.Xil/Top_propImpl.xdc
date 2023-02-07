@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/Users/UserTP.PPI919.000/Desktop/project_2/project_2.srcs/constrs_1/new/Impulse_Count_Basys.xdc rfile:../../../project_2.srcs/constrs_1/new/Impulse_Count_Basys.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:/users/enseig/li/Bureau/FPGA/TP1/project_2/project_2.srcs/constrs_1/new/Impulse_Count_Basys.xdc rfile:../../../project_2.srcs/constrs_1/new/Impulse_Count_Basys.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:7 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN W5 IOSTANDARD LVCMOS33 } [get_ports Clk]
 set_property src_info {type:XDC file:1 line:11 export:INPUT save:INPUT read:READ} [current_design]
@@ -11,9 +11,21 @@ set_property src_info {type:XDC file:1 line:16 export:INPUT save:INPUT read:READ
 set_property -dict { PACKAGE_PIN U19 IOSTANDARD LVCMOS33 } [get_ports {LED[2]}]
 set_property src_info {type:XDC file:1 line:17 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN V19 IOSTANDARD LVCMOS33 } [get_ports {LED[3]}]
+set_property src_info {type:XDC file:1 line:18 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN V3 IOSTANDARD LVCMOS33 }  [get_ports {Count_out[0]}]
+set_property src_info {type:XDC file:1 line:19 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN W3 IOSTANDARD LVCMOS33 }  [get_ports {Count_out[1]}]
 set_property src_info {type:XDC file:1 line:20 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict { PACKAGE_PIN U18 IOSTANDARD LVCMOS33 } [get_ports Button_C];
+set_property -dict { PACKAGE_PIN U3 IOSTANDARD LVCMOS33 } [get_ports {Count_out[2]}]
 set_property src_info {type:XDC file:1 line:21 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict { PACKAGE_PIN W19 IOSTANDARD LVCMOS33 } [get_ports Button_L]; #Sch=btnl
+set_property -dict { PACKAGE_PIN P3 IOSTANDARD LVCMOS33 } [get_ports {Count_out[3]}]
 set_property src_info {type:XDC file:1 line:22 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN P1 IOSTANDARD LVCMOS33 }  [get_ports {Mode_out[0]}]
+set_property src_info {type:XDC file:1 line:23 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN L1 IOSTANDARD LVCMOS33 }  [get_ports {Mode_out[1]}]
+set_property src_info {type:XDC file:1 line:26 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN U18 IOSTANDARD LVCMOS33 } [get_ports Button_C];
+set_property src_info {type:XDC file:1 line:27 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN W19 IOSTANDARD LVCMOS33 } [get_ports Button_L]; #Sch=btnl
+set_property src_info {type:XDC file:1 line:28 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN T17 IOSTANDARD LVCMOS33 } [get_ports Button_R]

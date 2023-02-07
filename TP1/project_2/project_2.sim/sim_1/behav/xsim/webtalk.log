@@ -1,13 +1,13 @@
 #-----------------------------------------------------------
 # Webtalk v2020.2 (64-bit)
-# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Tue Feb  7 10:32:43 2023
-# Process ID: 13040
-# Current directory: C:/Users/UserTP.PPI919.000/Desktop/project_1/project_1.sim/sim_1/behav/xsim
-# Command line: wbtcv.exe -mode batch -source C:/Users/UserTP.PPI919.000/Desktop/project_1/project_1.sim/sim_1/behav/xsim/xsim.dir/TB_impulse_count_behav/webtalk/xsim_webtalk.tcl -notrace
-# Log file: C:/Users/UserTP.PPI919.000/Desktop/project_1/project_1.sim/sim_1/behav/xsim/webtalk.log
-# Journal file: C:/Users/UserTP.PPI919.000/Desktop/project_1/project_1.sim/sim_1/behav/xsim\webtalk.jou
+# Start of session at: Tue Feb  7 16:03:07 2023
+# Process ID: 1596
+# Current directory: /users/enseig/li/Bureau/FPGA/TP1/project_2/project_2.sim/sim_1/behav/xsim
+# Command line: wbtcv -mode batch -source /users/enseig/li/Bureau/FPGA/TP1/project_2/project_2.sim/sim_1/behav/xsim/xsim.dir/TB_Top_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /users/enseig/li/Bureau/FPGA/TP1/project_2/project_2.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: /users/enseig/li/Bureau/FPGA/TP1/project_2/project_2.sim/sim_1/behav/xsim/webtalk.jou
 #-----------------------------------------------------------
-source C:/Users/UserTP.PPI919.000/Desktop/project_1/project_1.sim/sim_1/behav/xsim/xsim.dir/TB_impulse_count_behav/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-206] Exiting Webtalk at Tue Feb  7 10:32:43 2023...
+source /users/enseig/li/Bureau/FPGA/TP1/project_2/project_2.sim/sim_1/behav/xsim/xsim.dir/TB_Top_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Tue Feb  7 16:03:07 2023...

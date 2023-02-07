@@ -18,10 +18,12 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity Top is
     Port ( Clk : in  STD_LOGIC;								-- Horloge
            Reset : in  STD_LOGIC;							-- Reset Asynchrone
-           Button_L : in  STD_LOGIC;						-- Bouton Left --> Incrémentation du Compteur
-           Button_C : in  STD_LOGIC;						-- BOuton Center --> Décrémentation du Compteur 
-           Button_R : in  STD_LOGIC;						-- Bouton Right --> Mise à Jour des LEDs
-           LED : out  STD_LOGIC_VECTOR (3 downto 0));
+           Button_L : in  STD_LOGIC;						-- Bouton Left --> Incrï¿½mentation du Compteur
+           Button_C : in  STD_LOGIC;						-- BOuton Center --> Dï¿½crï¿½mentation du Compteur 
+           Button_R : in  STD_LOGIC;						-- Bouton Right --> Mise ï¿½ Jour des LEDs
+           LED : out  STD_LOGIC_VECTOR (3 downto 0);
+           Count_out : out std_logic_vector(3 downto 0);
+           Mode_out : out std_logic_vector(1 downto 0));
 end Top;
 
 architecture Behavioral of Top is
@@ -33,7 +35,8 @@ signal Sup : STD_LOGIC;
 signal Count : STD_LOGIC_VECTOR (3 downto 0);
 
 begin
-
+Count_out <= Count;
+Mode_out <= Mode;
 -----------------------------------------------------------------
 --																					--
 --		Les Boutons Left et Center Font Varier un Compteur Modulo 16		--
@@ -53,20 +56,20 @@ begin
 --											Mode = 10 / Seuil = 8 M			-- 
 --											Clignotement 3x par seconde	--																					
 --																					--
---			- Cpt > 9			-->	LEDs Allumées						--
+--			- Cpt > 9			-->	LEDs Allumï¿½es						--
 --											Mode = 11 / Seuil = 0xFFFFFF	-- 
 --																					--
 --																					--
---		Le Mode des LEDs Est Validé par l'Appui sur le Bouton Right	--
+--		Le Mode des LEDs Est Validï¿½ par l'Appui sur le Bouton Right	--
 
---		La Valeur du Mode et du Seuil Sont Fixés dans le Module Selector
---		La Machine à Etats Gère le Comportement des LEDs
+--		La Valeur du Mode et du Seuil Sont Fixï¿½s dans le Module Selector
+--		La Machine ï¿½ Etats Gï¿½re le Comportement des LEDs
 --																					--
 -----------------------------------------------------------------
 
 
 -- Affectation des Valeurs de Mode et Seuil 
---		Calculées à Partir de Limit (Selector)
+--		Calculï¿½es ï¿½ Partir de Limit (Selector)
 Mode <= Limit(27 downto 26);
 Seuil <= Limit (25 downto 0);
 
@@ -75,8 +78,8 @@ Seuil <= Limit (25 downto 0);
    Impulse: entity work.IMPULSE_COUNT PORT MAP (
           Clk => Clk,				-- Horloge
 			 Reset => Reset,			-- Reset Asynchrone
-          Button_L => Button_L,	-- Bouton Left (Incrémentation Compreur)
-          Button_C => Button_C,	-- Bouton Right (Décrémentation Compteur)
+          Button_L => Button_L,	-- Bouton Left (Incrï¿½mentation Compreur)
+          Button_C => Button_C,	-- Bouton Right (Dï¿½crï¿½mentation Compteur)
           Count => Count,			-- Compteur Modulo 16
           Sup => Sup					-- Indicateur Compteur > 9
         );
@@ -89,11 +92,11 @@ Seuil <= Limit (25 downto 0);
           Count => Count,			-- Compteur Modulo 16
           Sup => Sup,				-- Indicateur Compteur > 9
           Limit => Limit			-- Mode de Fonctionnement des LEDs
-											--	(Transféré vers Mode et Seuil)
+											--	(Transfï¿½rï¿½ vers Mode et Seuil)
         );
 
 	
-	-- MAchine à Etats
+	-- MAchine ï¿½ Etats
 	MAE: entity work.FSM PORT MAP(
 			Clk => Clk,					-- Horloge
 			Reset => Reset,			-- Reset Asynchrone

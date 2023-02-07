@@ -9,9 +9,9 @@
 
 -- XDC File:			Top.xdc					
 
--- Description: Machine à Etat - Version KO
+-- Description: Machine ï¿½ Etat - Version KO
 --
---				Fixe le Comportement des LEDs (Allumées/Eteintes/Clignotement)
+--				Fixe le Comportement des LEDs (Allumï¿½es/Eteintes/Clignotement)
 --
 ----------------------------------------------------------------------------------
 library IEEE;
@@ -31,7 +31,7 @@ architecture Behavioral of FSM is
 signal cpt: integer range 0 to 24000000;						-- Compteur de Temporisation
 
 type etat is (LED_OFF, CLIGN_OFF, LED_ON, CLIGN_ON);		-- Etats de la MAE
-signal EP,EF: etat;													-- Etat Présent, Etat Futur
+signal EP,EF: etat;													-- Etat Prï¿½sent, Etat Futur
 
 begin
 
@@ -48,10 +48,10 @@ begin
 		-- Si on A un Front d'Horloge...
 		elsif rising_edge(Clk) then
 		
-			-- Si On Est en Mode Clignotement, le Compteur s'Incrémente
+			-- Si On Est en Mode Clignotement, le Compteur s'Incrï¿½mente
 			if (EP = CLIGN_OFF) or (EP = CLIGN_ON) then
 				Cpt <= Cpt + 1;
-			-- Sinon, on Remet le Compteur à 0
+			-- Sinon, on Remet le Compteur ï¿½ 0
 			else
 				Cpt <= 0;
 			end if;
@@ -72,7 +72,7 @@ begin
 		-- Si on A un Front d'Horloge
 		elsif rising_edge (Clk) then
 		
-			EP <= EF; -- Mise à Jour du Registre d'Etat
+			EP <= EF; -- Mise ï¿½ Jour du Registre d'Etat
 		end if;
 	end process;
 	
@@ -84,52 +84,52 @@ begin
 	
 	begin
 		
-		LED <= "0000"; -- Par Défaut les LEDs Sont Eteintes
+		LED <= "0000"; -- Par Dï¿½faut les LEDs Sont Eteintes
 	
 		-----------------------------------------------------------------
 		-- 						Modes de Fonctionnement							--
 		--																					--
 		--		Mode = 00 	 --> LEDs Eteintes										--
 		--		Mode = 01/10 --> LEDs Clignotent										--
-		--							Vitesse de Clignotement Dépend de Seuil	--
-		--		Mode = 11 	 --> LEDs Allumées										--
+		--							Vitesse de Clignotement Dï¿½pend de Seuil	--
+		--		Mode = 11 	 --> LEDs Allumï¿½es										--
 		-----------------------------------------------------------------
 				
 		
 		case (EP) is
 		
 			-- LEDs Eteintes
-			-- On Reste dans Cet Etat Tant que Mode est à 00
-			-- Si Mode Passe à 10, On Passe en LEDs Clignotement
-			-- Si Mode Passe à 11, On Passe en LEDs Allumées
-			when LED_OFF	=> if Mode = "10" then EF <= CLIGN_OFF;
-									elsif Mode = "11" then EF <= LED_ON;
+			-- On Reste dans Cet Etat Tant que Mode est ï¿½ 00
+			-- Si Mode Passe ï¿½ 10, On Passe en LEDs Clignotement
+			-- Si Mode Passe ï¿½ 11, On Passe en LEDs Allumï¿½es
+			when LED_OFF	=>      if Mode = "10" then         EF <= CLIGN_OFF;
+									elsif Mode = "11" then      EF <= LED_ON;
+									else                        EF <= EP;
 									end if;
 									
 			-- LEDs Clignotement - (Eteint)
-			-- Le Compteur Compte Jusqu'au Seuil puis on Passe à l'Etat Suivant
-			when CLIGN_OFF	=> if Mode = "00" then EF <= LED_OFF;
-									elsif Mode = "11" then EF <= LED_ON;
-									end if;
-									if Cpt = Seuil then EF <= LED_ON;
+			-- Le Compteur Compte Jusqu'au Seuil puis on Passe ï¿½ l'Etat Suivant
+			when CLIGN_OFF	=>      if Mode = "00" then                        EF <= LED_OFF;
+									elsif Mode = "11" or Cpt = Seuil then      EF <= LED_ON;
+									else                                       EF <= EP;
 									end if;
 									
-			-- LEDs Allumées
-			-- On Reste dans Cet Etat Tant que Mode est à 11
-			-- Si Mode Passe à 10, On Passe en LEDs Clignotement
-			-- Si Mode Passe à 00, On Passe en LEDs Eteintes
+			-- LEDs Allumï¿½es
+			-- On Reste dans Cet Etat Tant que Mode est ï¿½ 11
+			-- Si Mode Passe ï¿½ 10, On Passe en LEDs Clignotement
+			-- Si Mode Passe ï¿½ 00, On Passe en LEDs Eteintes
 			when LED_ON		=> LED <= "1111";
-									if Mode = "10" then EF <= CLIGN_ON;
-									elsif Mode = "00" then EF <= LED_OFF;
+									if Mode = "10" then                        EF <= CLIGN_ON;
+									elsif Mode = "00" then                     EF <= LED_OFF;
+									else                                       EF <= EP;
 									end if;
 	
-			-- LEDs Clignotement - (Allumé)
-			-- Le Compteur Compte Jusqu'au Seuil puis on Passe à l'Etat Suivant
+			-- LEDs Clignotement - (Allumï¿½)
+			-- Le Compteur Compte Jusqu'au Seuil puis on Passe ï¿½ l'Etat Suivant
 			when CLIGN_ON	=> LED <= "1111";
-									if Mode = "00" then EF <= LED_OFF;
-									elsif Mode = "11" then EF <= LED_ON;
-									end if;
-									if Cpt = Seuil then EF <= LED_OFF;
+									if Mode = "00" or Cpt = Seuil then         EF <= LED_OFF;
+									elsif Mode = "11" then                     EF <= LED_ON;
+									else                                       EF <= EP;
 									end if;
 		end case;
 	end process;

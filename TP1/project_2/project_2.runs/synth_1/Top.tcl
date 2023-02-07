@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/Users/UserTP.PPI919.000/Desktop/project_2/project_2.runs/synth_1/Top.tcl"
+  variable script "/users/enseig/li/Bureau/FPGA/TP1/project_2/project_2.runs/synth_1/Top.tcl"
   variable category "vivado_synth"
 }
 
@@ -70,30 +70,27 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 3
+set_param chipscope.maxJobs 1
 set_param xicom.use_bs_reader 1
-set_msg_config -id {Common 17-41} -limit 10000000
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 OPTRACE "Creating in-memory project" START { }
-create_project -in_memory -part xc7a35tcpg236-1
+create_project -in_memory -part xc7a35tcpg236-3
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/Users/UserTP.PPI919.000/Desktop/project_2/project_2.cache/wt [current_project]
-set_property parent.project_path C:/Users/UserTP.PPI919.000/Desktop/project_2/project_2.xpr [current_project]
+set_property webtalk.parent_dir /users/enseig/li/Bureau/FPGA/TP1/project_2/project_2.cache/wt [current_project]
+set_property parent.project_path /users/enseig/li/Bureau/FPGA/TP1/project_2/project_2.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
-set_property board_part digilentinc.com:basys3:part0:1.1 [current_project]
+set_property ip_output_repo /users/enseig/li/Bureau/FPGA/TP1/project_2/project_2.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_vhdl -library xil_defaultlib {
-  C:/Users/UserTP.PPI919.000/Desktop/project_2/project_2.srcs/sources_1/imports/3_Decodeur_Machines_a_Etats/FSM.vhd
-  C:/Users/UserTP.PPI919.000/Desktop/project_2/project_2.srcs/sources_1/imports/3_Decodeur_Machines_a_Etats/Selector.vhd
-  C:/Users/UserTP.PPI919.000/Desktop/project_2/project_2.srcs/sources_1/imports/2_Compteur_Impulsions/impulse_count_.vhd
-  C:/Users/UserTP.PPI919.000/Desktop/project_2/project_2.srcs/sources_1/imports/3_Decodeur_Machines_a_Etats/Top.vhd
+  /users/enseig/li/Bureau/FPGA/TP1/project_2/project_2.srcs/sources_1/imports/3_Decodeur_Machines_a_Etats/FSM.vhd
+  /users/enseig/li/Bureau/FPGA/TP1/project_2/project_2.srcs/sources_1/imports/3_Decodeur_Machines_a_Etats/Selector.vhd
+  /users/enseig/li/Bureau/FPGA/TP1/project_2/project_2.srcs/sources_1/imports/2_Compteur_Impulsions/impulse_count_.vhd
+  /users/enseig/li/Bureau/FPGA/TP1/project_2/project_2.srcs/sources_1/imports/3_Decodeur_Machines_a_Etats/Top.vhd
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -104,14 +101,14 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/UserTP.PPI919.000/Desktop/project_2/project_2.srcs/constrs_1/new/Impulse_Count_Basys.xdc
-set_property used_in_implementation false [get_files C:/Users/UserTP.PPI919.000/Desktop/project_2/project_2.srcs/constrs_1/new/Impulse_Count_Basys.xdc]
+read_xdc /users/enseig/li/Bureau/FPGA/TP1/project_2/project_2.srcs/constrs_1/new/Impulse_Count_Basys.xdc
+set_property used_in_implementation false [get_files /users/enseig/li/Bureau/FPGA/TP1/project_2/project_2.srcs/constrs_1/new/Impulse_Count_Basys.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
-synth_design -top Top -part xc7a35tcpg236-1
+synth_design -top Top -part xc7a35tcpg236-3
 OPTRACE "synth_design" END { }
 if { [get_msg_config -count -severity {CRITICAL WARNING}] > 0 } {
  send_msg_id runtcl-6 info "Synthesis results are not added to the cache due to CRITICAL_WARNING"

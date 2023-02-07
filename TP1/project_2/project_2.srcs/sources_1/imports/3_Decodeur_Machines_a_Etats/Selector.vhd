@@ -9,12 +9,12 @@
 
 -- XDC File:			Impulse_Selector.xdc					
 
--- Description: Décodeur - Version KO
+-- Description: Dï¿½codeur - Version KO
 --
---		Génère en Sortie une Valeur "Limit"
+--		Gï¿½nï¿½re en Sortie une Valeur "Limit"
 --			- Cette Valeur Depend de Celle d'un Signal d'Entree sur 4 Bits (Count)
---			- Limit Est Remise à Jour A Chaque Appui sur le Bouton Right
---			- Limit Sera Utilisée par une Machine à Etats dans la Suite du TP...
+--			- Limit Est Remise ï¿½ Jour A Chaque Appui sur le Bouton Right
+--			- Limit Sera Utilisï¿½e par une Machine ï¿½ Etats dans la Suite du TP...
 --
 ----------------------------------------------------------------------------------
 library IEEE;
@@ -39,7 +39,7 @@ signal Decode: std_logic_vector(1 downto 0); -- Commande du Decodeur
 begin
 
 	-------------------------
-	-- Gestion du Décodeur --
+	-- Gestion du Dï¿½codeur --
 	-------------------------
 	process(Clk,Reset)
 	
@@ -55,23 +55,23 @@ begin
 			if Button_R = '1' then
 
 				-- Signification de Limit (Pour la Machine a Etats de la Suite du TP)
-					-- Les 2 MSB définissent le Mode de Clignotement
+					-- Les 2 MSB dï¿½finissent le Mode de Clignotement
 						-- 00 --> 	LEDs Toujours Eteintes
 						-- 10 --> 	Clignotement des LEDs 
-						--			 	La Fréquence de Clignotement 
+						--			 	La Frï¿½quence de Clignotement 
 						--			 	Depend des LSB de Limit
 						--					- 24 Millions --> 1 fois par Seconde
 						--					- 8 Millions --> 3 fois par Seconde
-						-- 11	-->	LEDs Toujours Allumées
+						-- 11	-->	LEDs Toujours Allumï¿½es
 				
 				case (Decode) is
 			
 					when "00" => Limit <= (others => '0');
-					when "01" => Limit <= X"96E3600";		-- 24 000 000 en Décimal
-					when "10" => Limit <= X"87A1200";		-- 8 000 000 en Décomal
+					when "01" => Limit <= X"96E3600";		-- 24 000 000 en Dï¿½cimal
+					when "10" => Limit <= X"87A1200";		-- 8 000 000 en Dï¿½comal
 					when "11" => Limit <= (others => '1');	
 	
-					-- when others => NULL; -- RETIRER LE COMMENTAIRE POUR CORRIGER L'ERREUR
+					when others => NULL; -- RETIRER LE COMMENTAIRE POUR CORRIGER L'ERREUR
 	
 				end case;
 			end if;
@@ -83,9 +83,9 @@ begin
 	-- Commande du Decodeur --
 	--------------------------
 	Decode <= 		"11" when Sup='1'		-- Si Count > 9 		 --> Decode = 11
-				 else	"10" when Count > 5	-- Si Count = 6,7,8,9 --> Decode = 10
-				 else "01" when Count > 2;	-- Si Count = 3,4,5   --> Decode = 01
-											-- Si Count = 0,1,2   --> Decode = 00
+				    else "10" when Count > 5	-- Si Count = 6,7,8,9 --> Decode = 10
+				    else "01" when Count > 2	-- Si Count = 3,4,5   --> Decode = 01
+				    else "00";							-- Si Count = 0,1,2   --> Decode = 00
 	
 end Behavioral;
 
