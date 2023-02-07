@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/UserTP.PPI919.000/Desktop/project_1/project_1.sim/sim_1/synth/func/xsim/TB_impulse_count_func_synth.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'IMPULSE_COUNT'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/UserTP.PPI919.000/Desktop/project_1/project_1.srcs/sim_1/imports/2_Compteur_Impulsions/TB_impulse_count.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'TB_impulse_count'

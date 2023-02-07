@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Feb  7 11:39:25 2023
+# Process ID: 9436
+# Current directory: C:/Users/UserTP.PPI919.000/Desktop/project_1/project_1.runs/synth_1
+# Command line: vivado.exe -log IMPULSE_COUNT.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source IMPULSE_COUNT.tcl
+# Log file: C:/Users/UserTP.PPI919.000/Desktop/project_1/project_1.runs/synth_1/IMPULSE_COUNT.vds
+# Journal file: C:/Users/UserTP.PPI919.000/Desktop/project_1/project_1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source IMPULSE_COUNT.tcl -notrace

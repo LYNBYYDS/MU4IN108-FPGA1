@@ -1,0 +1,1 @@
+-wto "e20caf8efaaa4912b21d88b14650e8a7" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "TB_impulse_count_func_synth" "xil_defaultlib.TB_impulse_count" -log "elaborate.log" 

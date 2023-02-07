@@ -1,0 +1,6 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../../Documents/FPGA1_TP1/Partie_2_Etudes_de_Cas/2_Compteur_Impulsions/impulse_count_.vhd" \
+
+# Do not sort compile order
+nosort
