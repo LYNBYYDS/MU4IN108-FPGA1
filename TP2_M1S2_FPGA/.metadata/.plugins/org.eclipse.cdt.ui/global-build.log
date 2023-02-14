@@ -1,0 +1,23 @@
+Nothing to build in platform 'TP2_HW'
+
+11:57:23 **** Incremental Build of configuration Debug for project TP2_SW ****
+make all 
+'Building file: ../src/extension.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/extension.o" -IC:/Users/28607510/Desktop/TP2_M1S2_FPGA/TP2_HW/export/TP2_HW/sw/TP2_HW/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/extension.d" -MT"src/extension.o" -o "src/extension.o" "../src/extension.c"
+'Finished building: ../src/extension.c'
+' '
+'Building target: TP2_SW.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/28607510/Desktop/TP2_M1S2_FPGA/TP2_HW/export/TP2_HW/sw/TP2_HW/standalone_domain/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "TP2_SW.elf"  ./src/extension.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TP2_SW.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size TP2_SW.elf  |tee "TP2_SW.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3276	    360	   3148	   6784	   1a80	TP2_SW.elf
+'Finished building: TP2_SW.elf.size'
+' '
+11:57:27 **** Incremental Build of configuration Debug for project TP2_SW_system ****
+make all 
+Skipping SD card image generation. Reason: "The system project only has applications for microblaze processors."

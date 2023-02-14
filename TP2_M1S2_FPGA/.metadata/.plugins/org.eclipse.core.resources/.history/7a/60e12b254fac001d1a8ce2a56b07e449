@@ -1,0 +1,33 @@
+#include "xgpio.h"
+#include "xparameters.h"
+
+XGpio led_switch, button;
+
+void delay () {
+	int i = 0;
+	while (1 < 1000000) {
+		i++;
+	}
+}
+
+int main () {
+XGpio_Initialize(&led_switch, XPAR_LED_SWITCH_DEVICE_ID);
+XGpio_Initialize(&button, XPAR_BOUTONS_DEVICE_ID);
+
+XGpio_SetDataDirction(&led_switch, 2, 0);
+XGpio_SetDataDirction(&button, 1, "111");
+u32 bp = "111";
+
+while(1) {
+	if(bp != XGpio_DiscreteRead(&button, 1) && XGpio_DiscreteRead(&button, 1) == 1){
+		XGpioDiscreteWrite(&led_switch, 2, 0xF);
+	}else {
+		XGpioDiscreteWrite(&led_switch, 2, 0xF);
+	}
+
+	bp = XGpio_DiscreteRead(&button, 1);
+	delay();
+}
+
+return 0;
+}
