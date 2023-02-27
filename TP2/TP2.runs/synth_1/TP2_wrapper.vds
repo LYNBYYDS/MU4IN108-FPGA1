@@ -1,0 +1,450 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Feb 21 09:22:57 2023
+# Process ID: 12436
+# Current directory: C:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.runs/synth_1
+# Command line: vivado.exe -log TP2_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TP2_wrapper.tcl
+# Log file: C:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.runs/synth_1/TP2_wrapper.vds
+# Journal file: C:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source TP2_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+Command: synth_design -top TP2_wrapper -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 7212
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1017.578 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'TP2_wrapper' [C:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.srcs/sources_1/imports/TP2_wrapper.vhd:24]
+INFO: [Synth 8-3491] module 'TP2' declared at 'c:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.gen/sources_1/bd/TP2/synth/TP2.vhd:1583' bound to instance 'TP2_i' of component 'TP2' [C:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.srcs/sources_1/imports/TP2_wrapper.vhd:35]
+INFO: [Synth 8-638] synthesizing module 'TP2' [c:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.gen/sources_1/bd/TP2/synth/TP2.vhd:1597]
+INFO: [Synth 8-3491] module 'TP2_axi_gpio_0_1' declared at 'C:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.runs/synth_1/.Xil/Vivado-12436-SE227-04/realtime/TP2_axi_gpio_0_1_stub.vhdl:5' bound to instance 'boutons' of component 'TP2_axi_gpio_0_1' [c:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.gen/sources_1/bd/TP2/synth/TP2.vhd:1913]
+INFO: [Synth 8-638] synthesizing module 'TP2_axi_gpio_0_1' [C:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.runs/synth_1/.Xil/Vivado-12436-SE227-04/realtime/TP2_axi_gpio_0_1_stub.vhdl:32]
+INFO: [Synth 8-3491] module 'TP2_clk_wiz_1_0' declared at 'C:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.runs/synth_1/.Xil/Vivado-12436-SE227-04/realtime/TP2_clk_wiz_1_0_stub.vhdl:5' bound to instance 'clk_wiz_1' of component 'TP2_clk_wiz_1_0' [c:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.gen/sources_1/bd/TP2/synth/TP2.vhd:1937]
+INFO: [Synth 8-638] synthesizing module 'TP2_clk_wiz_1_0' [C:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.runs/synth_1/.Xil/Vivado-12436-SE227-04/realtime/TP2_clk_wiz_1_0_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'TP2_axi_gpio_0_0' declared at 'C:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.runs/synth_1/.Xil/Vivado-12436-SE227-04/realtime/TP2_axi_gpio_0_0_stub.vhdl:5' bound to instance 'led_switch' of component 'TP2_axi_gpio_0_0' [c:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.gen/sources_1/bd/TP2/synth/TP2.vhd:1944]
+INFO: [Synth 8-638] synthesizing module 'TP2_axi_gpio_0_0' [C:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.runs/synth_1/.Xil/Vivado-12436-SE227-04/realtime/TP2_axi_gpio_0_0_stub.vhdl:33]
+INFO: [Synth 8-3491] module 'TP2_mdm_1_0' declared at 'C:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.runs/synth_1/.Xil/Vivado-12436-SE227-04/realtime/TP2_mdm_1_0_stub.vhdl:5' bound to instance 'mdm_1' of component 'TP2_mdm_1_0' [c:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.gen/sources_1/bd/TP2/synth/TP2.vhd:1969]
+INFO: [Synth 8-638] synthesizing module 'TP2_mdm_1_0' [C:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.runs/synth_1/.Xil/Vivado-12436-SE227-04/realtime/TP2_mdm_1_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'TP2_microblaze_0_0' declared at 'C:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.runs/synth_1/.Xil/Vivado-12436-SE227-04/realtime/TP2_microblaze_0_0_stub.vhdl:5' bound to instance 'microblaze_0' of component 'TP2_microblaze_0_0' [c:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.gen/sources_1/bd/TP2/synth/TP2.vhd:1982]
+INFO: [Synth 8-638] synthesizing module 'TP2_microblaze_0_0' [C:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.runs/synth_1/.Xil/Vivado-12436-SE227-04/realtime/TP2_microblaze_0_0_stub.vhdl:63]
+INFO: [Synth 8-3491] module 'TP2_microblaze_0_axi_intc_0' declared at 'C:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.runs/synth_1/.Xil/Vivado-12436-SE227-04/realtime/TP2_microblaze_0_axi_intc_0_stub.vhdl:5' bound to instance 'microblaze_0_axi_intc' of component 'TP2_microblaze_0_axi_intc_0' [c:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.gen/sources_1/bd/TP2/synth/TP2.vhd:2068]
+INFO: [Synth 8-638] synthesizing module 'TP2_microblaze_0_axi_intc_0' [C:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.runs/synth_1/.Xil/Vivado-12436-SE227-04/realtime/TP2_microblaze_0_axi_intc_0_stub.vhdl:36]
+INFO: [Synth 8-638] synthesizing module 'TP2_microblaze_0_axi_periph_0' [c:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.gen/sources_1/bd/TP2/synth/TP2.vhd:1071]
+INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_1LJ99AU' [c:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.gen/sources_1/bd/TP2/synth/TP2.vhd:57]
+INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_1LJ99AU' (1#1) [c:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.gen/sources_1/bd/TP2/synth/TP2.vhd:57]
+INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_57PM8J' [c:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.gen/sources_1/bd/TP2/synth/TP2.vhd:158]
+INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_57PM8J' (2#1) [c:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.gen/sources_1/bd/TP2/synth/TP2.vhd:158]
+INFO: [Synth 8-638] synthesizing module 'm02_couplers_imp_1CK1YXP' [c:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.gen/sources_1/bd/TP2/synth/TP2.vhd:259]
+INFO: [Synth 8-256] done synthesizing module 'm02_couplers_imp_1CK1YXP' (3#1) [c:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.gen/sources_1/bd/TP2/synth/TP2.vhd:259]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_SDVHWS' [c:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.gen/sources_1/bd/TP2/synth/TP2.vhd:922]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_SDVHWS' (4#1) [c:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.gen/sources_1/bd/TP2/synth/TP2.vhd:922]
+INFO: [Synth 8-3491] module 'TP2_xbar_0' declared at 'C:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.runs/synth_1/.Xil/Vivado-12436-SE227-04/realtime/TP2_xbar_0_stub.vhdl:5' bound to instance 'xbar' of component 'TP2_xbar_0' [c:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.gen/sources_1/bd/TP2/synth/TP2.vhd:1501]
+INFO: [Synth 8-638] synthesizing module 'TP2_xbar_0' [C:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.runs/synth_1/.Xil/Vivado-12436-SE227-04/realtime/TP2_xbar_0_stub.vhdl:51]
+INFO: [Synth 8-256] done synthesizing module 'TP2_microblaze_0_axi_periph_0' (5#1) [c:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.gen/sources_1/bd/TP2/synth/TP2.vhd:1071]
+INFO: [Synth 8-638] synthesizing module 'microblaze_0_local_memory_imp_AWO01G' [c:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.gen/sources_1/bd/TP2/synth/TP2.vhd:343]
+INFO: [Synth 8-3491] module 'TP2_dlmb_bram_if_cntlr_0' declared at 'C:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.runs/synth_1/.Xil/Vivado-12436-SE227-04/realtime/TP2_dlmb_bram_if_cntlr_0_stub.vhdl:5' bound to instance 'dlmb_bram_if_cntlr' of component 'TP2_dlmb_bram_if_cntlr_0' [c:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.gen/sources_1/bd/TP2/synth/TP2.vhd:557]
+INFO: [Synth 8-638] synthesizing module 'TP2_dlmb_bram_if_cntlr_0' [C:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.runs/synth_1/.Xil/Vivado-12436-SE227-04/realtime/TP2_dlmb_bram_if_cntlr_0_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'TP2_dlmb_v10_0' declared at 'C:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.runs/synth_1/.Xil/Vivado-12436-SE227-04/realtime/TP2_dlmb_v10_0_stub.vhdl:5' bound to instance 'dlmb_v10' of component 'TP2_dlmb_v10_0' [c:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.gen/sources_1/bd/TP2/synth/TP2.vhd:611]
+INFO: [Synth 8-638] synthesizing module 'TP2_dlmb_v10_0' [C:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.runs/synth_1/.Xil/Vivado-12436-SE227-04/realtime/TP2_dlmb_v10_0_stub.vhdl:36]
+INFO: [Synth 8-3491] module 'TP2_ilmb_bram_if_cntlr_0' declared at 'C:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.runs/synth_1/.Xil/Vivado-12436-SE227-04/realtime/TP2_ilmb_bram_if_cntlr_0_stub.vhdl:5' bound to instance 'ilmb_bram_if_cntlr' of component 'TP2_ilmb_bram_if_cntlr_0' [c:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.gen/sources_1/bd/TP2/synth/TP2.vhd:639]
+INFO: [Synth 8-638] synthesizing module 'TP2_ilmb_bram_if_cntlr_0' [C:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.runs/synth_1/.Xil/Vivado-12436-SE227-04/realtime/TP2_ilmb_bram_if_cntlr_0_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'TP2_ilmb_v10_0' declared at 'C:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.runs/synth_1/.Xil/Vivado-12436-SE227-04/realtime/TP2_ilmb_v10_0_stub.vhdl:5' bound to instance 'ilmb_v10' of component 'TP2_ilmb_v10_0' [c:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.gen/sources_1/bd/TP2/synth/TP2.vhd:693]
+INFO: [Synth 8-638] synthesizing module 'TP2_ilmb_v10_0' [C:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.runs/synth_1/.Xil/Vivado-12436-SE227-04/realtime/TP2_ilmb_v10_0_stub.vhdl:36]
+INFO: [Synth 8-3491] module 'TP2_lmb_bram_0' declared at 'C:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.runs/synth_1/.Xil/Vivado-12436-SE227-04/realtime/TP2_lmb_bram_0_stub.vhdl:5' bound to instance 'lmb_bram' of component 'TP2_lmb_bram_0' [c:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.gen/sources_1/bd/TP2/synth/TP2.vhd:721]
+INFO: [Synth 8-638] synthesizing module 'TP2_lmb_bram_0' [C:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.runs/synth_1/.Xil/Vivado-12436-SE227-04/realtime/TP2_lmb_bram_0_stub.vhdl:27]
+INFO: [Synth 8-256] done synthesizing module 'microblaze_0_local_memory_imp_AWO01G' (6#1) [c:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.gen/sources_1/bd/TP2/synth/TP2.vhd:343]
+INFO: [Synth 8-3491] module 'TP2_microblaze_0_xlconcat_0' declared at 'c:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.gen/sources_1/bd/TP2/ip/TP2_microblaze_0_xlconcat_0/synth/TP2_microblaze_0_xlconcat_0.v:60' bound to instance 'microblaze_0_xlconcat' of component 'TP2_microblaze_0_xlconcat_0' [c:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.gen/sources_1/bd/TP2/synth/TP2.vhd:2204]
+INFO: [Synth 8-6157] synthesizing module 'TP2_microblaze_0_xlconcat_0' [c:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.gen/sources_1/bd/TP2/ip/TP2_microblaze_0_xlconcat_0/synth/TP2_microblaze_0_xlconcat_0.v:60]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat' [c:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.gen/sources_1/bd/TP2/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+	Parameter IN0_WIDTH bound to: 1 - type: integer 
+	Parameter IN1_WIDTH bound to: 1 - type: integer 
+	Parameter IN2_WIDTH bound to: 1 - type: integer 
+	Parameter IN3_WIDTH bound to: 1 - type: integer 
+	Parameter IN4_WIDTH bound to: 1 - type: integer 
+	Parameter IN5_WIDTH bound to: 1 - type: integer 
+	Parameter IN6_WIDTH bound to: 1 - type: integer 
+	Parameter IN7_WIDTH bound to: 1 - type: integer 
+	Parameter IN8_WIDTH bound to: 1 - type: integer 
+	Parameter IN9_WIDTH bound to: 1 - type: integer 
+	Parameter IN10_WIDTH bound to: 1 - type: integer 
+	Parameter IN11_WIDTH bound to: 1 - type: integer 
+	Parameter IN12_WIDTH bound to: 1 - type: integer 
+	Parameter IN13_WIDTH bound to: 1 - type: integer 
+	Parameter IN14_WIDTH bound to: 1 - type: integer 
+	Parameter IN15_WIDTH bound to: 1 - type: integer 
+	Parameter IN16_WIDTH bound to: 1 - type: integer 
+	Parameter IN17_WIDTH bound to: 1 - type: integer 
+	Parameter IN18_WIDTH bound to: 1 - type: integer 
+	Parameter IN19_WIDTH bound to: 1 - type: integer 
+	Parameter IN20_WIDTH bound to: 1 - type: integer 
+	Parameter IN21_WIDTH bound to: 1 - type: integer 
+	Parameter IN22_WIDTH bound to: 1 - type: integer 
+	Parameter IN23_WIDTH bound to: 1 - type: integer 
+	Parameter IN24_WIDTH bound to: 1 - type: integer 
+	Parameter IN25_WIDTH bound to: 1 - type: integer 
+	Parameter IN26_WIDTH bound to: 1 - type: integer 
+	Parameter IN27_WIDTH bound to: 1 - type: integer 
+	Parameter IN28_WIDTH bound to: 1 - type: integer 
+	Parameter IN29_WIDTH bound to: 1 - type: integer 
+	Parameter IN30_WIDTH bound to: 1 - type: integer 
+	Parameter IN31_WIDTH bound to: 1 - type: integer 
+	Parameter IN32_WIDTH bound to: 1 - type: integer 
+	Parameter IN33_WIDTH bound to: 1 - type: integer 
+	Parameter IN34_WIDTH bound to: 1 - type: integer 
+	Parameter IN35_WIDTH bound to: 1 - type: integer 
+	Parameter IN36_WIDTH bound to: 1 - type: integer 
+	Parameter IN37_WIDTH bound to: 1 - type: integer 
+	Parameter IN38_WIDTH bound to: 1 - type: integer 
+	Parameter IN39_WIDTH bound to: 1 - type: integer 
+	Parameter IN40_WIDTH bound to: 1 - type: integer 
+	Parameter IN41_WIDTH bound to: 1 - type: integer 
+	Parameter IN42_WIDTH bound to: 1 - type: integer 
+	Parameter IN43_WIDTH bound to: 1 - type: integer 
+	Parameter IN44_WIDTH bound to: 1 - type: integer 
+	Parameter IN45_WIDTH bound to: 1 - type: integer 
+	Parameter IN46_WIDTH bound to: 1 - type: integer 
+	Parameter IN47_WIDTH bound to: 1 - type: integer 
+	Parameter IN48_WIDTH bound to: 1 - type: integer 
+	Parameter IN49_WIDTH bound to: 1 - type: integer 
+	Parameter IN50_WIDTH bound to: 1 - type: integer 
+	Parameter IN51_WIDTH bound to: 1 - type: integer 
+	Parameter IN52_WIDTH bound to: 1 - type: integer 
+	Parameter IN53_WIDTH bound to: 1 - type: integer 
+	Parameter IN54_WIDTH bound to: 1 - type: integer 
+	Parameter IN55_WIDTH bound to: 1 - type: integer 
+	Parameter IN56_WIDTH bound to: 1 - type: integer 
+	Parameter IN57_WIDTH bound to: 1 - type: integer 
+	Parameter IN58_WIDTH bound to: 1 - type: integer 
+	Parameter IN59_WIDTH bound to: 1 - type: integer 
+	Parameter IN60_WIDTH bound to: 1 - type: integer 
+	Parameter IN61_WIDTH bound to: 1 - type: integer 
+	Parameter IN62_WIDTH bound to: 1 - type: integer 
+	Parameter IN63_WIDTH bound to: 1 - type: integer 
+	Parameter IN64_WIDTH bound to: 1 - type: integer 
+	Parameter IN65_WIDTH bound to: 1 - type: integer 
+	Parameter IN66_WIDTH bound to: 1 - type: integer 
+	Parameter IN67_WIDTH bound to: 1 - type: integer 
+	Parameter IN68_WIDTH bound to: 1 - type: integer 
+	Parameter IN69_WIDTH bound to: 1 - type: integer 
+	Parameter IN70_WIDTH bound to: 1 - type: integer 
+	Parameter IN71_WIDTH bound to: 1 - type: integer 
+	Parameter IN72_WIDTH bound to: 1 - type: integer 
+	Parameter IN73_WIDTH bound to: 1 - type: integer 
+	Parameter IN74_WIDTH bound to: 1 - type: integer 
+	Parameter IN75_WIDTH bound to: 1 - type: integer 
+	Parameter IN76_WIDTH bound to: 1 - type: integer 
+	Parameter IN77_WIDTH bound to: 1 - type: integer 
+	Parameter IN78_WIDTH bound to: 1 - type: integer 
+	Parameter IN79_WIDTH bound to: 1 - type: integer 
+	Parameter IN80_WIDTH bound to: 1 - type: integer 
+	Parameter IN81_WIDTH bound to: 1 - type: integer 
+	Parameter IN82_WIDTH bound to: 1 - type: integer 
+	Parameter IN83_WIDTH bound to: 1 - type: integer 
+	Parameter IN84_WIDTH bound to: 1 - type: integer 
+	Parameter IN85_WIDTH bound to: 1 - type: integer 
+	Parameter IN86_WIDTH bound to: 1 - type: integer 
+	Parameter IN87_WIDTH bound to: 1 - type: integer 
+	Parameter IN88_WIDTH bound to: 1 - type: integer 
+	Parameter IN89_WIDTH bound to: 1 - type: integer 
+	Parameter IN90_WIDTH bound to: 1 - type: integer 
+	Parameter IN91_WIDTH bound to: 1 - type: integer 
+	Parameter IN92_WIDTH bound to: 1 - type: integer 
+	Parameter IN93_WIDTH bound to: 1 - type: integer 
+	Parameter IN94_WIDTH bound to: 1 - type: integer 
+	Parameter IN95_WIDTH bound to: 1 - type: integer 
+	Parameter IN96_WIDTH bound to: 1 - type: integer 
+	Parameter IN97_WIDTH bound to: 1 - type: integer 
+	Parameter IN98_WIDTH bound to: 1 - type: integer 
+	Parameter IN99_WIDTH bound to: 1 - type: integer 
+	Parameter IN100_WIDTH bound to: 1 - type: integer 
+	Parameter IN101_WIDTH bound to: 1 - type: integer 
+	Parameter IN102_WIDTH bound to: 1 - type: integer 
+	Parameter IN103_WIDTH bound to: 1 - type: integer 
+	Parameter IN104_WIDTH bound to: 1 - type: integer 
+	Parameter IN105_WIDTH bound to: 1 - type: integer 
+	Parameter IN106_WIDTH bound to: 1 - type: integer 
+	Parameter IN107_WIDTH bound to: 1 - type: integer 
+	Parameter IN108_WIDTH bound to: 1 - type: integer 
+	Parameter IN109_WIDTH bound to: 1 - type: integer 
+	Parameter IN110_WIDTH bound to: 1 - type: integer 
+	Parameter IN111_WIDTH bound to: 1 - type: integer 
+	Parameter IN112_WIDTH bound to: 1 - type: integer 
+	Parameter IN113_WIDTH bound to: 1 - type: integer 
+	Parameter IN114_WIDTH bound to: 1 - type: integer 
+	Parameter IN115_WIDTH bound to: 1 - type: integer 
+	Parameter IN116_WIDTH bound to: 1 - type: integer 
+	Parameter IN117_WIDTH bound to: 1 - type: integer 
+	Parameter IN118_WIDTH bound to: 1 - type: integer 
+	Parameter IN119_WIDTH bound to: 1 - type: integer 
+	Parameter IN120_WIDTH bound to: 1 - type: integer 
+	Parameter IN121_WIDTH bound to: 1 - type: integer 
+	Parameter IN122_WIDTH bound to: 1 - type: integer 
+	Parameter IN123_WIDTH bound to: 1 - type: integer 
+	Parameter IN124_WIDTH bound to: 1 - type: integer 
+	Parameter IN125_WIDTH bound to: 1 - type: integer 
+	Parameter IN126_WIDTH bound to: 1 - type: integer 
+	Parameter IN127_WIDTH bound to: 1 - type: integer 
+	Parameter dout_width bound to: 2 - type: integer 
+	Parameter NUM_PORTS bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat' (7#1) [c:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.gen/sources_1/bd/TP2/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'TP2_microblaze_0_xlconcat_0' (8#1) [c:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.gen/sources_1/bd/TP2/ip/TP2_microblaze_0_xlconcat_0/synth/TP2_microblaze_0_xlconcat_0.v:60]
+INFO: [Synth 8-3491] module 'TP2_rst_clk_wiz_1_100M_0' declared at 'C:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.runs/synth_1/.Xil/Vivado-12436-SE227-04/realtime/TP2_rst_clk_wiz_1_100M_0_stub.vhdl:5' bound to instance 'rst_clk_wiz_1_100M' of component 'TP2_rst_clk_wiz_1_100M_0' [c:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.gen/sources_1/bd/TP2/synth/TP2.vhd:2210]
+INFO: [Synth 8-638] synthesizing module 'TP2_rst_clk_wiz_1_100M_0' [C:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.runs/synth_1/.Xil/Vivado-12436-SE227-04/realtime/TP2_rst_clk_wiz_1_100M_0_stub.vhdl:21]
+INFO: [Synth 8-256] done synthesizing module 'TP2' (9#1) [c:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.gen/sources_1/bd/TP2/synth/TP2.vhd:1597]
+INFO: [Synth 8-256] done synthesizing module 'TP2_wrapper' (10#1) [C:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.srcs/sources_1/imports/TP2_wrapper.vhd:24]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1017.578 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1017.578 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1017.578 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.046 . Memory (MB): peak = 1017.578 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.gen/sources_1/bd/TP2/ip/TP2_microblaze_0_0/TP2_microblaze_0_0/TP2_microblaze_0_0_in_context.xdc] for cell 'TP2_i/microblaze_0'
+Finished Parsing XDC File [c:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.gen/sources_1/bd/TP2/ip/TP2_microblaze_0_0/TP2_microblaze_0_0/TP2_microblaze_0_0_in_context.xdc] for cell 'TP2_i/microblaze_0'
+Parsing XDC File [c:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.gen/sources_1/bd/TP2/ip/TP2_dlmb_v10_0/TP2_dlmb_v10_0/TP2_ilmb_v10_0_in_context.xdc] for cell 'TP2_i/microblaze_0_local_memory/dlmb_v10'
+Finished Parsing XDC File [c:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.gen/sources_1/bd/TP2/ip/TP2_dlmb_v10_0/TP2_dlmb_v10_0/TP2_ilmb_v10_0_in_context.xdc] for cell 'TP2_i/microblaze_0_local_memory/dlmb_v10'
+Parsing XDC File [c:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.gen/sources_1/bd/TP2/ip/TP2_ilmb_v10_0/TP2_ilmb_v10_0/TP2_ilmb_v10_0_in_context.xdc] for cell 'TP2_i/microblaze_0_local_memory/ilmb_v10'
+Finished Parsing XDC File [c:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.gen/sources_1/bd/TP2/ip/TP2_ilmb_v10_0/TP2_ilmb_v10_0/TP2_ilmb_v10_0_in_context.xdc] for cell 'TP2_i/microblaze_0_local_memory/ilmb_v10'
+Parsing XDC File [c:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.gen/sources_1/bd/TP2/ip/TP2_dlmb_bram_if_cntlr_0/TP2_dlmb_bram_if_cntlr_0/TP2_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'TP2_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Finished Parsing XDC File [c:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.gen/sources_1/bd/TP2/ip/TP2_dlmb_bram_if_cntlr_0/TP2_dlmb_bram_if_cntlr_0/TP2_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'TP2_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Parsing XDC File [c:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.gen/sources_1/bd/TP2/ip/TP2_ilmb_bram_if_cntlr_0/TP2_ilmb_bram_if_cntlr_0/TP2_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'TP2_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Finished Parsing XDC File [c:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.gen/sources_1/bd/TP2/ip/TP2_ilmb_bram_if_cntlr_0/TP2_ilmb_bram_if_cntlr_0/TP2_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'TP2_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Parsing XDC File [c:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.gen/sources_1/bd/TP2/ip/TP2_lmb_bram_0/TP2_lmb_bram_0/TP2_lmb_bram_0_in_context.xdc] for cell 'TP2_i/microblaze_0_local_memory/lmb_bram'
+Finished Parsing XDC File [c:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.gen/sources_1/bd/TP2/ip/TP2_lmb_bram_0/TP2_lmb_bram_0/TP2_lmb_bram_0_in_context.xdc] for cell 'TP2_i/microblaze_0_local_memory/lmb_bram'
+Parsing XDC File [c:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.gen/sources_1/bd/TP2/ip/TP2_xbar_0/TP2_xbar_0/TP2_xbar_0_in_context.xdc] for cell 'TP2_i/microblaze_0_axi_periph/xbar'
+Finished Parsing XDC File [c:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.gen/sources_1/bd/TP2/ip/TP2_xbar_0/TP2_xbar_0/TP2_xbar_0_in_context.xdc] for cell 'TP2_i/microblaze_0_axi_periph/xbar'
+Parsing XDC File [c:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.gen/sources_1/bd/TP2/ip/TP2_microblaze_0_axi_intc_0/TP2_microblaze_0_axi_intc_0/TP2_microblaze_0_axi_intc_0_in_context.xdc] for cell 'TP2_i/microblaze_0_axi_intc'
+Finished Parsing XDC File [c:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.gen/sources_1/bd/TP2/ip/TP2_microblaze_0_axi_intc_0/TP2_microblaze_0_axi_intc_0/TP2_microblaze_0_axi_intc_0_in_context.xdc] for cell 'TP2_i/microblaze_0_axi_intc'
+Parsing XDC File [c:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.gen/sources_1/bd/TP2/ip/TP2_mdm_1_0/TP2_mdm_1_0/TP2_mdm_1_0_in_context.xdc] for cell 'TP2_i/mdm_1'
+Finished Parsing XDC File [c:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.gen/sources_1/bd/TP2/ip/TP2_mdm_1_0/TP2_mdm_1_0/TP2_mdm_1_0_in_context.xdc] for cell 'TP2_i/mdm_1'
+Parsing XDC File [c:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.gen/sources_1/bd/TP2/ip/TP2_clk_wiz_1_0/TP2_clk_wiz_1_0/TP2_clk_wiz_1_0_in_context.xdc] for cell 'TP2_i/clk_wiz_1'
+Finished Parsing XDC File [c:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.gen/sources_1/bd/TP2/ip/TP2_clk_wiz_1_0/TP2_clk_wiz_1_0/TP2_clk_wiz_1_0_in_context.xdc] for cell 'TP2_i/clk_wiz_1'
+Parsing XDC File [c:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.gen/sources_1/bd/TP2/ip/TP2_rst_clk_wiz_1_100M_0/TP2_rst_clk_wiz_1_100M_0/TP2_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'TP2_i/rst_clk_wiz_1_100M'
+Finished Parsing XDC File [c:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.gen/sources_1/bd/TP2/ip/TP2_rst_clk_wiz_1_100M_0/TP2_rst_clk_wiz_1_100M_0/TP2_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'TP2_i/rst_clk_wiz_1_100M'
+Parsing XDC File [c:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.gen/sources_1/bd/TP2/ip/TP2_axi_gpio_0_0/TP2_axi_gpio_0_0/TP2_axi_gpio_0_0_in_context.xdc] for cell 'TP2_i/led_switch'
+Finished Parsing XDC File [c:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.gen/sources_1/bd/TP2/ip/TP2_axi_gpio_0_0/TP2_axi_gpio_0_0/TP2_axi_gpio_0_0_in_context.xdc] for cell 'TP2_i/led_switch'
+Parsing XDC File [c:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.gen/sources_1/bd/TP2/ip/TP2_axi_gpio_0_1/TP2_axi_gpio_0_1/TP2_axi_gpio_0_1_in_context.xdc] for cell 'TP2_i/boutons'
+Finished Parsing XDC File [c:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.gen/sources_1/bd/TP2/ip/TP2_axi_gpio_0_1/TP2_axi_gpio_0_1/TP2_axi_gpio_0_1_in_context.xdc] for cell 'TP2_i/boutons'
+Parsing XDC File [C:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.srcs/constrs_1/new/basys3.xdc]
+Finished Parsing XDC File [C:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.srcs/constrs_1/new/basys3.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.srcs/constrs_1/new/basys3.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TP2_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/TP2_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1043.336 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1043.336 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'TP2_i/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1044.344 ; gain = 26.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1044.344 ; gain = 26.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clock. (constraint file  c:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.gen/sources_1/bd/TP2/ip/TP2_clk_wiz_1_0/TP2_clk_wiz_1_0/TP2_clk_wiz_1_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clock. (constraint file  c:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.gen/sources_1/bd/TP2/ip/TP2_clk_wiz_1_0/TP2_clk_wiz_1_0/TP2_clk_wiz_1_0_in_context.xdc, line 4).
+Applied set_property KEEP_HIERARCHY = SOFT for TP2_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for TP2_i/microblaze_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for TP2_i/microblaze_0_local_memory/dlmb_v10. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for TP2_i/microblaze_0_local_memory/ilmb_v10. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for TP2_i/microblaze_0_local_memory/dlmb_bram_if_cntlr. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for TP2_i/microblaze_0_local_memory/ilmb_bram_if_cntlr. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for TP2_i/microblaze_0_local_memory/lmb_bram. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for TP2_i/microblaze_0_axi_periph/xbar. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for TP2_i/microblaze_0_axi_periph. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for TP2_i/microblaze_0_axi_intc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for TP2_i/microblaze_0_xlconcat. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for TP2_i/mdm_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for TP2_i/clk_wiz_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for TP2_i/rst_clk_wiz_1_100M. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for TP2_i/led_switch. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for TP2_i/boutons. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1044.344 ; gain = 26.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1044.344 ; gain = 26.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1044.344 ; gain = 26.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1061.461 ; gain = 43.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1061.758 ; gain = 44.180
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1080.875 ; gain = 63.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1087.609 ; gain = 70.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1087.609 ; gain = 70.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1087.609 ; gain = 70.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1087.609 ; gain = 70.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1087.609 ; gain = 70.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1087.609 ; gain = 70.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+----------------------------+----------+
+|      |BlackBox name               |Instances |
++------+----------------------------+----------+
+|1     |TP2_xbar_0                  |         1|
+|2     |TP2_axi_gpio_0_1            |         1|
+|3     |TP2_clk_wiz_1_0             |         1|
+|4     |TP2_axi_gpio_0_0            |         1|
+|5     |TP2_mdm_1_0                 |         1|
+|6     |TP2_microblaze_0_0          |         1|
+|7     |TP2_microblaze_0_axi_intc_0 |         1|
+|8     |TP2_rst_clk_wiz_1_100M_0    |         1|
+|9     |TP2_dlmb_bram_if_cntlr_0    |         1|
+|10    |TP2_dlmb_v10_0              |         1|
+|11    |TP2_ilmb_bram_if_cntlr_0    |         1|
+|12    |TP2_ilmb_v10_0              |         1|
+|13    |TP2_lmb_bram_0              |         1|
++------+----------------------------+----------+
+
+Report Cell Usage: 
++------+---------------------------------+------+
+|      |Cell                             |Count |
++------+---------------------------------+------+
+|1     |TP2_axi_gpio_0_0_bbox            |     1|
+|2     |TP2_axi_gpio_0_1_bbox            |     1|
+|3     |TP2_clk_wiz_1_0_bbox             |     1|
+|4     |TP2_dlmb_bram_if_cntlr_0_bbox    |     1|
+|5     |TP2_dlmb_v10_0_bbox              |     1|
+|6     |TP2_ilmb_bram_if_cntlr_0_bbox    |     1|
+|7     |TP2_ilmb_v10_0_bbox              |     1|
+|8     |TP2_lmb_bram_0_bbox              |     1|
+|9     |TP2_mdm_1_0_bbox                 |     1|
+|10    |TP2_microblaze_0_0_bbox          |     1|
+|11    |TP2_microblaze_0_axi_intc_0_bbox |     1|
+|12    |TP2_rst_clk_wiz_1_100M_0_bbox    |     1|
+|13    |TP2_xbar_0_bbox                  |     1|
+|14    |IBUF                             |     8|
+|15    |OBUF                             |    16|
++------+---------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1087.609 ; gain = 70.031
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 1087.609 ; gain = 43.266
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1087.609 ; gain = 70.031
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 1093.703 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1105.047 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+64 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:37 . Memory (MB): peak = 1105.047 ; gain = 87.469
+INFO: [Common 17-1381] The checkpoint 'C:/Users/UserTP/Desktop/FPGA-main/TP2/TP2.runs/synth_1/TP2_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file TP2_wrapper_utilization_synth.rpt -pb TP2_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Feb 21 09:23:40 2023...

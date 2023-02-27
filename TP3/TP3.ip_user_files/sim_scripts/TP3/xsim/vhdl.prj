@@ -1,0 +1,17 @@
+vhdl xil_defaultlib  \
+"../../../../TP3.gen/sources_1/bd/TP3/ip/TP3_microblaze_0_0/sim/TP3_microblaze_0_0.vhd" \
+"../../../../TP3.gen/sources_1/bd/TP3/ip/TP3_dlmb_v10_0/sim/TP3_dlmb_v10_0.vhd" \
+"../../../../TP3.gen/sources_1/bd/TP3/ip/TP3_ilmb_v10_0/sim/TP3_ilmb_v10_0.vhd" \
+"../../../../TP3.gen/sources_1/bd/TP3/ip/TP3_dlmb_bram_if_cntlr_0/sim/TP3_dlmb_bram_if_cntlr_0.vhd" \
+"../../../../TP3.gen/sources_1/bd/TP3/ip/TP3_ilmb_bram_if_cntlr_0/sim/TP3_ilmb_bram_if_cntlr_0.vhd" \
+"../../../../TP3.gen/sources_1/bd/TP3/ip/TP3_microblaze_0_axi_intc_0/sim/TP3_microblaze_0_axi_intc_0.vhd" \
+"../../../../TP3.gen/sources_1/bd/TP3/ip/TP3_mdm_1_0/sim/TP3_mdm_1_0.vhd" \
+"../../../../TP3.gen/sources_1/bd/TP3/ip/TP3_rst_clk_wiz_1_100M_0/sim/TP3_rst_clk_wiz_1_100M_0.vhd" \
+"../../../../TP3.gen/sources_1/bd/TP3/ip/TP3_boutons_0/sim/TP3_boutons_0.vhd" \
+"../../../../TP3.gen/sources_1/bd/TP3/ipshared/dc6f/src/my_led.vhd" \
+"../../../../TP3.gen/sources_1/bd/TP3/ipshared/dc6f/hdl/my_led_v1_0_S00_AXI.vhd" \
+"../../../../TP3.gen/sources_1/bd/TP3/ipshared/dc6f/hdl/my_led_v1_0.vhd" \
+"../../../../TP3.gen/sources_1/bd/TP3/ip/TP3_my_led_0_0/sim/TP3_my_led_0_0.vhd" \
+"../../../../TP3.gen/sources_1/bd/TP3/sim/TP3.vhd" \
+
+nosort

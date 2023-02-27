@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Feb 19 13:03:50 2023
+# Process ID: 15200
+# Current directory: C:/Users/pc/Desktop/FPGA-main/TP2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18288 C:\Users\pc\Desktop\FPGA-main\TP2\TP2.xpr
+# Log file: C:/Users/pc/Desktop/FPGA-main/TP2/vivado.log
+# Journal file: C:/Users/pc/Desktop/FPGA-main/TP2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/pc/Desktop/FPGA-main/TP2/TP2.xpr
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/pc/Desktop/FPGA-main/TP2/TP2.srcs/sources_1/bd/TP2/TP2.bd}
+save_bd_design_as TP3
+save_bd_design_as TP3
+open_bd_design {C:/Users/pc/Desktop/FPGA-main/TP2/TP2.srcs/sources_1/bd/TP2/TP2.bd}
+save_bd_design_as TP3

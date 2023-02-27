@@ -1,0 +1,9 @@
+verilog xil_defaultlib --include "../../../../TP3.gen/sources_1/bd/TP3/ipshared/ec67/hdl" --include "../../../../TP3.gen/sources_1/bd/TP3/ipshared/d0f7" \
+"../../../../TP3.gen/sources_1/bd/TP3/ip/TP3_lmb_bram_0/sim/TP3_lmb_bram_0.v" \
+"../../../../TP3.gen/sources_1/bd/TP3/ip/TP3_xbar_0/sim/TP3_xbar_0.v" \
+"../../../../TP3.gen/sources_1/bd/TP3/ip/TP3_clk_wiz_1_0/TP3_clk_wiz_1_0_clk_wiz.v" \
+"../../../../TP3.gen/sources_1/bd/TP3/ip/TP3_clk_wiz_1_0/TP3_clk_wiz_1_0.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort
