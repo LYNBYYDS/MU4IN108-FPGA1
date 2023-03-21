@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Project_FPGA.srcs/sources_1/imports/Project_FPGA/Compteur_Tempo.vhd" \
+"../../../../Project_FPGA.srcs/sim_1/new/Compteur_Tempo_tb.vhd" \
+
+# Do not sort compile order
+nosort
