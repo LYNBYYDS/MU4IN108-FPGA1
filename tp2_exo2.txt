@@ -1,0 +1,56 @@
+#include "xgpio.h"
+#include "xparameters.h"
+
+#define cpt_25Hz 1
+#define cpt_10Hz 5
+#define cpt_5Hz 10
+#define cpt_1Hz 50
+
+XGpio led_switch, button;
+// button L C R
+
+
+
+int main () {
+XGpio_Initialize(&led_switch, XPAR_LED_SWITCH_DEVICE_ID);
+XGpio_Initialize(&button, XPAR_BOUTONS_DEVICE_ID);
+
+XGpio_SetDataDirection(&led_switch, 1, 0xF);
+XGpio_SetDataDirection(&led_switch, 2, 0);
+XGpio_SetDataDirection(&button, 1, 0x7);
+
+int clignoter = 1;
+int cpt_led = 0;
+int cpt_total = 0;
+int bit = 0;
+
+while(1) {
+
+
+	XGpio_DiscreteWrite(&led_switch, 2, 0x1<<bit);
+
+
+	cpt_total = 0;
+
+	if( XGpio_DiscreteRead(&led_switch, 1)>>3 & 0x1 ){
+		cpt_led = cpt_led >=  cpt_25Hz-1? 0 : cpt_led + 1;
+	}else if( XGpio_DiscreteRead(&led_switch, 1)>>2 & 0x1 ){
+		cpt_led = cpt_led >=  cpt_10Hz-1? 0 : cpt_led + 1;
+	}else if( XGpio_DiscreteRead(&led_switch, 1)>>1 & 0x1 ){
+		cpt_led = cpt_led >=  cpt_5Hz-1? 0 : cpt_led + 1;
+	}else if( XGpio_DiscreteRead(&led_switch, 1) & 0x1 ){
+		cpt_led = cpt_led >=  cpt_1Hz-1? 0 : cpt_led + 1;
+	}
+
+
+
+	if (cpt_led == 0) {
+		bit = bit >= 15? 0 : bit + 1;
+	}
+
+	for(int i = 0; i < 80000; ){
+		i = i + 1;
+	} // function delay
+}
+return 0;
+}
