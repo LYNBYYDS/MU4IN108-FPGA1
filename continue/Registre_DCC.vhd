@@ -38,7 +38,7 @@ begin
 			reg_data <= Trame_DCC;                              -- Recharge the data to shift
 		-- A Chaque Front d'Horloge
 		elsif rising_edge (Clk) then
-			case Com_REG is 
+			case (Com_REG) is 
                 when "01" =>                                                -- Shift the data
                     if nb_shifted < 50 then                                 -- if not shift to last bit 
                         Bit_out_s <= ((reg_data >> nb_shifted) && 1);
