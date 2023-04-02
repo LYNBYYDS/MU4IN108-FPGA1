@@ -31,36 +31,36 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity Compteur_Tempo_tb is
+entity DCC_Bit0_tb is
 --  Port ( );
-end Compteur_Tempo_tb;
+end DCC_Bit0_tb;
 
-architecture Behavioral of Compteur_Tempo_tb is
+architecture Behavioral of DCC_Bit0_tb is
 
-component COMPTEUR_TEMPO is 
-    Port (  Clk 			: in STD_LOGIC;	   -- Horloge 100 MHz
-            Reset 		: in STD_LOGIC;		   -- Reset Asynchrone
-            Clk1M 		: in STD_LOGIC;		   -- Horloge 1 MHz
-            Start_Tempo	: in STD_LOGIC;		   -- Commande de Démarrage de la Temporisation
-            Fin_Tempo	: out STD_LOGIC		   -- Drapeau de Fin de la Temporisation
-            );
+component DCC_Bit0_tb is
+    Port ( Clk 			: in std_logic;		-- Horloge 100 MHz
+           Reset 		: in std_logic;		-- Reset Asynchrone
+           Clk1M 		: in std_logic;		-- Horloge 1 MHz
+           GO_0	        : in std_logic;		-- Commande de Dï¿½marrage de la Temporisation
+           FIN_0	    : out std_logic		-- Drapeau de Fin de la Temporisation
+		);
 end component;
 
 signal Clk_s : std_logic := '0';            -- Horloge input signal 100Mhz
 signal Reset_s : std_logic := '1';          -- Reset Asynchrone signal
 signal Clk1M_s : std_logic := '0';          -- Horloge input signal 1Mhz
-signal Start_Tempo_s : std_logic := '0';	-- Command to start Tempo
-signal Fin_Tempo_s : std_logic;             -- Flag if Tempo finish
+signal GO_0_s : std_logic := '0';	-- Command to start Tempo
+signal FIN_0_s : std_logic;             -- Flag if Tempo finish
             
 begin
 
-    -- Component COMPTEUR_TEMPO 
-    COMPTEUR_TEMPO_1 : COMPTEUR_TEMPO
+    -- Component DCC_Bit0 
+    DCC_Bit0_1 : DCC_Bit0
     port map (  Clk => Clk_s,
                 Reset => Reset_s,
                 Clk1M => Clk1M_s,
-                Start_Tempo	=> Start_Tempo_s,
-                Fin_Tempo => Fin_Tempo_s);
+                GO_0 => GO_0_s,
+                FIN_0 => FIN_0_s);
 
     -- Inverse the signal horloge
     Clk_s <= not Clk_s after 1 ns;

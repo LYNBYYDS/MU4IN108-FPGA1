@@ -1,6 +1,35 @@
+----------------------------------------------------------------------------------
+-- Company: UPMC
+-- Engineer: YongLI & MarcZHAN
+-- 
+-- Create Date: 22.03.2023 18:39:36
+-- Design Name: Registre_DCC
+-- Module Name: REGISTRE_DCC - Behavioral
+-- Project Name: 
+-- Target Devices: 
+-- Tool Versions: 
+-- Description: 
+-- 
+-- Dependencies: 
+-- 
+-- Revision:
+-- Revision 0.01 - File Created
+-- Additional Comments:
+-- 
+----------------------------------------------------------------------------------
+
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+
+-- Uncomment the following library declaration if using
+-- arithmetic functions with Signed or Unsigned values
+--use IEEE.NUMERIC_STD.ALL;
+
+-- Uncomment the following library declaration if instantiating
+-- any Xilinx leaf cells in this code.
+--library UNISIM;
+--use UNISIM.VComponents.all;
 
 entity REGISTRE_DCC is
     Port (  Clk : in std_logic;		                            -- Horloge 100 MHz 
@@ -11,7 +40,6 @@ entity REGISTRE_DCC is
             );
 end REGISTRE_DCC;
 
-
 architecture Behavioral of REGISTRE_DCC is
 
 signal nb_shifted : INTEGER range 0 to 50;	                    -- Compteur de cycles d'horloge
@@ -19,7 +47,7 @@ signal reg_data : std_logic_vector(50 downto 0);			 	-- Signal stock the Trame d
 signal bit_out_s : std_logic;                                   -- Signal stock the last data send to FSM
 
 begin
-    
+
     bit_out <= bit_out_s;
 
     -- Command for register
@@ -34,17 +62,17 @@ begin
 	begin
 		-- Reset Asynchrone
 		if Reset = '1' then 
-            nb_shifted <= '0';                                  -- Reset shift number to 0
+            nb_shifted <= 0;                                  -- Reset shift number to 0
 			reg_data <= Trame_DCC;                              -- Recharge the data to shift
 		-- A Chaque Front d'Horloge
 		elsif rising_edge (Clk) then
 			case (Com_REG) is 
                 when "01" =>                                                -- Shift the data
                     if nb_shifted < 50 then                                 -- if not shift to last bit 
-                        Bit_out_s <= ((reg_data >> nb_shifted) && 1);
+                        Bit_out_s <= reg_data(nb_shifted);
                         nb_shifted <= nb_shifted + 1;
                     elsif nb_shifted = 50 then
-                        Bit_out_s <= ((reg_data >> nb_shifted) && 1);
+                        Bit_out_s <= reg_data(nb_shifted);
                         nb_shifted <= 0;
                         reg_data <= Trame_DCC;
                     end if;
@@ -55,6 +83,5 @@ begin
                 when others => NULL;
             end case;                    
 		end if;
-end process;
-
+    end process;
 end Behavioral;

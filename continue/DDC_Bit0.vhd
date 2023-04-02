@@ -2,16 +2,16 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
-entity DCC_BI1 is
+entity DCC_BIT0 is
     Port ( Clk 			: in std_logic;		-- Horloge 100 MHz
            Reset 		: in std_logic;		-- Reset Asynchrone
            Clk1M 		: in std_logic;		-- Horloge 1 MHz
-           GO_1	        : in std_logic;		-- Commande de D�marrage de la Temporisation
-           FIN_1	    : out std_logic		-- Drapeau de Fin de la Temporisation
+           GO_0	        : in std_logic;		-- Commande de D�marrage de la Temporisation
+           FIN_0	    : out std_logic		-- Drapeau de Fin de la Temporisation
 		);
-end DCC_BI1;
+end DCC_BIT0;
 
-architecture Behavioral of DCC_BI1 is
+architecture Behavioral of DCC_BIT0 is
 
 -- Component MAE
     component DDC_MAE is
@@ -38,7 +38,7 @@ architecture Behavioral of DCC_BI1 is
             );
         end component;
 
-constant seuil : integer := 100;
+constant seuil : integer := 3; -- test use 3 otherwise should use 100
     
 signal Reset_Cpt_Low    : std_logic;        -- Reset counter_low
 signal Reset_Cpt_High   ; std_logic;        -- Reset counter_high
@@ -71,13 +71,13 @@ begin
     MAE : DDC_MAE
     port map (  Clk => Clk,
                 Reset => reset,
-                Go => GO_1,
+                Go => GO_0,
                 Reset_Cpt_Low => Reset_Cpt_Low,
                 Reset_Cpt_High => Reset_Cpt_High,
                 Cmd_Cpt_Low => Cmd_Cpt_Low,
                 Cmd_Cpt_high => Cmd_Cpt_High,
                 Fin_Cpt_Low => Fin_Cpt_Low,
                 Fin_Cpt_High => Fin_Cpt_High,
-                Fin => FIN_1);
+                Fin => FIN_0);
 
 end Behavioral;
