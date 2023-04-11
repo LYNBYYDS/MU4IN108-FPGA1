@@ -1,6 +1,0 @@
-# compile vhdl design source files
-vhdl xil_defaultlib  \
-"../../../../Project_FPGA.srcs/sources_1/imports/Project_FPGA/Diviseur_Horloge.vhd" \
-
-# Do not sort compile order
-nosort
