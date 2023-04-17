@@ -1,48 +1,132 @@
 #include "xgpio.h"
 #include "xparameters.h"
 
-#define FUNCTION22 0x40
-
-
-
-
-
-// Variable for the functions
-	// The number of function 
-	int nb_Function = 0;
-
-	// Componant to forme a trame
+// Trame parts
 	int address;
 	int command0;
 	int command1;
 
-	
-	// Function ChangeSpeed
-	int index_Train = 1;
-	int direction_Train = 1;
-	int speed_Train = 0;
-	// F0-F4
-	bool is_Light_ON = false;
-	bool is_Sound_ON = false;
-	bool play_Horn1 = false;
-	bool play_Horn2 = false;
-	bool is Turbo_ON - false;
-	// F5-F12
 
+// Function type
+	// Function changeing speed : 0
+	// Function F0-F4			: 1
+	// Function F5-F12			: 2
+	// Function F13-F20			: 3
+		int type_Function = 0;
+
+	// Function changing speed 
+		int index_Train = 1;
+		int direction_Train = 1;
+		int speed_Train = 0;
+
+	// Function F0-F4
+		bool F0_ON = false;
+		bool F1_ON = false;
+		bool F2_ON = false;
+		bool F3_ON = false;
+		bool F4_ON = false;
+
+	// Function F5-F12
+		bool F5_ON - false;
+		bool F6_ON - false;
+		bool F7_ON - false;
+		bool F8_ON - false;
+		bool F9_ON - false;
+		bool F10_ON - false;
+		bool F11_ON - false;
+		bool F12_ON - false;
+
+	// Function F13-F20
+		bool F13_ON - false;
+		bool F14_ON - false;
+		bool F15_ON - false;
+		bool F16_ON - false;
+		bool F17_ON - false;
+		bool F18_ON - false;
+		bool F19_ON - false;
+		bool F20_ON - false;
+
+// LED 
+	// LED trigger
+		// 0 - 3 : Function changing speed
+		// 0, 1, 3 : Function F0 - F20
+		int LED_index = 0;
+
+	// Each led setting 
+		// Setting0 : function type
+		int led_setting0 = 0;
+		int LED0 = 0;
+		bool if_show_LED0 = true;
+		// Setting1 : train address
+		int led_setting1 = 1;
+		int LED1 = 1;
+		bool if_show_LED1 = true;
+		// Setting2 : train direction
+		int led_setting2 = 1;
+		int LED2 = 0;
+		bool if_show_LED2 = true;
+		// Setting3 : speed setting or ON/OFF
+		int led_setting3 = 0;
+		int LED3 = 0;
+		bool if_show_LED3 = true;
 	
-	int trigger_function = 0;
-	int trigger_setting = 0;
-	
-	// Function press right button
-	void pressRightButton()
+// Function press left button
+	void pressLeftButton()
 	{
-		if (trigger_function == 0) 		// Change speed
+		if (type_Function == 0)				// Function changing speed 
 		{
-			triiger
+			if (LED_index != 0)
+			{
+				LED_index --; 
+			} 
+		}
+		else 
+		{
+			if (LED_index != 0 && LED_index != 3)
+			{
+				LED_index --; 
+			}
+			else if (LED_index == 3)
+			{
+				LED_index = 1; 
+			}
 		}
 	}
 
+// Function press right button
+	void pressRightButton()
+	{
+		if (type_Function == 3)				// Function changing speed 
+		{
+			if (LED_index != 3)
+			{
+				LED_index ++; 
+			} 
+		}
+		else 
+		{
+			if (LED_index != 1 && LED_index != 3)
+			{
+				LED_index --; 
+			}
+			else if (LED_index == 1)
+			{
+				LED_index = 3; 
+			}
+		}
+	}
 
+// Fucntion recharge LED data when change function
+// Function press up button
+	void pressUpButton()
+	{
+		switch (LED_index)
+		{
+			case 0 : // Function type
+				if 
+
+		}
+	}
 
 // Input/Output data exchange
 	// Actual state of sw and btn
@@ -183,7 +267,7 @@
 	// Function to write value to led to be done 
 	void writeLed(int value)
 {
-	// Function Change Speed
+	
 
 	
 	XGpio_DiscreteWrite(&led, 1, (value & 0x7FFF));
