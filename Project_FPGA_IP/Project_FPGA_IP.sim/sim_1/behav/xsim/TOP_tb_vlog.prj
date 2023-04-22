@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../Project_FPGA_IP.gen/sources_1/bd/Project_FPGA/ipshared/ec67/hdl" --include "../../../../Project_FPGA_IP.gen/sources_1/bd/Project_FPGA/ipshared/d0f7" \
+"../../../../Project_FPGA_IP.ip_user_files/bd/Project_FPGA/ip/Project_FPGA_lmb_bram_0/sim/Project_FPGA_lmb_bram_0.v" \
+"../../../../Project_FPGA_IP.ip_user_files/bd/Project_FPGA/ip/Project_FPGA_xbar_0/sim/Project_FPGA_xbar_0.v" \
+"../../../../Project_FPGA_IP.ip_user_files/bd/Project_FPGA/ip/Project_FPGA_clk_wiz_1_0/Project_FPGA_clk_wiz_1_0_clk_wiz.v" \
+"../../../../Project_FPGA_IP.ip_user_files/bd/Project_FPGA/ip/Project_FPGA_clk_wiz_1_0/Project_FPGA_clk_wiz_1_0.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

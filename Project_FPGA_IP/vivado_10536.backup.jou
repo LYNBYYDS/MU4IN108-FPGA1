@@ -1,0 +1,89 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Apr 18 16:17:32 2023
+# Process ID: 10536
+# Current directory: D:/Desktop/FPGA/Project_FPGA_IP
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10272 D:\Desktop\FPGA\Project_FPGA_IP\Project_FPGA_IP.xpr
+# Log file: D:/Desktop/FPGA/Project_FPGA_IP/vivado.log
+# Journal file: D:/Desktop/FPGA/Project_FPGA_IP\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Desktop/FPGA/Project_FPGA_IP/Project_FPGA_IP.xpr
+launch_simulation
+source TOP_tb.tcl
+run 10 ms
+open_bd_design {D:/Desktop/FPGA/Project_FPGA_IP/Project_FPGA_IP.srcs/sources_1/bd/Project_FPGA/Project_FPGA.bd}
+ipx::edit_ip_in_project -upgrade true -name IP_Centrale_DCC_v1_0_project -directory D:/Desktop/FPGA/Project_FPGA_IP/Project_FPGA_IP.tmp/IP_Centrale_DCC_v1_0_project d:/Desktop/FPGA/ip_repo/IP_Centrale_DCC_1.0/component.xml
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+set_property core_revision 5 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path d:/Desktop/FPGA/ip_repo/IP_Centrale_DCC_1.0
+report_ip_status -name ip_status 
+upgrade_ip -vlnv upmc.fr:user:IP_Centrale_DCC:1.0 [get_ips  Project_FPGA_IP_Centrale_DCC_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips Project_FPGA_IP_Centrale_DCC_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  D:/Desktop/FPGA/Project_FPGA_IP/Project_FPGA_IP.srcs/sources_1/bd/Project_FPGA/Project_FPGA.bd]
+export_ip_user_files -of_objects [get_files D:/Desktop/FPGA/Project_FPGA_IP/Project_FPGA_IP.srcs/sources_1/bd/Project_FPGA/Project_FPGA.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files D:/Desktop/FPGA/Project_FPGA_IP/Project_FPGA_IP.srcs/sources_1/bd/Project_FPGA/Project_FPGA.bd] -directory D:/Desktop/FPGA/Project_FPGA_IP/Project_FPGA_IP.ip_user_files/sim_scripts -ip_user_files_dir D:/Desktop/FPGA/Project_FPGA_IP/Project_FPGA_IP.ip_user_files -ipstatic_source_dir D:/Desktop/FPGA/Project_FPGA_IP/Project_FPGA_IP.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Desktop/FPGA/Project_FPGA_IP/Project_FPGA_IP.cache/compile_simlib/modelsim} {questa=D:/Desktop/FPGA/Project_FPGA_IP/Project_FPGA_IP.cache/compile_simlib/questa} {riviera=D:/Desktop/FPGA/Project_FPGA_IP/Project_FPGA_IP.cache/compile_simlib/riviera} {activehdl=D:/Desktop/FPGA/Project_FPGA_IP/Project_FPGA_IP.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+ipx::edit_ip_in_project -upgrade true -name IP_Centrale_DCC_v1_0_project -directory D:/Desktop/FPGA/Project_FPGA_IP/Project_FPGA_IP.tmp/IP_Centrale_DCC_v1_0_project d:/Desktop/FPGA/ip_repo/IP_Centrale_DCC_1.0/component.xml
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+set_property core_revision 6 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path d:/Desktop/FPGA/ip_repo/IP_Centrale_DCC_1.0
+report_ip_status -name ip_status 
+upgrade_ip -vlnv upmc.fr:user:IP_Centrale_DCC:1.0 [get_ips  Project_FPGA_IP_Centrale_DCC_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips Project_FPGA_IP_Centrale_DCC_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  D:/Desktop/FPGA/Project_FPGA_IP/Project_FPGA_IP.srcs/sources_1/bd/Project_FPGA/Project_FPGA.bd]
+export_ip_user_files -of_objects [get_files D:/Desktop/FPGA/Project_FPGA_IP/Project_FPGA_IP.srcs/sources_1/bd/Project_FPGA/Project_FPGA.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files D:/Desktop/FPGA/Project_FPGA_IP/Project_FPGA_IP.srcs/sources_1/bd/Project_FPGA/Project_FPGA.bd] -directory D:/Desktop/FPGA/Project_FPGA_IP/Project_FPGA_IP.ip_user_files/sim_scripts -ip_user_files_dir D:/Desktop/FPGA/Project_FPGA_IP/Project_FPGA_IP.ip_user_files -ipstatic_source_dir D:/Desktop/FPGA/Project_FPGA_IP/Project_FPGA_IP.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Desktop/FPGA/Project_FPGA_IP/Project_FPGA_IP.cache/compile_simlib/modelsim} {questa=D:/Desktop/FPGA/Project_FPGA_IP/Project_FPGA_IP.cache/compile_simlib/questa} {riviera=D:/Desktop/FPGA/Project_FPGA_IP/Project_FPGA_IP.cache/compile_simlib/riviera} {activehdl=D:/Desktop/FPGA/Project_FPGA_IP/Project_FPGA_IP.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+open_bd_design {D:/Desktop/FPGA/Project_FPGA_IP/Project_FPGA_IP.srcs/sources_1/bd/Project_FPGA/Project_FPGA.bd}
+ipx::edit_ip_in_project -upgrade true -name IP_Centrale_DCC_v1_0_project -directory D:/Desktop/FPGA/Project_FPGA_IP/Project_FPGA_IP.tmp/IP_Centrale_DCC_v1_0_project d:/Desktop/FPGA/ip_repo/IP_Centrale_DCC_1.0/component.xml
+update_compile_order -fileset sources_1
+current_project Project_FPGA_IP
+current_project IP_Centrale_DCC_v1_0_project
+current_project Project_FPGA_IP
+current_project IP_Centrale_DCC_v1_0_project
+current_project Project_FPGA_IP
+current_project IP_Centrale_DCC_v1_0_project
+current_project Project_FPGA_IP
+current_project IP_Centrale_DCC_v1_0_project
+current_project Project_FPGA_IP
+current_project IP_Centrale_DCC_v1_0_project
+current_project Project_FPGA_IP
+current_project IP_Centrale_DCC_v1_0_project
+current_project Project_FPGA_IP
+current_project IP_Centrale_DCC_v1_0_project
+current_project Project_FPGA_IP
+current_project IP_Centrale_DCC_v1_0_project
+current_project Project_FPGA_IP
+current_project IP_Centrale_DCC_v1_0_project
+current_project Project_FPGA_IP
+current_project IP_Centrale_DCC_v1_0_project
+current_project Project_FPGA_IP
+current_project IP_Centrale_DCC_v1_0_project
+close_project
+make_wrapper -files [get_files D:/Desktop/FPGA/Project_FPGA_IP/Project_FPGA_IP.srcs/sources_1/bd/Project_FPGA/Project_FPGA.bd] -top
+make_wrapper -files [get_files D:/Desktop/FPGA/Project_FPGA_IP/Project_FPGA_IP.srcs/sources_1/bd/Project_FPGA/Project_FPGA.bd] -top
+open_bd_design {D:/Desktop/FPGA/Project_FPGA_IP/Project_FPGA_IP.srcs/sources_1/bd/Project_FPGA/Project_FPGA.bd}
+make_wrapper -files [get_files D:/Desktop/FPGA/Project_FPGA_IP/Project_FPGA_IP.srcs/sources_1/bd/Project_FPGA/Project_FPGA.bd] -top
+close_sim

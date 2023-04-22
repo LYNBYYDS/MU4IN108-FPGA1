@@ -1,0 +1,25 @@
+18:26:22 **** Build of configuration Debug for project Project_SW ****
+make all 
+'Building file: ../src/extension.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/extension.o" -IC:/Users/marcs/OneDrive/Bureau/Desktop/workspace/Project_HW/export/Project_HW/sw/Project_HW/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/extension.d" -MT"src/extension.o" -o "src/extension.o" "../src/extension.c"
+../src/extension.c: In function 'main':
+../src/extension.c:221:4: warning: multi-line comment [-Wcomment]
+  221 |    // #define IP_CENTRALE_DCC_mWriteReg(BaseAddress, RegOffset, Data) \
+      |    ^
+'Finished building: ../src/extension.c'
+' '
+'Building target: Project_SW.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/marcs/OneDrive/Bureau/Desktop/workspace/Project_HW/export/Project_HW/sw/Project_HW/standalone_domain/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Project_SW.elf"  ./src/extension.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Project_SW.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Project_SW.elf  |tee "Project_SW.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6568	    352	   3112	  10032	   2730	Project_SW.elf
+'Finished building: Project_SW.elf.size'
+' '
+
+18:26:26 Build Finished (took 3s.750ms)
+

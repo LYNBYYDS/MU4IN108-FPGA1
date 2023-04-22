@@ -1,0 +1,13 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Project_FPGA.srcs/sources_1/new/MAE.vhd" \
+"../../../../Project_FPGA.srcs/sources_1/new/MAE_Compteur.vhd" \
+"../../../../Project_FPGA.srcs/sim_1/new/Compteur_Tempo_tb.vhd" \
+"../../../../Project_FPGA.srcs/sim_1/new/Diviseur_Horloge_tb.vhd" \
+"../../../../Project_FPGA.srcs/sim_1/new/Generateur_Trames_tb.vhd" \
+"../../../../Project_FPGA.srcs/sim_1/new/Registre_DCC_tb.vhd" \
+"../../../../Project_FPGA.srcs/sim_1/new/DCC_Bit0_tb.vhd" \
+"../../../../Project_FPGA.srcs/sim_1/new/MAE_tb.vhd" \
+
+# Do not sort compile order
+nosort

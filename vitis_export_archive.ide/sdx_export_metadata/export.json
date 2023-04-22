@@ -1,0 +1,29 @@
+{
+  "version": "2020.2",
+  "applications": [],
+  "platforms": [
+    {
+      "name": "Project_HW"
+    }
+  ],
+  "systems": [
+    {
+      "name": "Project_SW_system",
+      "platform": "C:/Users/marcs/OneDrive/Bureau/Desktop/workspace/Project_HW/export/Project_HW/Project_HW.xpfm",
+      "sysConfig": "Project_HW",
+      "buildConfig": "Debug",
+      "applications": [
+        {
+          "name": "Project_SW",
+          "platform": "C:/Users/marcs/OneDrive/Bureau/Desktop/workspace/Project_HW/export/Project_HW/Project_HW.xpfm",
+          "platformPath": "C:\\Users\\marcs\\OneDrive\\Bureau\\Desktop\\workspace\\Project_HW\\export\\Project_HW",
+          "sysConfig": "Project_HW",
+          "domain": "standalone_domain",
+          "system": "Project_SW_system"
+        }
+      ],
+      "platformPath": "C:\\Users\\marcs\\OneDrive\\Bureau\\Desktop\\workspace\\Project_HW\\export\\Project_HW"
+    }
+  ],
+  "others": []
+}

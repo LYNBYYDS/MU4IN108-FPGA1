@@ -1,0 +1,9 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 1c7452f4f5764b219d186381814466cb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L secureip --snapshot TOP_tb_func_synth xil_defaultlib.TOP_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-718] formal port <Clk> does not exist in entity <TOP>.  Please compare the definition of block <TOP> to its component declaration and its instantion to detect the mismatch. [C:/Users/UserTP/Desktop/FPGA/Project_FPGA_IP/Project_FPGA_IP.srcs/sim_1/new/TOP_tb.vhd:41]
+ERROR: [VRFC 10-718] formal port <Reset> does not exist in entity <TOP>.  Please compare the definition of block <TOP> to its component declaration and its instantion to detect the mismatch. [C:/Users/UserTP/Desktop/FPGA/Project_FPGA_IP/Project_FPGA_IP.srcs/sim_1/new/TOP_tb.vhd:42]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.

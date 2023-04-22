@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Apr 18 18:17:28 2023
+# Process ID: 11460
+# Current directory: C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA_IP/Project_FPGA_IP.runs/synth_1
+# Command line: vivado.exe -log Project_FPGA_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Project_FPGA_wrapper.tcl
+# Log file: C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA_IP/Project_FPGA_IP.runs/synth_1/Project_FPGA_wrapper.vds
+# Journal file: C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA_IP/Project_FPGA_IP.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Project_FPGA_wrapper.tcl -notrace
