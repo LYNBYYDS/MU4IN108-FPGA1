@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue May  9 15:57:28 2023
+# Process ID: 27100
+# Current directory: C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Test/Test
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent27832 C:\Users\marcs\OneDrive\Bureau\Desktop\FPGA\Test\Test\Test.xpr
+# Log file: C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Test/Test/vivado.log
+# Journal file: C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Test/Test\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Test/Test/Test.xpr
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Test/Test/Test.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 1019.629 ; gain = 0.000
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+boost::filesystem::remove: Le processus ne peut pas accéder au fichier car ce fichier est utilisé par un autre processus: "C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Test/Test/Test.sim/sim_1/behav/xsim/simulate.log"
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue May  9 15:58:04 2023...

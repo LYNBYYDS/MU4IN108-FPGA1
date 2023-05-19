@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1683715214">
+  <File Type="ROUTE-PWR" Name="DCC_wrapper_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="DCC_wrapper.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="DCC_wrapper_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="DCC_wrapper_reports.tcl"/>
+  <File Type="BITSTR-MSK" Name="DCC_wrapper.msk"/>
+  <File Type="ROUTE-CLK" Name="DCC_wrapper_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="DCC_wrapper.vdi"/>
+  <File Type="BG-BIT" Name="DCC_wrapper.bit"/>
+  <File Type="BG-DRC" Name="DCC_wrapper.drc"/>
+  <File Type="BG-BGN" Name="DCC_wrapper.bgn"/>
+  <File Type="BG-BIN" Name="DCC_wrapper.bin"/>
+  <File Type="BITSTR-RBT" Name="DCC_wrapper.rbt"/>
+  <File Type="BITSTR-NKY" Name="DCC_wrapper.nky"/>
+  <File Type="BITSTR-BMM" Name="DCC_wrapper_bd.bmm"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="DCC_wrapper_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-MMI" Name="DCC_wrapper.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="DCC_wrapper.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="DCC_wrapper.ltx"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="OPT-DRC" Name="DCC_wrapper_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="DCC_wrapper.hwdef"/>
+  <File Type="PLACE-IO" Name="DCC_wrapper_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="DCC_wrapper_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="DCC_wrapper_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="DCC_wrapper_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="DCC_wrapper_incremental_reuse_pre_placed.rpt"/>
+  <File Type="ROUTE-DRC" Name="DCC_wrapper_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="DCC_wrapper_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="DCC_wrapper_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="DCC_wrapper_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="DCC_wrapper_route_status.pb"/>
+  <File Type="ROUTE-DCP" Name="DCC_wrapper_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="DCC_wrapper_routed_error.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="DCC_wrapper_routed_bb.dcp"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="DCC_wrapper_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="DCC_wrapper_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="DCC_wrapper_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-BUS-SKEW" Name="DCC_wrapper_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="DCC_wrapper_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="DCC_wrapper_bus_skew_routed.rpx"/>
+  <File Type="OPT-DCP" Name="DCC_wrapper_opt.dcp"/>
+  <File Type="PLACE-DCP" Name="DCC_wrapper_placed.dcp"/>
+  <File Type="PWROPT-DCP" Name="DCC_wrapper_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="DCC_wrapper_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="DCC_wrapper_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="DCC_wrapper_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="DCC_wrapper_postroute_physopt_bb.dcp"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="DCC_wrapper_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="DCC_wrapper_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="DCC_wrapper_methodology_drc_routed.rpx"/>
+  <File Type="PDI-FILE" Name="DCC_wrapper.pdi"/>
+  <File Type="RCFI_FILE" Name="DCC_wrapper.rcfi"/>
+  <File Type="CFI_FILE" Name="DCC_wrapper.cfi"/>
+  <File Type="RNPI_FILE" Name="DCC_wrapper.rnpi"/>
+  <File Type="NPI_FILE" Name="DCC_wrapper.npi"/>
+  <File Type="RBD_FILE" Name="DCC_wrapper.rbd"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/DCC/DCC.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PGENDIR/sources_1/bd/DCC/hdl/DCC_wrapper.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="DCC_wrapper"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/Project_FPGA/Nexys4DDR_Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/Project_FPGA_IP/Project_FPGA_IP.srcs/constrs_1/imports/Project_FPGA/Nexys4DDR_Master.xdc"/>
+        <Attr Name="ImportTime" Val="1683583096"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="DCC_lmb_bram_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="DCC_mdm_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="DCC_axi_gpio_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="DCC_dlmb_bram_if_cntlr_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="DCC_ilmb_v10_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="DCC_dlmb_v10_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="DCC_xbar_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="DCC_microblaze_0_axi_intc_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="DCC_microblaze_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="DCC_ilmb_bram_if_cntlr_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="DCC_axi_gpio_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="DCC_rst_clk_wiz_1_100M_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="DCC_clk_wiz_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="DCC_SS_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="DCC_DCC_0_0"/>
+</GenRun>

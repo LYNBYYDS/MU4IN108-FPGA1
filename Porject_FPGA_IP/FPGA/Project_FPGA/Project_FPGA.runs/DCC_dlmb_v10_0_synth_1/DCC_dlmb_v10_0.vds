@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue May  9 13:45:17 2023
+# Process ID: 21332
+# Current directory: C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.runs/DCC_dlmb_v10_0_synth_1
+# Command line: vivado.exe -log DCC_dlmb_v10_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source DCC_dlmb_v10_0.tcl
+# Log file: C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.runs/DCC_dlmb_v10_0_synth_1/DCC_dlmb_v10_0.vds
+# Journal file: C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.runs/DCC_dlmb_v10_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source DCC_dlmb_v10_0.tcl -notrace
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP DCC_dlmb_v10_0, cache-ID = 34c570cc1b8e9217.
+INFO: [Common 17-206] Exiting Vivado at Tue May  9 13:45:26 2023...

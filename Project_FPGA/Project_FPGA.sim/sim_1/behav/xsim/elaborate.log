@@ -1,0 +1,28 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 1e5d8116712748de85efcacbae10ef8a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TOP_tb_behav xil_defaultlib.TOP_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.MAE_Compteur [mae_compteur_default]
+Compiling architecture behavioral of entity xil_defaultlib.MAE [mae_default]
+Compiling architecture behavioral of entity xil_defaultlib.REGISTRE_DCC [registre_dcc_default]
+Compiling architecture behavioral of entity xil_defaultlib.COMPTEUR_TEMPO [compteur_tempo_default]
+Compiling architecture behavioral of entity xil_defaultlib.CLK_DIV [clk_div_default]
+Compiling architecture behavioral of entity xil_defaultlib.XOR_OPERATION [xor_operation_default]
+Compiling architecture behavioral of entity xil_defaultlib.DCC_FRAME_GENERATOR [dcc_frame_generator_default]
+Compiling architecture behavioral of entity xil_defaultlib.DCC_Compteur [dcc_compteur_default]
+Compiling architecture behavioral of entity xil_defaultlib.DDC_MAE [ddc_mae_default]
+Compiling architecture behavioral of entity xil_defaultlib.DCC_Bit0 [dcc_bit0_default]
+Compiling architecture behavioral of entity xil_defaultlib.DCC_Bit1 [dcc_bit1_default]
+Compiling architecture behavioral of entity xil_defaultlib.TOP [top_default]
+Compiling architecture behavioral of entity xil_defaultlib.top_tb
+Built simulation snapshot TOP_tb_behav

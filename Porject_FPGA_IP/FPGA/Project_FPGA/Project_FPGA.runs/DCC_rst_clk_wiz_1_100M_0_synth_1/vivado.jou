@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue May  9 13:47:33 2023
+# Process ID: 9828
+# Current directory: C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.runs/DCC_rst_clk_wiz_1_100M_0_synth_1
+# Command line: vivado.exe -log DCC_rst_clk_wiz_1_100M_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source DCC_rst_clk_wiz_1_100M_0.tcl
+# Log file: C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.runs/DCC_rst_clk_wiz_1_100M_0_synth_1/DCC_rst_clk_wiz_1_100M_0.vds
+# Journal file: C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.runs/DCC_rst_clk_wiz_1_100M_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source DCC_rst_clk_wiz_1_100M_0.tcl -notrace

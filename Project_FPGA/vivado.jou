@@ -1,0 +1,46 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri May 19 16:09:35 2023
+# Process ID: 10224
+# Current directory: C:/Users/chmis/Desktop/Project_FPGA
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9648 C:\Users\chmis\Desktop\Project_FPGA\Project_FPGA.xpr
+# Log file: C:/Users/chmis/Desktop/Project_FPGA/vivado.log
+# Journal file: C:/Users/chmis/Desktop/Project_FPGA\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/chmis/Desktop/Project_FPGA/Project_FPGA.xpr
+launch_simulation
+launch_simulation
+launch_simulation
+open_wave_config C:/Users/chmis/Desktop/Project_FPGA/Compteur_Tempo_tb_behav.wcfg
+source TOP_tb.tcl
+run 10 ms
+relaunch_sim
+run 10 ms
+close_sim
+launch_simulation -mode post-synthesis -type functional
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_design
+launch_simulation -mode post-synthesis -type functional
+open_wave_config C:/Users/chmis/Desktop/Project_FPGA/Compteur_Tempo_tb_behav.wcfg
+source TOP_tb.tcl
+run 10 ms
+close_sim
+close_design
+launch_simulation -mode post-synthesis -type functional
+open_wave_config C:/Users/chmis/Desktop/Project_FPGA/Compteur_Tempo_tb_behav.wcfg
+source TOP_tb.tcl
+restart
+run 10 ms
+relaunch_sim
+restart
+run 10 ms
+relaunch_sim
+restart
+run 10 ms
+save_wave_config {C:/Users/chmis/Desktop/Project_FPGA/Compteur_Tempo_tb_behav.wcfg}
+close_sim

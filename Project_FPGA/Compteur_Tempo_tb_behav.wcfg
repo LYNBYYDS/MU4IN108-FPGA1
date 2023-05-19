@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="TOP_tb_func_synth.wdb" id="1">
+         <top_modules>
+            <top_module name="TOP_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="5041340616fs"></ZoomStartTime>
+      <ZoomEndTime time="7065340617fs"></ZoomEndTime>
+      <Cursor1Time time="5104680588fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="120"></NameColumnWidth>
+      <ValueColumnWidth column_width="72"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="4" />
+   <wvobject fp_name="/TOP_tb/Clk_s" type="logic">
+      <obj_property name="ElementShortName">Clk_s</obj_property>
+      <obj_property name="ObjectShortName">Clk_s</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TOP_tb/Reset_s" type="logic">
+      <obj_property name="ElementShortName">Reset_s</obj_property>
+      <obj_property name="ObjectShortName">Reset_s</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TOP_tb/Interrupteur_s" type="array">
+      <obj_property name="ElementShortName">Interrupteur_s[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Interrupteur_s[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TOP_tb/SORTIE_DCC_s" type="logic">
+      <obj_property name="ElementShortName">SORTIE_DCC_s</obj_property>
+      <obj_property name="ObjectShortName">SORTIE_DCC_s</obj_property>
+   </wvobject>
+</wave_config>

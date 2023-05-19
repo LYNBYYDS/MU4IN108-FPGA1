@@ -1,0 +1,367 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed May 10 11:32:44 2023
+# Process ID: 18928
+# Current directory: C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17956 C:\Users\marcs\OneDrive\Bureau\Desktop\FPGA\Project_FPGA\Project_FPGA.xpr
+# Log file: C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/vivado.log
+# Journal file: C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/ip_repo/SS_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/ip_repo/DCC_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:11 . Memory (MB): peak = 1015.344 ; gain = 0.000
+update_compile_order -fileset sources_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 03 2020-22:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 1015.344 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B16876A
+open_hw_target: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2434.652 ; gain = 1419.309
+set_property PROGRAM.FILE {C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.runs/impl_1/DCC_wrapper.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.runs/impl_1/DCC_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+open_bd_design {C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.srcs/sources_1/bd/DCC/DCC.bd}
+Reading block design file <C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.srcs/sources_1/bd/DCC/DCC.bd>...
+Adding component instance block -- xilinx.com:ip:microblaze:11.0 - microblaze_0
+Adding component instance block -- xilinx.com:ip:lmb_v10:3.0 - dlmb_v10
+Adding component instance block -- xilinx.com:ip:lmb_v10:3.0 - ilmb_v10
+Adding component instance block -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - dlmb_bram_if_cntlr
+Adding component instance block -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - ilmb_bram_if_cntlr
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - lmb_bram
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - microblaze_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_intc:4.1 - microblaze_0_axi_intc
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - microblaze_0_xlconcat
+Adding component instance block -- xilinx.com:ip:mdm:3.2 - mdm_1
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_1
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_clk_wiz_1_100M
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - sw_btn
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - led
+Adding component instance block -- xilinx.com:user:SS:1.0 - SS_0
+Adding component instance block -- xilinx.com:user:DCC:1.0 - DCC_0
+Successfully read diagram <DCC> from block design file <C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.srcs/sources_1/bd/DCC/DCC.bd>
+open_bd_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 2645.750 ; gain = 148.859
+ipx::edit_ip_in_project -upgrade true -name DCC_v1_0_project -directory C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.tmp/DCC_v1_0_project c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/ip_repo/DCC_1.0/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/users/marcs/onedrive/bureau/desktop/fpga/project_fpga/project_fpga.tmp/dcc_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 2763.398 ; gain = 24.930
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/ip_repo/SS_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/ip_repo/DCC_1.0'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 2767.781 ; gain = 29.312
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+WARNING: [IP_Flow 19-5226] Project source file 'c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/ip_repo/DCC_1.0/component.xml' ignored by IP packager.
+set_property core_revision 4 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+INFO: [Ipptcl 7-1486] check_integrity: Integrity check passed.
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/ip_repo/DCC_1.0
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/ip_repo/DCC_1.0'
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:DCC:1.0 [get_ips  DCC_DCC_0_0] -log ip_upgrade.log
+Upgrading 'C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.srcs/sources_1/bd/DCC/DCC.bd'
+INFO: [IP_Flow 19-3422] Upgraded DCC_DCC_0_0 (DCC_v1.0 1.0) from revision 3 to revision 4
+Wrote  : <C:\Users\marcs\OneDrive\Bureau\Desktop\FPGA\Project_FPGA\Project_FPGA.srcs\sources_1\bd\DCC\DCC.bd> 
+Wrote  : <C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.srcs/sources_1/bd/DCC/ui/bd_593ef8c4.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips DCC_DCC_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.srcs/sources_1/bd/DCC/DCC.bd]
+INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_1 clk_wiz propagate
+Wrote  : <C:\Users\marcs\OneDrive\Bureau\Desktop\FPGA\Project_FPGA\Project_FPGA.srcs\sources_1\bd\DCC\DCC.bd> 
+VHDL Output written to : c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.gen/sources_1/bd/DCC/synth/DCC.vhd
+VHDL Output written to : c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.gen/sources_1/bd/DCC/sim/DCC.vhd
+VHDL Output written to : c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.gen/sources_1/bd/DCC/hdl/DCC_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block DCC_0 .
+Exporting to file c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.gen/sources_1/bd/DCC/hw_handoff/DCC.hwh
+Generated Block Design Tcl file c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.gen/sources_1/bd/DCC/hw_handoff/DCC_bd.tcl
+Generated Hardware Definition File c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.gen/sources_1/bd/DCC/synth/DCC.hwdef
+generate_target: Time (s): cpu = 00:00:11 ; elapsed = 00:00:20 . Memory (MB): peak = 2989.293 ; gain = 171.734
+catch { config_ip_cache -export [get_ips -all DCC_DCC_0_0] }
+export_ip_user_files -of_objects [get_files C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.srcs/sources_1/bd/DCC/DCC.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.srcs/sources_1/bd/DCC/DCC.bd]
+launch_runs DCC_DCC_0_0_synth_1 -jobs 4
+[Wed May 10 11:43:48 2023] Launched DCC_DCC_0_0_synth_1...
+Run output will be captured here: C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.runs/DCC_DCC_0_0_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.srcs/sources_1/bd/DCC/DCC.bd] -directory C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.ip_user_files -ipstatic_source_dir C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.cache/compile_simlib/modelsim} {questa=C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.cache/compile_simlib/questa} {riviera=C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.cache/compile_simlib/riviera} {activehdl=C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed May 10 11:44:53 2023] Launched synth_1...
+Run output will be captured here: C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.runs/synth_1/runme.log
+[Wed May 10 11:44:53 2023] Launched impl_1...
+Run output will be captured here: C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.runs/impl_1/runme.log
+make_wrapper -files [get_files C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.srcs/sources_1/bd/DCC/DCC.bd] -top
+write_hw_platform -fixed -include_bit -force -file C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/DCC_wrapper.xsa
+INFO: [Vivado 12-4895] Creating Hardware Platform: C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/DCC_wrapper.xsa ...
+INFO: [Hsi 55-2053] elapsed time for repository (C:/Xilinx/Vivado/2020.2/data\embeddedsw) loading 1 seconds
+WARNING: [Project 1-645] Board images not set in Hardware Platform.
+INFO: [Vivado 12-12467] The Hardware Platform can be used for Hardware
+INFO: [Vivado 12-4896] Successfully created Hardware Platform: C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/DCC_wrapper.xsa
+write_hw_platform -fixed -include_bit -force -file C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/DCC_wrapper.xsa
+INFO: [Vivado 12-4895] Creating Hardware Platform: C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/DCC_wrapper.xsa ...
+WARNING: [Project 1-645] Board images not set in Hardware Platform.
+INFO: [Vivado 12-12467] The Hardware Platform can be used for Hardware
+INFO: [Vivado 12-4896] Successfully created Hardware Platform: C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/DCC_wrapper.xsa
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 03 2020-22:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 3214.695 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B16876A
+set_property PROGRAM.FILE {C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.runs/impl_1/DCC_wrapper.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.runs/impl_1/DCC_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+create_bd_port -dir O SORTIE_DCC
+startgroup
+connect_bd_net [get_bd_ports SORTIE_DCC] [get_bd_pins DCC_0/SORTIE_DCC]
+endgroup
+validate_bd_design
+INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_1 clk_wiz propagate
+validate_bd_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 3236.113 ; gain = 0.000
+save_bd_design
+Wrote  : <C:\Users\marcs\OneDrive\Bureau\Desktop\FPGA\Project_FPGA\Project_FPGA.srcs\sources_1\bd\DCC\DCC.bd> 
+Wrote  : <C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.srcs/sources_1/bd/DCC/ui/bd_593ef8c4.ui> 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [BD 41-1662] The design 'DCC.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <C:\Users\marcs\OneDrive\Bureau\Desktop\FPGA\Project_FPGA\Project_FPGA.srcs\sources_1\bd\DCC\DCC.bd> 
+VHDL Output written to : c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.gen/sources_1/bd/DCC/synth/DCC.vhd
+VHDL Output written to : c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.gen/sources_1/bd/DCC/sim/DCC.vhd
+VHDL Output written to : c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.gen/sources_1/bd/DCC/hdl/DCC_wrapper.vhd
+Exporting to file c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.gen/sources_1/bd/DCC/hw_handoff/DCC.hwh
+Generated Block Design Tcl file c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.gen/sources_1/bd/DCC/hw_handoff/DCC_bd.tcl
+Generated Hardware Definition File c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.gen/sources_1/bd/DCC/synth/DCC.hwdef
+[Wed May 10 12:03:24 2023] Launched synth_1...
+Run output will be captured here: C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.runs/synth_1/runme.log
+[Wed May 10 12:03:24 2023] Launched impl_1...
+Run output will be captured here: C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 3236.113 ; gain = 0.000
+make_wrapper -files [get_files C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.srcs/sources_1/bd/DCC/DCC.bd] -top
+write_hw_platform -fixed -include_bit -force -file C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/DCC_wrapper.xsa
+INFO: [Vivado 12-4895] Creating Hardware Platform: C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/DCC_wrapper.xsa ...
+WARNING: [Project 1-645] Board images not set in Hardware Platform.
+INFO: [Vivado 12-12467] The Hardware Platform can be used for Hardware
+INFO: [Vivado 12-4896] Successfully created Hardware Platform: C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/DCC_wrapper.xsa
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 03 2020-22:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 3255.129 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B16876A
+set_property PROGRAM.FILE {C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.runs/impl_1/DCC_wrapper.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.runs/impl_1/DCC_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+close_hw_manager: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 3255.129 ; gain = 0.000
+ipx::edit_ip_in_project -upgrade true -name DCC_v1_0_project -directory C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.tmp/DCC_v1_0_project c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/ip_repo/DCC_1.0/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/users/marcs/onedrive/bureau/desktop/fpga/project_fpga/project_fpga.tmp/dcc_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 3255.129 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/ip_repo/SS_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/ip_repo/DCC_1.0'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 3255.129 ; gain = 0.000
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+WARNING: [IP_Flow 19-5226] Project source file 'c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/ip_repo/DCC_1.0/component.xml' ignored by IP packager.
+set_property core_revision 5 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+INFO: [Ipptcl 7-1486] check_integrity: Integrity check passed.
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/ip_repo/DCC_1.0
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/ip_repo/DCC_1.0'
+upgrade_ip -vlnv xilinx.com:user:DCC:1.0 [get_ips  DCC_DCC_0_0] -log ip_upgrade.log
+Upgrading 'C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.srcs/sources_1/bd/DCC/DCC.bd'
+INFO: [IP_Flow 19-3422] Upgraded DCC_DCC_0_0 (DCC_v1.0 1.0) from revision 4 to revision 5
+Wrote  : <C:\Users\marcs\OneDrive\Bureau\Desktop\FPGA\Project_FPGA\Project_FPGA.srcs\sources_1\bd\DCC\DCC.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips DCC_DCC_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.srcs/sources_1/bd/DCC/DCC.bd]
+INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_1 clk_wiz propagate
+Wrote  : <C:\Users\marcs\OneDrive\Bureau\Desktop\FPGA\Project_FPGA\Project_FPGA.srcs\sources_1\bd\DCC\DCC.bd> 
+VHDL Output written to : c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.gen/sources_1/bd/DCC/synth/DCC.vhd
+VHDL Output written to : c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.gen/sources_1/bd/DCC/sim/DCC.vhd
+VHDL Output written to : c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.gen/sources_1/bd/DCC/hdl/DCC_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block DCC_0 .
+Exporting to file c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.gen/sources_1/bd/DCC/hw_handoff/DCC.hwh
+Generated Block Design Tcl file c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.gen/sources_1/bd/DCC/hw_handoff/DCC_bd.tcl
+Generated Hardware Definition File c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.gen/sources_1/bd/DCC/synth/DCC.hwdef
+generate_target: Time (s): cpu = 00:00:11 ; elapsed = 00:00:25 . Memory (MB): peak = 3276.801 ; gain = 0.000
+catch { config_ip_cache -export [get_ips -all DCC_DCC_0_0] }
+export_ip_user_files -of_objects [get_files C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.srcs/sources_1/bd/DCC/DCC.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.srcs/sources_1/bd/DCC/DCC.bd]
+launch_runs DCC_DCC_0_0_synth_1 -jobs 4
+[Wed May 10 12:31:02 2023] Launched DCC_DCC_0_0_synth_1...
+Run output will be captured here: C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.runs/DCC_DCC_0_0_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.srcs/sources_1/bd/DCC/DCC.bd] -directory C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.ip_user_files -ipstatic_source_dir C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.cache/compile_simlib/modelsim} {questa=C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.cache/compile_simlib/questa} {riviera=C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.cache/compile_simlib/riviera} {activehdl=C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed May 10 12:32:33 2023] Launched synth_1...
+Run output will be captured here: C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.runs/synth_1/runme.log
+[Wed May 10 12:32:33 2023] Launched impl_1...
+Run output will be captured here: C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.runs/impl_1/runme.log
+make_wrapper -files [get_files C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.srcs/sources_1/bd/DCC/DCC.bd] -top
+validate_bd_design -force
+INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_1 clk_wiz propagate
+validate_bd_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:23 . Memory (MB): peak = 3277.379 ; gain = 0.000
+save_bd_design
+Wrote  : <C:\Users\marcs\OneDrive\Bureau\Desktop\FPGA\Project_FPGA\Project_FPGA.srcs\sources_1\bd\DCC\DCC.bd> 
+Wrote  : <C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.srcs/sources_1/bd/DCC/ui/bd_593ef8c4.ui> 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [BD 41-1662] The design 'DCC.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <C:\Users\marcs\OneDrive\Bureau\Desktop\FPGA\Project_FPGA\Project_FPGA.srcs\sources_1\bd\DCC\DCC.bd> 
+VHDL Output written to : c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.gen/sources_1/bd/DCC/synth/DCC.vhd
+VHDL Output written to : c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.gen/sources_1/bd/DCC/sim/DCC.vhd
+VHDL Output written to : c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.gen/sources_1/bd/DCC/hdl/DCC_wrapper.vhd
+Exporting to file c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.gen/sources_1/bd/DCC/hw_handoff/DCC.hwh
+Generated Block Design Tcl file c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.gen/sources_1/bd/DCC/hw_handoff/DCC_bd.tcl
+Generated Hardware Definition File c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.gen/sources_1/bd/DCC/synth/DCC.hwdef
+[Wed May 10 12:40:14 2023] Launched synth_1...
+Run output will be captured here: C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.runs/synth_1/runme.log
+[Wed May 10 12:40:14 2023] Launched impl_1...
+Run output will be captured here: C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 3279.547 ; gain = 2.168
+make_wrapper -files [get_files C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.srcs/sources_1/bd/DCC/DCC.bd] -top
+write_hw_platform -fixed -include_bit -force -file C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/DCC_wrapper.xsa
+INFO: [Vivado 12-4895] Creating Hardware Platform: C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/DCC_wrapper.xsa ...
+WARNING: [Project 1-645] Board images not set in Hardware Platform.
+INFO: [Vivado 12-12467] The Hardware Platform can be used for Hardware
+INFO: [Vivado 12-4896] Successfully created Hardware Platform: C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/DCC_wrapper.xsa
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 03 2020-22:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 3307.051 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B16876A
+set_property PROGRAM.FILE {C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.runs/impl_1/DCC_wrapper.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed May 10 12:51:25 2023...

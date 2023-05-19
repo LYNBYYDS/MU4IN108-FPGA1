@@ -1,0 +1,10 @@
+
+
+OPTION psf_version = 2.1;
+
+BEGIN DRIVER SS
+	OPTION supported_peripherals = (SS);
+	OPTION copyfiles = all;
+	OPTION VERSION = 1.0;
+	OPTION NAME = SS;
+END DRIVER

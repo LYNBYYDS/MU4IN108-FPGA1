@@ -1,0 +1,31 @@
+vhdl xil_defaultlib  \
+"../../../bd/DCC/ip/DCC_microblaze_0_0/sim/DCC_microblaze_0_0.vhd" \
+"../../../bd/DCC/ip/DCC_dlmb_v10_0/sim/DCC_dlmb_v10_0.vhd" \
+"../../../bd/DCC/ip/DCC_ilmb_v10_0/sim/DCC_ilmb_v10_0.vhd" \
+"../../../bd/DCC/ip/DCC_dlmb_bram_if_cntlr_0/sim/DCC_dlmb_bram_if_cntlr_0.vhd" \
+"../../../bd/DCC/ip/DCC_ilmb_bram_if_cntlr_0/sim/DCC_ilmb_bram_if_cntlr_0.vhd" \
+"../../../bd/DCC/ip/DCC_microblaze_0_axi_intc_0/sim/DCC_microblaze_0_axi_intc_0.vhd" \
+"../../../bd/DCC/ip/DCC_mdm_1_0/sim/DCC_mdm_1_0.vhd" \
+"../../../bd/DCC/ip/DCC_rst_clk_wiz_1_100M_0/sim/DCC_rst_clk_wiz_1_100M_0.vhd" \
+"../../../bd/DCC/ip/DCC_axi_gpio_0_0/sim/DCC_axi_gpio_0_0.vhd" \
+"../../../bd/DCC/ip/DCC_axi_gpio_0_1/sim/DCC_axi_gpio_0_1.vhd" \
+"../../../bd/DCC/ipshared/5f9e/src/SEPT_SEGMENTS.vhd" \
+"../../../bd/DCC/ipshared/5f9e/hdl/SS_v1_0_S00_AXI.vhd" \
+"../../../bd/DCC/ipshared/5f9e/hdl/SS_v1_0.vhd" \
+"../../../bd/DCC/ip/DCC_SS_0_0/sim/DCC_SS_0_0.vhd" \
+"../../../bd/DCC/ipshared/8eea/src/Compteur_Tempo.vhd" \
+"../../../bd/DCC/ipshared/8eea/src/DCC_Bit0.vhd" \
+"../../../bd/DCC/ipshared/8eea/src/DCC_Bit1.vhd" \
+"../../../bd/DCC/ipshared/8eea/src/DCC_Compteur.vhd" \
+"../../../bd/DCC/ipshared/8eea/src/TOP.vhd" \
+"../../../bd/DCC/ipshared/8eea/hdl/DCC_v1_0_S00_AXI.vhd" \
+"../../../bd/DCC/ipshared/8eea/src/DDC_MAE.vhd" \
+"../../../bd/DCC/ipshared/8eea/src/Diviseur_Horloge.vhd" \
+"../../../bd/DCC/ipshared/8eea/src/MAE.vhd" \
+"../../../bd/DCC/ipshared/8eea/src/MAE_Compteur.vhd" \
+"../../../bd/DCC/ipshared/8eea/src/Registre_DCC.vhd" \
+"../../../bd/DCC/ipshared/8eea/hdl/DCC_v1_0.vhd" \
+"../../../bd/DCC/ip/DCC_DCC_0_0/sim/DCC_DCC_0_0.vhd" \
+"../../../bd/DCC/sim/DCC.vhd" \
+
+nosort

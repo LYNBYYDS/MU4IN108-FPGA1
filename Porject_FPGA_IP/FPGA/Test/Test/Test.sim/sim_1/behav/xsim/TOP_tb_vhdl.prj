@@ -1,0 +1,16 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Test.srcs/sources_1/imports/Test/Compteur_Tempo.vhd" \
+"../../../../Test.srcs/sources_1/imports/Test/DCC_Bit0.vhd" \
+"../../../../Test.srcs/sources_1/imports/Test/DCC_Bit1.vhd" \
+"../../../../Test.srcs/sources_1/imports/Test/DCC_Compteur.vhd" \
+"../../../../Test.srcs/sources_1/imports/Test/DDC_MAE.vhd" \
+"../../../../Test.srcs/sources_1/imports/Test/Diviseur_Horloge.vhd" \
+"../../../../Test.srcs/sources_1/imports/Test/MAE.vhd" \
+"../../../../Test.srcs/sources_1/imports/Test/MAE_Compteur.vhd" \
+"../../../../Test.srcs/sources_1/imports/Test/Registre_DCC.vhd" \
+"../../../../Test.srcs/sources_1/imports/Test/TOP.vhd" \
+"../../../../Test.srcs/sources_1/imports/Test/TOP_tb.vhd" \
+
+# Do not sort compile order
+nosort

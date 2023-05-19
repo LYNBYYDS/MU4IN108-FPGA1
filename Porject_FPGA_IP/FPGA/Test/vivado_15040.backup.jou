@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed May 10 11:59:20 2023
+# Process ID: 15040
+# Current directory: C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Test
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9784 C:\Users\marcs\OneDrive\Bureau\Desktop\FPGA\Test\Test.xpr
+# Log file: C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Test/vivado.log
+# Journal file: C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Test\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Test/Test.xpr
+update_compile_order -fileset sources_1
+

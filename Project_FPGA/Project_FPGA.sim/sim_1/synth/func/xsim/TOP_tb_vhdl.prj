@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"TOP_tb_func_synth.vhd" \
+"../../../../../Project_FPGA.srcs/sim_1/new/TOP_tb.vhd" \
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,1837 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Apr  4 09:02:09 2023
+# Process ID: 12416
+# Current directory: C:/Users/28711949/Desktop/Project_FPGA
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5904 C:\Users\28711949\Desktop\Project_FPGA\Project_FPGA.xpr
+# Log file: C:/Users/28711949/Desktop/Project_FPGA/vivado.log
+# Journal file: C:/Users/28711949/Desktop/Project_FPGA\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/UserTP.PPI919.001/Desktop/Project_FPGA/Project_FPGA' since last save.
+WARNING: [filemgmt 56-2] Default IP Output Path : Could not find the directory 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.gen/sources_1', nor could it be found using path 'C:/Users/UserTP.PPI919.001/Desktop/Project_FPGA/Project_FPGA/Project_FPGA.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 1016.977 ; gain = 0.000
+close [ open C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sources_1/new/DCC_Compteur.vhd w ]
+add_files C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sources_1/new/DCC_Compteur.vhd
+close [ open C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sources_1/new/DCC_Bit0.vhd w ]
+add_files C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sources_1/new/DCC_Bit0.vhd
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sim_1/new/DCC_Bit0_tb.vhd w ]
+add_files -fileset sim_1 C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sim_1/new/DCC_Bit0_tb.vhd
+set_property top DCC_Bit0_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'DCC_Bit0_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj DCC_Bit0_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sources_1/new/DDC_MAE.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'DDC_MAE'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sources_1/new/DCC_Compteur.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'DCC_Compteur'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sources_1/new/DCC_Bit0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'DCC_Bit0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sim_1/new/Compteur_Tempo_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Compteur_Tempo_tb'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sim_1/new/Diviseur_Horloge_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Diviseur_Horloge_tb'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sim_1/new/Generateur_Trames_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Generateur_Trames_tb'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sim_1/new/Registre_DCC_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Registre_DCC_tb'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sim_1/new/DCC_Bit0_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'DCC_Bit0_tb'
+ERROR: [VRFC 10-4982] syntax error near 'end' [C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sim_1/new/DCC_Bit0_tb.vhd:76]
+INFO: [VRFC 10-3070] VHDL file 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sim_1/new/DCC_Bit0_tb.vhd' ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'DCC_Bit0_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj DCC_Bit0_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sources_1/new/DDC_MAE.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'DDC_MAE'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sources_1/new/DCC_Compteur.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'DCC_Compteur'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sources_1/new/DCC_Bit0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'DCC_Bit0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sim_1/new/Compteur_Tempo_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Compteur_Tempo_tb'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sim_1/new/Diviseur_Horloge_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Diviseur_Horloge_tb'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sim_1/new/Generateur_Trames_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Generateur_Trames_tb'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sim_1/new/Registre_DCC_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Registre_DCC_tb'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sim_1/new/DCC_Bit0_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'DCC_Bit0_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+"xelab -wto 1e5d8116712748de85efcacbae10ef8a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot DCC_Bit0_tb_behav xil_defaultlib.DCC_Bit0_tb -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 1e5d8116712748de85efcacbae10ef8a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot DCC_Bit0_tb_behav xil_defaultlib.DCC_Bit0_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.DCC_Compteur [dcc_compteur_default]
+Compiling architecture behavioral of entity xil_defaultlib.DDC_MAE [ddc_mae_default]
+Compiling architecture behavioral of entity xil_defaultlib.DCC_Bit0 [dcc_bit0_default]
+Compiling architecture behavioral of entity xil_defaultlib.dcc_bit0_tb
+Built simulation snapshot DCC_Bit0_tb_behav
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim/xsim.dir/DCC_Bit0_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Tue Apr  4 09:14:49 2023...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 1016.977 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '10' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "DCC_Bit0_tb_behav -key {Behavioral:sim_1:Functional:DCC_Bit0_tb} -tclbatch {DCC_Bit0_tb.tcl} -view {C:/Users/28711949/Desktop/Project_FPGA/Compteur_Tempo_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config C:/Users/28711949/Desktop/Project_FPGA/Compteur_Tempo_tb_behav.wcfg
+WARNING: Simulation object /Registre_DCC_tb/REGISTRE_DCC_1/Clk was not found in the design.
+WARNING: Simulation object /Registre_DCC_tb/REGISTRE_DCC_1/Reset was not found in the design.
+WARNING: Simulation object /Registre_DCC_tb/REGISTRE_DCC_1/Trame_DCC was not found in the design.
+WARNING: Simulation object /Registre_DCC_tb/REGISTRE_DCC_1/Com_REG was not found in the design.
+WARNING: Simulation object /Registre_DCC_tb/REGISTRE_DCC_1/Bit_out was not found in the design.
+WARNING: Simulation object /Registre_DCC_tb/REGISTRE_DCC_1/nb_shifted was not found in the design.
+source DCC_Bit0_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'DCC_Bit0_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 1016.977 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1016.977 ; gain = 0.000
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'DCC_Bit0_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj DCC_Bit0_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sources_1/new/DDC_MAE.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'DDC_MAE'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sources_1/new/DCC_Bit0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'DCC_Bit0'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+"xelab -wto 1e5d8116712748de85efcacbae10ef8a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot DCC_Bit0_tb_behav xil_defaultlib.DCC_Bit0_tb -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 1e5d8116712748de85efcacbae10ef8a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot DCC_Bit0_tb_behav xil_defaultlib.DCC_Bit0_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.DCC_Compteur [dcc_compteur_default]
+Compiling architecture behavioral of entity xil_defaultlib.DDC_MAE [ddc_mae_default]
+Compiling architecture behavioral of entity xil_defaultlib.DCC_Bit0 [dcc_bit0_default]
+Compiling architecture behavioral of entity xil_defaultlib.dcc_bit0_tb
+Built simulation snapshot DCC_Bit0_tb_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1016.977 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "DCC_Bit0_tb_behav -key {Behavioral:sim_1:Functional:DCC_Bit0_tb} -tclbatch {DCC_Bit0_tb.tcl} -view {C:/Users/28711949/Desktop/Project_FPGA/Compteur_Tempo_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config C:/Users/28711949/Desktop/Project_FPGA/Compteur_Tempo_tb_behav.wcfg
+WARNING: Simulation object /Registre_DCC_tb/REGISTRE_DCC_1/Clk was not found in the design.
+WARNING: Simulation object /Registre_DCC_tb/REGISTRE_DCC_1/Reset was not found in the design.
+WARNING: Simulation object /Registre_DCC_tb/REGISTRE_DCC_1/Trame_DCC was not found in the design.
+WARNING: Simulation object /Registre_DCC_tb/REGISTRE_DCC_1/Com_REG was not found in the design.
+WARNING: Simulation object /Registre_DCC_tb/REGISTRE_DCC_1/Bit_out was not found in the design.
+WARNING: Simulation object /Registre_DCC_tb/REGISTRE_DCC_1/nb_shifted was not found in the design.
+source DCC_Bit0_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'DCC_Bit0_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 1016.977 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 10 us
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100 ns
+run 100 ns
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100 ns
+save_wave_config {C:/Users/28711949/Desktop/Project_FPGA/Compteur_Tempo_tb_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1016.977 ; gain = 0.000
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'DCC_Bit0_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj DCC_Bit0_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sources_1/new/DDC_MAE.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'DDC_MAE'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sources_1/new/DCC_Bit0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'DCC_Bit0'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+"xelab -wto 1e5d8116712748de85efcacbae10ef8a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot DCC_Bit0_tb_behav xil_defaultlib.DCC_Bit0_tb -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 1e5d8116712748de85efcacbae10ef8a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot DCC_Bit0_tb_behav xil_defaultlib.DCC_Bit0_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.DCC_Compteur [dcc_compteur_default]
+Compiling architecture behavioral of entity xil_defaultlib.DDC_MAE [ddc_mae_default]
+Compiling architecture behavioral of entity xil_defaultlib.DCC_Bit0 [dcc_bit0_default]
+Compiling architecture behavioral of entity xil_defaultlib.dcc_bit0_tb
+Built simulation snapshot DCC_Bit0_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1016.977 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "DCC_Bit0_tb_behav -key {Behavioral:sim_1:Functional:DCC_Bit0_tb} -tclbatch {DCC_Bit0_tb.tcl} -view {C:/Users/28711949/Desktop/Project_FPGA/Compteur_Tempo_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config C:/Users/28711949/Desktop/Project_FPGA/Compteur_Tempo_tb_behav.wcfg
+source DCC_Bit0_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'DCC_Bit0_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 1016.977 ; gain = 0.000
+run 100 ns
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100 ns
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100 ns
+save_wave_config {C:/Users/28711949/Desktop/Project_FPGA/Compteur_Tempo_tb_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1016.977 ; gain = 0.000
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'DCC_Bit0_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj DCC_Bit0_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sources_1/new/DDC_MAE.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'DDC_MAE'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+"xelab -wto 1e5d8116712748de85efcacbae10ef8a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot DCC_Bit0_tb_behav xil_defaultlib.DCC_Bit0_tb -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 1e5d8116712748de85efcacbae10ef8a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot DCC_Bit0_tb_behav xil_defaultlib.DCC_Bit0_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.DCC_Compteur [dcc_compteur_default]
+Compiling architecture behavioral of entity xil_defaultlib.DDC_MAE [ddc_mae_default]
+Compiling architecture behavioral of entity xil_defaultlib.DCC_Bit0 [dcc_bit0_default]
+Compiling architecture behavioral of entity xil_defaultlib.dcc_bit0_tb
+Built simulation snapshot DCC_Bit0_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1016.977 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "DCC_Bit0_tb_behav -key {Behavioral:sim_1:Functional:DCC_Bit0_tb} -tclbatch {DCC_Bit0_tb.tcl} -view {C:/Users/28711949/Desktop/Project_FPGA/Compteur_Tempo_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config C:/Users/28711949/Desktop/Project_FPGA/Compteur_Tempo_tb_behav.wcfg
+source DCC_Bit0_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'DCC_Bit0_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 1016.977 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1016.977 ; gain = 0.000
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'DCC_Bit0_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj DCC_Bit0_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+"xelab -wto 1e5d8116712748de85efcacbae10ef8a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot DCC_Bit0_tb_behav xil_defaultlib.DCC_Bit0_tb -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 1e5d8116712748de85efcacbae10ef8a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot DCC_Bit0_tb_behav xil_defaultlib.DCC_Bit0_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "DCC_Bit0_tb_behav -key {Behavioral:sim_1:Functional:DCC_Bit0_tb} -tclbatch {DCC_Bit0_tb.tcl} -view {C:/Users/28711949/Desktop/Project_FPGA/Compteur_Tempo_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config C:/Users/28711949/Desktop/Project_FPGA/Compteur_Tempo_tb_behav.wcfg
+source DCC_Bit0_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'DCC_Bit0_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1016.977 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100 ns
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1016.977 ; gain = 0.000
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'DCC_Bit0_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj DCC_Bit0_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sources_1/new/DDC_MAE.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'DDC_MAE'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+"xelab -wto 1e5d8116712748de85efcacbae10ef8a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot DCC_Bit0_tb_behav xil_defaultlib.DCC_Bit0_tb -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 1e5d8116712748de85efcacbae10ef8a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot DCC_Bit0_tb_behav xil_defaultlib.DCC_Bit0_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.DCC_Compteur [dcc_compteur_default]
+Compiling architecture behavioral of entity xil_defaultlib.DDC_MAE [ddc_mae_default]
+Compiling architecture behavioral of entity xil_defaultlib.DCC_Bit0 [dcc_bit0_default]
+Compiling architecture behavioral of entity xil_defaultlib.dcc_bit0_tb
+Built simulation snapshot DCC_Bit0_tb_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1016.977 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1016.977 ; gain = 0.000
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:16 . Memory (MB): peak = 1016.977 ; gain = 0.000
+save_wave_config {C:/Users/28711949/Desktop/Project_FPGA/Compteur_Tempo_tb_behav.wcfg}
+close [ open C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sources_1/new/DCC_Bit1.vhd w ]
+add_files C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sources_1/new/DCC_Bit1.vhd
+set_property is_enabled false [get_files  C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sources_1/new/DCC_Bit0.vhd]
+set_property is_enabled false [get_files  C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sources_1/new/DCC_Bit1.vhd]
+set_property is_enabled false [get_files  C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sim_1/new/DCC_Bit0_tb.vhd]
+set_property is_enabled false [get_files  C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sources_1/new/DCC_Compteur.vhd]
+set_property is_enabled false [get_files  C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sources_1/new/DDC_MAE.vhd]
+close [ open C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sources_1/new/MAE.vhd w ]
+add_files C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sources_1/new/MAE.vhd
+close [ open C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sources_1/new/MAE_Compteur.vhd w ]
+add_files C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sources_1/new/MAE_Compteur.vhd
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sim_1/new/MAE_tb.vhd w ]
+add_files -fileset sim_1 C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sim_1/new/MAE_tb.vhd
+set_property top MAE_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+launch_simulation
+Command: launch_simulation 
+boost::filesystem::remove: Le processus ne peut pas accéder au fichier car ce fichier est utilisé par un autre processus: "C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim/simulate.log"
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1016.977 ; gain = 0.000
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'MAE_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj MAE_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sources_1/new/MAE.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MAE'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sources_1/new/MAE_Compteur.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MAE_Compteur'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sim_1/new/MAE_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MAE_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+"xelab -wto 1e5d8116712748de85efcacbae10ef8a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot MAE_tb_behav xil_defaultlib.MAE_tb -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 1e5d8116712748de85efcacbae10ef8a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot MAE_tb_behav xil_defaultlib.MAE_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2335] case statement does not cover all choices. 'others' clause is needed [C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sources_1/new/MAE.vhd:94]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit mae_tb in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'MAE_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj MAE_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sources_1/new/MAE.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MAE'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+"xelab -wto 1e5d8116712748de85efcacbae10ef8a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot MAE_tb_behav xil_defaultlib.MAE_tb -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 1e5d8116712748de85efcacbae10ef8a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot MAE_tb_behav xil_defaultlib.MAE_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.MAE_Compteur [mae_compteur_default]
+Compiling architecture behavioral of entity xil_defaultlib.MAE [mae_default]
+Compiling architecture behavioral of entity xil_defaultlib.mae_tb
+Built simulation snapshot MAE_tb_behav
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim/xsim.dir/MAE_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Tue Apr  4 10:42:02 2023...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1016.977 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "MAE_tb_behav -key {Behavioral:sim_1:Functional:MAE_tb} -tclbatch {MAE_tb.tcl} -view {C:/Users/28711949/Desktop/Project_FPGA/Compteur_Tempo_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config C:/Users/28711949/Desktop/Project_FPGA/Compteur_Tempo_tb_behav.wcfg
+WARNING: Simulation object /DCC_Bit0_tb/Clk_s was not found in the design.
+WARNING: Simulation object /DCC_Bit0_tb/Reset_s was not found in the design.
+WARNING: Simulation object /DCC_Bit0_tb/GO_0_s was not found in the design.
+WARNING: Simulation object /DCC_Bit0_tb/FIN_0_s was not found in the design.
+WARNING: Simulation object /DCC_Bit0_tb/DCC_Bit0_1/MAE/Output was not found in the design.
+WARNING: Simulation object /DCC_Bit0_tb/DCC_Bit0_1/MAE/EP was not found in the design.
+WARNING: Simulation object /DCC_Bit0_tb/DCC_Bit0_1/Counter_Low/cpt was not found in the design.
+WARNING: Simulation object /DCC_Bit0_tb/DCC_Bit0_1/MAE/Fin_Cpt_Low was not found in the design.
+WARNING: Simulation object /DCC_Bit0_tb/DCC_Bit0_1/Counter_High/cpt was not found in the design.
+WARNING: Simulation object /DCC_Bit0_tb/DCC_Bit0_1/MAE/Fin_Cpt_High was not found in the design.
+source MAE_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'MAE_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 1016.977 ; gain = 0.000
+run 100 ns
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100 ns
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100 ns
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+restart: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1016.977 ; gain = 0.000
+run 100 ns
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1016.977 ; gain = 0.000
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'MAE_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj MAE_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sim_1/new/MAE_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MAE_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+"xelab -wto 1e5d8116712748de85efcacbae10ef8a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot MAE_tb_behav xil_defaultlib.MAE_tb -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 1e5d8116712748de85efcacbae10ef8a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot MAE_tb_behav xil_defaultlib.MAE_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.MAE_Compteur [mae_compteur_default]
+Compiling architecture behavioral of entity xil_defaultlib.MAE [mae_default]
+Compiling architecture behavioral of entity xil_defaultlib.mae_tb
+Built simulation snapshot MAE_tb_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1016.977 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1016.977 ; gain = 0.000
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:18 . Memory (MB): peak = 1016.977 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100 ns
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1016.977 ; gain = 0.000
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'MAE_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj MAE_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sim_1/new/MAE_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MAE_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+"xelab -wto 1e5d8116712748de85efcacbae10ef8a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot MAE_tb_behav xil_defaultlib.MAE_tb -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 1e5d8116712748de85efcacbae10ef8a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot MAE_tb_behav xil_defaultlib.MAE_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.MAE_Compteur [mae_compteur_default]
+Compiling architecture behavioral of entity xil_defaultlib.MAE [mae_default]
+Compiling architecture behavioral of entity xil_defaultlib.mae_tb
+Built simulation snapshot MAE_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1016.977 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1016.977 ; gain = 0.000
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:16 . Memory (MB): peak = 1016.977 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100 ns
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1016.977 ; gain = 0.000
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'MAE_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj MAE_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sim_1/new/MAE_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MAE_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+"xelab -wto 1e5d8116712748de85efcacbae10ef8a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot MAE_tb_behav xil_defaultlib.MAE_tb -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 1e5d8116712748de85efcacbae10ef8a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot MAE_tb_behav xil_defaultlib.MAE_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.MAE_Compteur [mae_compteur_default]
+Compiling architecture behavioral of entity xil_defaultlib.MAE [mae_default]
+Compiling architecture behavioral of entity xil_defaultlib.mae_tb
+Built simulation snapshot MAE_tb_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1016.977 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1016.977 ; gain = 0.000
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:16 . Memory (MB): peak = 1016.977 ; gain = 0.000
+save_wave_config {C:/Users/28711949/Desktop/Project_FPGA/Compteur_Tempo_tb_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1016.977 ; gain = 0.000
+set_property is_enabled true [get_files  C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sources_1/imports/Project_FPGA/Compteur_Tempo.vhd]
+set_property is_enabled true [get_files  C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sources_1/new/DCC_Bit0.vhd]
+set_property is_enabled true [get_files  {C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sources_1/new/DCC_Bit1.vhd C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sources_1/new/DCC_Compteur.vhd C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sources_1/new/DDC_MAE.vhd C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sources_1/imports/Project_FPGA/Diviseur_Horloge.vhd C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sources_1/imports/Project_FPGA/Generateur_Trames.vhd C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sources_1/new/Registre_DCC.vhd C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sources_1/new/Xor_Operation.vhd}]
+close [ open C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sources_1/new/TOP.vhd w ]
+add_files C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sources_1/new/TOP.vhd
+set_property is_enabled false [get_files  C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sources_1/new/TOP.vhd]
+set_property is_enabled true [get_files  C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sources_1/new/TOP.vhd]
+set_property top TOP [current_fileset]
+set_property is_enabled false [get_files  C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sim_1/new/MAE_tb.vhd]
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sim_1/new/TOP_tb.vhd w ]
+add_files -fileset sim_1 C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sim_1/new/TOP_tb.vhd
+set_property top TOP_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TOP_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj TOP_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sources_1/new/Xor_Operation.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'XOR_OPERATION'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sources_1/imports/Project_FPGA/Compteur_Tempo.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'COMPTEUR_TEMPO'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sources_1/imports/Project_FPGA/Diviseur_Horloge.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CLK_DIV'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sources_1/imports/Project_FPGA/Generateur_Trames.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'DCC_FRAME_GENERATOR'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sources_1/new/Registre_DCC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'REGISTRE_DCC'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sources_1/new/DDC_MAE.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'DDC_MAE'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sources_1/new/DCC_Bit0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'DCC_Bit0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sources_1/new/DCC_Bit1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'DCC_Bit1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sources_1/new/TOP.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'TOP'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sim_1/new/TOP_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'TOP_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+"xelab -wto 1e5d8116712748de85efcacbae10ef8a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TOP_tb_behav xil_defaultlib.TOP_tb -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 1e5d8116712748de85efcacbae10ef8a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TOP_tb_behav xil_defaultlib.TOP_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.top_tb
+Built simulation snapshot TOP_tb_behav
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim/xsim.dir/TOP_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Tue Apr  4 11:26:57 2023...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1016.977 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TOP_tb_behav -key {Behavioral:sim_1:Functional:TOP_tb} -tclbatch {TOP_tb.tcl} -view {C:/Users/28711949/Desktop/Project_FPGA/Compteur_Tempo_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config C:/Users/28711949/Desktop/Project_FPGA/Compteur_Tempo_tb_behav.wcfg
+WARNING: Simulation object /MAE_tb/Clk_s was not found in the design.
+WARNING: Simulation object /MAE_tb/Clk1M_s was not found in the design.
+WARNING: Simulation object /MAE_tb/start_s was not found in the design.
+WARNING: Simulation object /MAE_tb/Reset_s was not found in the design.
+WARNING: Simulation object /MAE_tb/Reset_Tempo_s was not found in the design.
+WARNING: Simulation object /MAE_tb/Start_Tempo_s was not found in the design.
+WARNING: Simulation object /MAE_tb/Fin_Tempo_s was not found in the design.
+WARNING: Simulation object /MAE_tb/Reset_DDC0_s was not found in the design.
+WARNING: Simulation object /MAE_tb/GO_0_s was not found in the design.
+WARNING: Simulation object /MAE_tb/FIN_0_s was not found in the design.
+WARNING: Simulation object /MAE_tb/Reset_DDC1_s was not found in the design.
+WARNING: Simulation object /MAE_tb/GO_1_s was not found in the design.
+WARNING: Simulation object /MAE_tb/FIN_1_s was not found in the design.
+WARNING: Simulation object /MAE_tb/Com_REG_s was not found in the design.
+WARNING: Simulation object /MAE_tb/Bit_out_s was not found in the design.
+WARNING: Simulation object /MAE_tb/MAE_0/EP was not found in the design.
+source TOP_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TOP_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 1016.977 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1016.977 ; gain = 0.000
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TOP_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj TOP_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sources_1/imports/Project_FPGA/Diviseur_Horloge.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CLK_DIV'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+"xelab -wto 1e5d8116712748de85efcacbae10ef8a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TOP_tb_behav xil_defaultlib.TOP_tb -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 1e5d8116712748de85efcacbae10ef8a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TOP_tb_behav xil_defaultlib.TOP_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 1016.977 ; gain = 0.000
+save_wave_config {C:/Users/28711949/Desktop/Project_FPGA/Compteur_Tempo_tb_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1016.977 ; gain = 0.000
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TOP_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj TOP_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sim_1/new/TOP_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'TOP_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+"xelab -wto 1e5d8116712748de85efcacbae10ef8a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TOP_tb_behav xil_defaultlib.TOP_tb -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 1e5d8116712748de85efcacbae10ef8a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TOP_tb_behav xil_defaultlib.TOP_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.MAE_Compteur [mae_compteur_default]
+Compiling architecture behavioral of entity xil_defaultlib.MAE [mae_default]
+Compiling architecture behavioral of entity xil_defaultlib.REGISTRE_DCC [registre_dcc_default]
+Compiling architecture behavioral of entity xil_defaultlib.COMPTEUR_TEMPO [compteur_tempo_default]
+Compiling architecture behavioral of entity xil_defaultlib.CLK_DIV [clk_div_default]
+Compiling architecture behavioral of entity xil_defaultlib.XOR_OPERATION [xor_operation_default]
+Compiling architecture behavioral of entity xil_defaultlib.DCC_FRAME_GENERATOR [dcc_frame_generator_default]
+Compiling architecture behavioral of entity xil_defaultlib.DCC_Compteur [dcc_compteur_default]
+Compiling architecture behavioral of entity xil_defaultlib.DDC_MAE [ddc_mae_default]
+Compiling architecture behavioral of entity xil_defaultlib.DCC_Bit0 [dcc_bit0_default]
+Compiling architecture behavioral of entity xil_defaultlib.DCC_Bit1 [dcc_bit1_default]
+Compiling architecture behavioral of entity xil_defaultlib.TOP [top_default]
+Compiling architecture behavioral of entity xil_defaultlib.top_tb
+Built simulation snapshot TOP_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1016.977 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TOP_tb_behav -key {Behavioral:sim_1:Functional:TOP_tb} -tclbatch {TOP_tb.tcl} -view {C:/Users/28711949/Desktop/Project_FPGA/Compteur_Tempo_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config C:/Users/28711949/Desktop/Project_FPGA/Compteur_Tempo_tb_behav.wcfg
+source TOP_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TOP_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:12 . Memory (MB): peak = 1016.977 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100 ns
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1016.977 ; gain = 0.000
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TOP_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj TOP_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sources_1/new/TOP.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'TOP'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+"xelab -wto 1e5d8116712748de85efcacbae10ef8a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TOP_tb_behav xil_defaultlib.TOP_tb -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 1e5d8116712748de85efcacbae10ef8a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TOP_tb_behav xil_defaultlib.TOP_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.MAE_Compteur [mae_compteur_default]
+Compiling architecture behavioral of entity xil_defaultlib.MAE [mae_default]
+Compiling architecture behavioral of entity xil_defaultlib.REGISTRE_DCC [registre_dcc_default]
+Compiling architecture behavioral of entity xil_defaultlib.COMPTEUR_TEMPO [compteur_tempo_default]
+Compiling architecture behavioral of entity xil_defaultlib.CLK_DIV [clk_div_default]
+Compiling architecture behavioral of entity xil_defaultlib.XOR_OPERATION [xor_operation_default]
+Compiling architecture behavioral of entity xil_defaultlib.DCC_FRAME_GENERATOR [dcc_frame_generator_default]
+Compiling architecture behavioral of entity xil_defaultlib.DCC_Compteur [dcc_compteur_default]
+Compiling architecture behavioral of entity xil_defaultlib.DDC_MAE [ddc_mae_default]
+Compiling architecture behavioral of entity xil_defaultlib.DCC_Bit0 [dcc_bit0_default]
+Compiling architecture behavioral of entity xil_defaultlib.DCC_Bit1 [dcc_bit1_default]
+Compiling architecture behavioral of entity xil_defaultlib.TOP [top_default]
+Compiling architecture behavioral of entity xil_defaultlib.top_tb
+Built simulation snapshot TOP_tb_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1016.977 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1016.977 ; gain = 0.000
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:16 . Memory (MB): peak = 1016.977 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100 ns
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1016.977 ; gain = 0.000
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TOP_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj TOP_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sources_1/new/TOP.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'TOP'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+"xelab -wto 1e5d8116712748de85efcacbae10ef8a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TOP_tb_behav xil_defaultlib.TOP_tb -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 1e5d8116712748de85efcacbae10ef8a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TOP_tb_behav xil_defaultlib.TOP_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.MAE_Compteur [mae_compteur_default]
+Compiling architecture behavioral of entity xil_defaultlib.MAE [mae_default]
+Compiling architecture behavioral of entity xil_defaultlib.REGISTRE_DCC [registre_dcc_default]
+Compiling architecture behavioral of entity xil_defaultlib.COMPTEUR_TEMPO [compteur_tempo_default]
+Compiling architecture behavioral of entity xil_defaultlib.CLK_DIV [clk_div_default]
+Compiling architecture behavioral of entity xil_defaultlib.XOR_OPERATION [xor_operation_default]
+Compiling architecture behavioral of entity xil_defaultlib.DCC_FRAME_GENERATOR [dcc_frame_generator_default]
+Compiling architecture behavioral of entity xil_defaultlib.DCC_Compteur [dcc_compteur_default]
+Compiling architecture behavioral of entity xil_defaultlib.DDC_MAE [ddc_mae_default]
+Compiling architecture behavioral of entity xil_defaultlib.DCC_Bit0 [dcc_bit0_default]
+Compiling architecture behavioral of entity xil_defaultlib.DCC_Bit1 [dcc_bit1_default]
+Compiling architecture behavioral of entity xil_defaultlib.TOP [top_default]
+Compiling architecture behavioral of entity xil_defaultlib.top_tb
+Built simulation snapshot TOP_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1016.977 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1016.977 ; gain = 0.000
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:16 . Memory (MB): peak = 1016.977 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100 ns
+current_wave_config {Compteur_Tempo_tb_behav.wcfg}
+Compteur_Tempo_tb_behav.wcfg
+add_wave {{/TOP_tb/TOP_0/CLK_DIV_0/Reset}} 
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1016.977 ; gain = 0.000
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TOP_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj TOP_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+"xelab -wto 1e5d8116712748de85efcacbae10ef8a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TOP_tb_behav xil_defaultlib.TOP_tb -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 1e5d8116712748de85efcacbae10ef8a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TOP_tb_behav xil_defaultlib.TOP_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 1016.977 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100 ns
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100 ns
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1016.977 ; gain = 0.000
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TOP_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj TOP_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sources_1/new/TOP.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'TOP'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+"xelab -wto 1e5d8116712748de85efcacbae10ef8a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TOP_tb_behav xil_defaultlib.TOP_tb -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 1e5d8116712748de85efcacbae10ef8a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TOP_tb_behav xil_defaultlib.TOP_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.MAE_Compteur [mae_compteur_default]
+Compiling architecture behavioral of entity xil_defaultlib.MAE [mae_default]
+Compiling architecture behavioral of entity xil_defaultlib.REGISTRE_DCC [registre_dcc_default]
+Compiling architecture behavioral of entity xil_defaultlib.COMPTEUR_TEMPO [compteur_tempo_default]
+Compiling architecture behavioral of entity xil_defaultlib.CLK_DIV [clk_div_default]
+Compiling architecture behavioral of entity xil_defaultlib.XOR_OPERATION [xor_operation_default]
+Compiling architecture behavioral of entity xil_defaultlib.DCC_FRAME_GENERATOR [dcc_frame_generator_default]
+Compiling architecture behavioral of entity xil_defaultlib.DCC_Compteur [dcc_compteur_default]
+Compiling architecture behavioral of entity xil_defaultlib.DDC_MAE [ddc_mae_default]
+Compiling architecture behavioral of entity xil_defaultlib.DCC_Bit0 [dcc_bit0_default]
+Compiling architecture behavioral of entity xil_defaultlib.DCC_Bit1 [dcc_bit1_default]
+Compiling architecture behavioral of entity xil_defaultlib.TOP [top_default]
+Compiling architecture behavioral of entity xil_defaultlib.top_tb
+Built simulation snapshot TOP_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1016.977 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1016.977 ; gain = 0.000
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:16 . Memory (MB): peak = 1016.977 ; gain = 0.000
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1016.977 ; gain = 0.000
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TOP_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj TOP_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sim_1/new/TOP_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'TOP_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+"xelab -wto 1e5d8116712748de85efcacbae10ef8a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TOP_tb_behav xil_defaultlib.TOP_tb -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 1e5d8116712748de85efcacbae10ef8a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TOP_tb_behav xil_defaultlib.TOP_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.MAE_Compteur [mae_compteur_default]
+Compiling architecture behavioral of entity xil_defaultlib.MAE [mae_default]
+Compiling architecture behavioral of entity xil_defaultlib.REGISTRE_DCC [registre_dcc_default]
+Compiling architecture behavioral of entity xil_defaultlib.COMPTEUR_TEMPO [compteur_tempo_default]
+Compiling architecture behavioral of entity xil_defaultlib.CLK_DIV [clk_div_default]
+Compiling architecture behavioral of entity xil_defaultlib.XOR_OPERATION [xor_operation_default]
+Compiling architecture behavioral of entity xil_defaultlib.DCC_FRAME_GENERATOR [dcc_frame_generator_default]
+Compiling architecture behavioral of entity xil_defaultlib.DCC_Compteur [dcc_compteur_default]
+Compiling architecture behavioral of entity xil_defaultlib.DDC_MAE [ddc_mae_default]
+Compiling architecture behavioral of entity xil_defaultlib.DCC_Bit0 [dcc_bit0_default]
+Compiling architecture behavioral of entity xil_defaultlib.DCC_Bit1 [dcc_bit1_default]
+Compiling architecture behavioral of entity xil_defaultlib.TOP [top_default]
+Compiling architecture behavioral of entity xil_defaultlib.top_tb
+Built simulation snapshot TOP_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1016.977 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1016.977 ; gain = 0.000
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:16 . Memory (MB): peak = 1016.977 ; gain = 0.000
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1016.977 ; gain = 0.000
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TOP_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj TOP_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sources_1/imports/Project_FPGA/Diviseur_Horloge.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CLK_DIV'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sim_1/new/TOP_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'TOP_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+"xelab -wto 1e5d8116712748de85efcacbae10ef8a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TOP_tb_behav xil_defaultlib.TOP_tb -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 1e5d8116712748de85efcacbae10ef8a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TOP_tb_behav xil_defaultlib.TOP_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.MAE_Compteur [mae_compteur_default]
+Compiling architecture behavioral of entity xil_defaultlib.MAE [mae_default]
+Compiling architecture behavioral of entity xil_defaultlib.REGISTRE_DCC [registre_dcc_default]
+Compiling architecture behavioral of entity xil_defaultlib.COMPTEUR_TEMPO [compteur_tempo_default]
+Compiling architecture behavioral of entity xil_defaultlib.CLK_DIV [clk_div_default]
+Compiling architecture behavioral of entity xil_defaultlib.XOR_OPERATION [xor_operation_default]
+Compiling architecture behavioral of entity xil_defaultlib.DCC_FRAME_GENERATOR [dcc_frame_generator_default]
+Compiling architecture behavioral of entity xil_defaultlib.DCC_Compteur [dcc_compteur_default]
+Compiling architecture behavioral of entity xil_defaultlib.DDC_MAE [ddc_mae_default]
+Compiling architecture behavioral of entity xil_defaultlib.DCC_Bit0 [dcc_bit0_default]
+Compiling architecture behavioral of entity xil_defaultlib.DCC_Bit1 [dcc_bit1_default]
+Compiling architecture behavioral of entity xil_defaultlib.TOP [top_default]
+Compiling architecture behavioral of entity xil_defaultlib.top_tb
+Built simulation snapshot TOP_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1016.977 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1016.977 ; gain = 0.000
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:16 . Memory (MB): peak = 1016.977 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100 ns
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1016.977 ; gain = 0.000
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TOP_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj TOP_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sources_1/new/TOP.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'TOP'
+ERROR: [VRFC 10-2989] 'clk_s' is not declared [C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sources_1/new/TOP.vhd:142]
+ERROR: [VRFC 10-2989] 'clk_s' is not declared [C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sources_1/new/TOP.vhd:160]
+ERROR: [VRFC 10-2989] 'clk_s' is not declared [C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sources_1/new/TOP.vhd:168]
+ERROR: [VRFC 10-2989] 'clk_s' is not declared [C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sources_1/new/TOP.vhd:187]
+ERROR: [VRFC 10-2989] 'clk_s' is not declared [C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sources_1/new/TOP.vhd:196]
+ERROR: [VRFC 10-3782] unit 'behavioral' ignored due to previous errors [C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sources_1/new/TOP.vhd:43]
+INFO: [VRFC 10-3070] VHDL file 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sources_1/new/TOP.vhd' ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+
+save_wave_config {C:/Users/28711949/Desktop/Project_FPGA/Compteur_Tempo_tb_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TOP_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj TOP_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sources_1/new/TOP.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'TOP'
+ERROR: [VRFC 10-2989] 'clk_s' is not declared [C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sources_1/new/TOP.vhd:142]
+ERROR: [VRFC 10-2989] 'clk_s' is not declared [C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sources_1/new/TOP.vhd:160]
+ERROR: [VRFC 10-2989] 'clk_s' is not declared [C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sources_1/new/TOP.vhd:168]
+ERROR: [VRFC 10-2989] 'clk_s' is not declared [C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sources_1/new/TOP.vhd:187]
+ERROR: [VRFC 10-2989] 'clk_s' is not declared [C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sources_1/new/TOP.vhd:196]
+ERROR: [VRFC 10-3782] unit 'behavioral' ignored due to previous errors [C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sources_1/new/TOP.vhd:43]
+INFO: [VRFC 10-3070] VHDL file 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sources_1/new/TOP.vhd' ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TOP_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj TOP_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sources_1/new/TOP.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'TOP'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sim_1/new/TOP_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'TOP_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+"xelab -wto 1e5d8116712748de85efcacbae10ef8a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TOP_tb_behav xil_defaultlib.TOP_tb -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 1e5d8116712748de85efcacbae10ef8a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TOP_tb_behav xil_defaultlib.TOP_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.MAE_Compteur [mae_compteur_default]
+Compiling architecture behavioral of entity xil_defaultlib.MAE [mae_default]
+Compiling architecture behavioral of entity xil_defaultlib.REGISTRE_DCC [registre_dcc_default]
+Compiling architecture behavioral of entity xil_defaultlib.COMPTEUR_TEMPO [compteur_tempo_default]
+Compiling architecture behavioral of entity xil_defaultlib.CLK_DIV [clk_div_default]
+Compiling architecture behavioral of entity xil_defaultlib.XOR_OPERATION [xor_operation_default]
+Compiling architecture behavioral of entity xil_defaultlib.DCC_FRAME_GENERATOR [dcc_frame_generator_default]
+Compiling architecture behavioral of entity xil_defaultlib.DCC_Compteur [dcc_compteur_default]
+Compiling architecture behavioral of entity xil_defaultlib.DDC_MAE [ddc_mae_default]
+Compiling architecture behavioral of entity xil_defaultlib.DCC_Bit0 [dcc_bit0_default]
+Compiling architecture behavioral of entity xil_defaultlib.DCC_Bit1 [dcc_bit1_default]
+Compiling architecture behavioral of entity xil_defaultlib.TOP [top_default]
+Compiling architecture behavioral of entity xil_defaultlib.top_tb
+Built simulation snapshot TOP_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1016.977 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TOP_tb_behav -key {Behavioral:sim_1:Functional:TOP_tb} -tclbatch {TOP_tb.tcl} -view {C:/Users/28711949/Desktop/Project_FPGA/Compteur_Tempo_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config C:/Users/28711949/Desktop/Project_FPGA/Compteur_Tempo_tb_behav.wcfg
+source TOP_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TOP_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 1016.977 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100 ns
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100 ns
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100 ns
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100 ns
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1016.977 ; gain = 0.000
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TOP_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj TOP_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sources_1/new/Registre_DCC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'REGISTRE_DCC'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+"xelab -wto 1e5d8116712748de85efcacbae10ef8a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TOP_tb_behav xil_defaultlib.TOP_tb -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 1e5d8116712748de85efcacbae10ef8a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TOP_tb_behav xil_defaultlib.TOP_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.MAE_Compteur [mae_compteur_default]
+Compiling architecture behavioral of entity xil_defaultlib.MAE [mae_default]
+Compiling architecture behavioral of entity xil_defaultlib.REGISTRE_DCC [registre_dcc_default]
+Compiling architecture behavioral of entity xil_defaultlib.COMPTEUR_TEMPO [compteur_tempo_default]
+Compiling architecture behavioral of entity xil_defaultlib.CLK_DIV [clk_div_default]
+Compiling architecture behavioral of entity xil_defaultlib.XOR_OPERATION [xor_operation_default]
+Compiling architecture behavioral of entity xil_defaultlib.DCC_FRAME_GENERATOR [dcc_frame_generator_default]
+Compiling architecture behavioral of entity xil_defaultlib.DCC_Compteur [dcc_compteur_default]
+Compiling architecture behavioral of entity xil_defaultlib.DDC_MAE [ddc_mae_default]
+Compiling architecture behavioral of entity xil_defaultlib.DCC_Bit0 [dcc_bit0_default]
+Compiling architecture behavioral of entity xil_defaultlib.DCC_Bit1 [dcc_bit1_default]
+Compiling architecture behavioral of entity xil_defaultlib.TOP [top_default]
+Compiling architecture behavioral of entity xil_defaultlib.top_tb
+Built simulation snapshot TOP_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1016.977 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1016.977 ; gain = 0.000
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:17 . Memory (MB): peak = 1016.977 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100 ns
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1016.977 ; gain = 0.000
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TOP_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj TOP_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sources_1/new/MAE.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MAE'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+"xelab -wto 1e5d8116712748de85efcacbae10ef8a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TOP_tb_behav xil_defaultlib.TOP_tb -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 1e5d8116712748de85efcacbae10ef8a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TOP_tb_behav xil_defaultlib.TOP_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.MAE_Compteur [mae_compteur_default]
+Compiling architecture behavioral of entity xil_defaultlib.MAE [mae_default]
+Compiling architecture behavioral of entity xil_defaultlib.REGISTRE_DCC [registre_dcc_default]
+Compiling architecture behavioral of entity xil_defaultlib.COMPTEUR_TEMPO [compteur_tempo_default]
+Compiling architecture behavioral of entity xil_defaultlib.CLK_DIV [clk_div_default]
+Compiling architecture behavioral of entity xil_defaultlib.XOR_OPERATION [xor_operation_default]
+Compiling architecture behavioral of entity xil_defaultlib.DCC_FRAME_GENERATOR [dcc_frame_generator_default]
+Compiling architecture behavioral of entity xil_defaultlib.DCC_Compteur [dcc_compteur_default]
+Compiling architecture behavioral of entity xil_defaultlib.DDC_MAE [ddc_mae_default]
+Compiling architecture behavioral of entity xil_defaultlib.DCC_Bit0 [dcc_bit0_default]
+Compiling architecture behavioral of entity xil_defaultlib.DCC_Bit1 [dcc_bit1_default]
+Compiling architecture behavioral of entity xil_defaultlib.TOP [top_default]
+Compiling architecture behavioral of entity xil_defaultlib.top_tb
+Built simulation snapshot TOP_tb_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1016.977 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1016.977 ; gain = 0.000
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:17 . Memory (MB): peak = 1016.977 ; gain = 0.000
+run 100 ns
+run 100 ns
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1016.977 ; gain = 0.000
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TOP_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj TOP_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sources_1/new/MAE.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MAE'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+"xelab -wto 1e5d8116712748de85efcacbae10ef8a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TOP_tb_behav xil_defaultlib.TOP_tb -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 1e5d8116712748de85efcacbae10ef8a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TOP_tb_behav xil_defaultlib.TOP_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.MAE_Compteur [mae_compteur_default]
+Compiling architecture behavioral of entity xil_defaultlib.MAE [mae_default]
+Compiling architecture behavioral of entity xil_defaultlib.REGISTRE_DCC [registre_dcc_default]
+Compiling architecture behavioral of entity xil_defaultlib.COMPTEUR_TEMPO [compteur_tempo_default]
+Compiling architecture behavioral of entity xil_defaultlib.CLK_DIV [clk_div_default]
+Compiling architecture behavioral of entity xil_defaultlib.XOR_OPERATION [xor_operation_default]
+Compiling architecture behavioral of entity xil_defaultlib.DCC_FRAME_GENERATOR [dcc_frame_generator_default]
+Compiling architecture behavioral of entity xil_defaultlib.DCC_Compteur [dcc_compteur_default]
+Compiling architecture behavioral of entity xil_defaultlib.DDC_MAE [ddc_mae_default]
+Compiling architecture behavioral of entity xil_defaultlib.DCC_Bit0 [dcc_bit0_default]
+Compiling architecture behavioral of entity xil_defaultlib.DCC_Bit1 [dcc_bit1_default]
+Compiling architecture behavioral of entity xil_defaultlib.TOP [top_default]
+Compiling architecture behavioral of entity xil_defaultlib.top_tb
+Built simulation snapshot TOP_tb_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1016.977 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1016.977 ; gain = 0.000
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:16 . Memory (MB): peak = 1016.977 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100 ns
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100 ns
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run all
+run: Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 1016.977 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 1000 ns
+run 1000 ns
+run 1000 ns
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1016.977 ; gain = 0.000
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TOP_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj TOP_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sources_1/new/Registre_DCC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'REGISTRE_DCC'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sources_1/new/DDC_MAE.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'DDC_MAE'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+"xelab -wto 1e5d8116712748de85efcacbae10ef8a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TOP_tb_behav xil_defaultlib.TOP_tb -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 1e5d8116712748de85efcacbae10ef8a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TOP_tb_behav xil_defaultlib.TOP_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.MAE_Compteur [mae_compteur_default]
+Compiling architecture behavioral of entity xil_defaultlib.MAE [mae_default]
+Compiling architecture behavioral of entity xil_defaultlib.REGISTRE_DCC [registre_dcc_default]
+Compiling architecture behavioral of entity xil_defaultlib.COMPTEUR_TEMPO [compteur_tempo_default]
+Compiling architecture behavioral of entity xil_defaultlib.CLK_DIV [clk_div_default]
+Compiling architecture behavioral of entity xil_defaultlib.XOR_OPERATION [xor_operation_default]
+Compiling architecture behavioral of entity xil_defaultlib.DCC_FRAME_GENERATOR [dcc_frame_generator_default]
+Compiling architecture behavioral of entity xil_defaultlib.DCC_Compteur [dcc_compteur_default]
+Compiling architecture behavioral of entity xil_defaultlib.DDC_MAE [ddc_mae_default]
+Compiling architecture behavioral of entity xil_defaultlib.DCC_Bit0 [dcc_bit0_default]
+Compiling architecture behavioral of entity xil_defaultlib.DCC_Bit1 [dcc_bit1_default]
+Compiling architecture behavioral of entity xil_defaultlib.TOP [top_default]
+Compiling architecture behavioral of entity xil_defaultlib.top_tb
+Built simulation snapshot TOP_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1016.977 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1016.977 ; gain = 0.000
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:17 . Memory (MB): peak = 1016.977 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100 ns
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1016.977 ; gain = 0.000
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TOP_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj TOP_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.srcs/sources_1/new/MAE.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MAE'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.sim/sim_1/behav/xsim'
+"xelab -wto 1e5d8116712748de85efcacbae10ef8a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TOP_tb_behav xil_defaultlib.TOP_tb -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 1e5d8116712748de85efcacbae10ef8a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TOP_tb_behav xil_defaultlib.TOP_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.MAE_Compteur [mae_compteur_default]
+Compiling architecture behavioral of entity xil_defaultlib.MAE [mae_default]
+Compiling architecture behavioral of entity xil_defaultlib.REGISTRE_DCC [registre_dcc_default]
+Compiling architecture behavioral of entity xil_defaultlib.COMPTEUR_TEMPO [compteur_tempo_default]
+Compiling architecture behavioral of entity xil_defaultlib.CLK_DIV [clk_div_default]
+Compiling architecture behavioral of entity xil_defaultlib.XOR_OPERATION [xor_operation_default]
+Compiling architecture behavioral of entity xil_defaultlib.DCC_FRAME_GENERATOR [dcc_frame_generator_default]
+Compiling architecture behavioral of entity xil_defaultlib.DCC_Compteur [dcc_compteur_default]
+Compiling architecture behavioral of entity xil_defaultlib.DDC_MAE [ddc_mae_default]
+Compiling architecture behavioral of entity xil_defaultlib.DCC_Bit0 [dcc_bit0_default]
+Compiling architecture behavioral of entity xil_defaultlib.DCC_Bit1 [dcc_bit1_default]
+Compiling architecture behavioral of entity xil_defaultlib.TOP [top_default]
+Compiling architecture behavioral of entity xil_defaultlib.top_tb
+Built simulation snapshot TOP_tb_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1016.977 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1016.977 ; gain = 0.000
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:16 . Memory (MB): peak = 1016.977 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+restart: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1016.977 ; gain = 0.000
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+save_wave_config {C:/Users/28711949/Desktop/Project_FPGA/Compteur_Tempo_tb_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1016.977 ; gain = 0.000
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Tue Apr  4 12:29:54 2023] Launched synth_1...
+Run output will be captured here: C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.runs/synth_1/runme.log
+[Tue Apr  4 12:29:54 2023] Launched impl_1...
+Run output will be captured here: C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 1016.977 ; gain = 0.000
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Tue Apr  4 12:32:44 2023] Launched synth_1...
+Run output will be captured here: C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.runs/synth_1/runme.log
+[Tue Apr  4 12:32:44 2023] Launched impl_1...
+Run output will be captured here: C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 1016.977 ; gain = 0.000
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 03 2020-22:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1016.977 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B157ABA
+set_property PROGRAM.FILE {C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.runs/impl_1/TOP.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/28711949/Desktop/Project_FPGA/Project_FPGA.runs/impl_1/TOP.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Apr  4 12:38:26 2023...

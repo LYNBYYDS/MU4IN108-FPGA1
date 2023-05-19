@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1683715212">
+  <File Type="PA-TCL" Name="DCC_wrapper.tcl"/>
+  <File Type="REPORTS-TCL" Name="DCC_wrapper_reports.tcl"/>
+  <File Type="RDS-RDS" Name="DCC_wrapper.vds"/>
+  <File Type="RDS-UTIL" Name="DCC_wrapper_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="DCC_wrapper_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="DCC_wrapper.dcp"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/DCC/DCC.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PGENDIR/sources_1/bd/DCC/hdl/DCC_wrapper.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="DCC_wrapper"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/Project_FPGA/Nexys4DDR_Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/Project_FPGA_IP/Project_FPGA_IP.srcs/constrs_1/imports/Project_FPGA/Nexys4DDR_Master.xdc"/>
+        <Attr Name="ImportTime" Val="1683583096"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="DCC_lmb_bram_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="DCC_mdm_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="DCC_axi_gpio_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="DCC_dlmb_bram_if_cntlr_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="DCC_ilmb_v10_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="DCC_dlmb_v10_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="DCC_xbar_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="DCC_microblaze_0_axi_intc_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="DCC_microblaze_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="DCC_ilmb_bram_if_cntlr_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="DCC_axi_gpio_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="DCC_rst_clk_wiz_1_100M_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="DCC_clk_wiz_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="DCC_SS_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="DCC_DCC_0_0"/>
+</GenRun>

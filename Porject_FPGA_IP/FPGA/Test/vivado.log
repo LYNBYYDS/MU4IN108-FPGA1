@@ -1,0 +1,528 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed May 10 12:51:11 2023
+# Process ID: 8840
+# Current directory: C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Test
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14764 C:\Users\marcs\OneDrive\Bureau\Desktop\FPGA\Test\Test.xpr
+# Log file: C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Test/vivado.log
+# Journal file: C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Test\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Test/Test.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Test/Test' since last save.
+WARNING: [filemgmt 56-2] Default IP Output Path : Could not find the directory 'C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Test/Test.gen/sources_1', nor could it be found using path 'C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Test/Test/Test.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:08 . Memory (MB): peak = 1018.008 ; gain = 0.000
+launch_runs impl_1 -jobs 4
+[Wed May 10 12:51:44 2023] Launched synth_1...
+Run output will be captured here: C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Test/Test.runs/synth_1/runme.log
+[Wed May 10 12:51:45 2023] Launched impl_1...
+Run output will be captured here: C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Test/Test.runs/impl_1/runme.log
+update_compile_order -fileset sources_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+launch_runs synth_1 -jobs 4
+CRITICAL WARNING: [HDL 9-806] Syntax error near "6". [C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Test/Test.srcs/sources_1/imports/Test/TOP_tb.vhd:62]
+[Wed May 10 12:51:55 2023] Launched synth_1...
+Run output will be captured here: C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Test/Test.runs/synth_1/runme.log
+export_ip_user_files -of_objects  [get_files C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Test/Test.srcs/sources_1/imports/Test/TOP_tb.vhd] -no_script -reset -force -quiet
+remove_files  C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Test/Test.srcs/sources_1/imports/Test/TOP_tb.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+import_files -fileset sim_1 -norecurse C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/TOP_tb.vhd
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Wed May 10 12:53:12 2023] Launched synth_1...
+Run output will be captured here: C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Test/Test.runs/synth_1/runme.log
+reset_simulation -simset sim_1 -mode post-synthesis -type functional
+launch_simulation -mode post-synthesis -type functional
+Command: launch_simulation -mode post-synthesis -type functional
+INFO: [Vivado 12-5682] Launching post-synthesis functional simulation in 'C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Test/Test.sim/sim_1/synth/func/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tcpg236-1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1098.234 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 73 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1179.621 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:14 ; elapsed = 00:00:11 . Memory (MB): peak = 1322.664 ; gain = 304.656
+INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'...
+INFO: [SIM-utils-26] write_vhdl -mode funcsim -nolib -force -file "C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Test/Test.sim/sim_1/synth/func/xsim/TOP_tb_func_synth.vhd"
+INFO: [SIM-utils-36] Netlist generated:C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Test/Test.sim/sim_1/synth/func/xsim/TOP_tb_func_synth.vhd
+INFO: [SIM-utils-54] Inspecting design source files for 'TOP_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Test/Test.sim/sim_1/synth/func/xsim'
+"xvhdl --incr --relax -prj TOP_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Test/Test.sim/sim_1/synth/func/xsim/TOP_tb_func_synth.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CLK_DIV'
+INFO: [VRFC 10-3107] analyzing entity 'COMPTEUR_TEMPO'
+INFO: [VRFC 10-3107] analyzing entity 'DCC_Compteur'
+INFO: [VRFC 10-3107] analyzing entity 'DCC_Compteur_0'
+INFO: [VRFC 10-3107] analyzing entity 'DCC_Compteur_1'
+INFO: [VRFC 10-3107] analyzing entity 'DCC_Compteur_2'
+INFO: [VRFC 10-3107] analyzing entity 'DDC_MAE'
+INFO: [VRFC 10-3107] analyzing entity 'DDC_MAE_3'
+INFO: [VRFC 10-3107] analyzing entity 'MAE_Compteur'
+INFO: [VRFC 10-3107] analyzing entity 'REGISTRE_DCC'
+INFO: [VRFC 10-3107] analyzing entity 'DCC_Bit0'
+INFO: [VRFC 10-3107] analyzing entity 'DCC_Bit1'
+INFO: [VRFC 10-3107] analyzing entity 'MAE'
+INFO: [VRFC 10-3107] analyzing entity 'TOP'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Test/Test.srcs/sim_1/imports/FPGA/TOP_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'TOP_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Test/Test.sim/sim_1/synth/func/xsim'
+"xelab -wto 85ecea3feec84314b39aa81f7dedd939 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TOP_tb_func_synth xil_defaultlib.TOP_tb -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 85ecea3feec84314b39aa81f7dedd939 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TOP_tb_func_synth xil_defaultlib.TOP_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0001")(0,3)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111111110111...]
+Compiling architecture fdce_v of entity unisim.FDCE [fdce_default]
+Compiling architecture lut1_v of entity unisim.LUT1 [\LUT1(init="0001")(0,3)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01010101101010000101...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="01101100")(0,7)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0110110011001100")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01111111111111011000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01111111111111011111...]
+Compiling architecture structure of entity xil_defaultlib.CLK_DIV [clk_div_default]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1101")(0,3)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="00101000")(0,7)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="00010100")(0,7)\]
+Compiling architecture carry4_v of entity unisim.CARRY4 [carry4_default]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="10000000")(0,7)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="10111010")(0,7)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1111000010001000")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000000010000000")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture structure of entity xil_defaultlib.COMPTEUR_TEMPO [compteur_tempo_default]
+Compiling architecture bufg_v of entity unisim.BUFG [bufg_default]
+Compiling architecture ibuf_v of entity unisim.IBUF [\IBUF(1,9)(1,1)(1,4)(1,7)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111111111111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111111111111...]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1110")(0,3)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111111111111...]
+Compiling architecture structure of entity xil_defaultlib.DCC_Compteur_1 [dcc_compteur_1_default]
+Compiling architecture structure of entity xil_defaultlib.DCC_Compteur_2 [dcc_compteur_2_default]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1111010001000100")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1000111110001000")(0...]
+Compiling architecture fdpe_v of entity unisim.FDPE [fdpe_default]
+Compiling architecture structure of entity xil_defaultlib.DDC_MAE_3 [ddc_mae_3_default]
+Compiling architecture structure of entity xil_defaultlib.DCC_Bit0 [dcc_bit0_default]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111011111111111111...]
+Compiling architecture structure of entity xil_defaultlib.DCC_Compteur [dcc_compteur_default]
+Compiling architecture structure of entity xil_defaultlib.DCC_Compteur_0 [dcc_compteur_0_default]
+Compiling architecture structure of entity xil_defaultlib.DDC_MAE [ddc_mae_default]
+Compiling architecture structure of entity xil_defaultlib.DCC_Bit1 [dcc_bit1_default]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10101111101011111010...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111000000000001000...]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0010")(0,3)\]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1000")(0,3)\]
+Compiling architecture structure of entity xil_defaultlib.MAE_Compteur [mae_compteur_default]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111111111111111111...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1011111110101010")(0...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="11111110")(0,7)\]
+Compiling architecture structure of entity xil_defaultlib.MAE [mae_default]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111110111111101111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10101111101000001100...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10111000111111111011...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="10111000")(0,7)\]
+Compiling architecture muxf8_v of entity unisim.MUXF8 [muxf8_default]
+Compiling architecture muxf7_v of entity unisim.MUXF7 [muxf7_default]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="00000100")(0,7)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1110101111111111")(0...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000001110...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111110101010111111...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000111111100000")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111111101010...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000111101000000")(0...]
+Compiling architecture ldce_v of entity unisim.LDCE [ldce_default]
+Compiling architecture structure of entity xil_defaultlib.REGISTRE_DCC [registre_dcc_default]
+Compiling architecture obuf_v of entity unisim.OBUF [\OBUF(1,9)(1,7)(1,4)\]
+Compiling architecture structure of entity xil_defaultlib.TOP [top_default]
+Compiling architecture behavioral of entity xil_defaultlib.top_tb
+Built simulation snapshot TOP_tb_func_synth
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Test/Test.sim/sim_1/synth/func/xsim/xsim.dir/TOP_tb_func_synth/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed May 10 12:55:54 2023...
+run_program: Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 1752.348 ; gain = 401.258
+INFO: [USF-XSim-69] 'elaborate' step finished in '11' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Test/Test.sim/sim_1/synth/func/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TOP_tb_func_synth -key {Post-Synthesis:sim_1:Functional:TOP_tb} -tclbatch {TOP_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source TOP_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TOP_tb_func_synth' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 1816.164 ; gain = 798.156
+run 10 ms
+run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1823.078 ; gain = 6.914
+run 10 ms
+run: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1823.617 ; gain = 0.539
+run 1 ms
+run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1824.586 ; gain = 0.969
+run 1 ms
+run: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1824.863 ; gain = 0.277
+run 1 ms
+run: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1824.953 ; gain = 0.090
+close_sim
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Simtcl 6-16] Simulation closed
+INFO: [Common 17-344] 'close_sim' was cancelled
+launch_simulation -mode post-synthesis -type functional
+Command: launch_simulation -mode post-synthesis -type functional
+INFO: [Vivado 12-5682] Launching post-synthesis functional simulation in 'C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Test/Test.sim/sim_1/synth/func/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'...
+INFO: [SIM-utils-26] write_vhdl -mode funcsim -nolib -force -file "C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Test/Test.sim/sim_1/synth/func/xsim/TOP_tb_func_synth.vhd"
+INFO: [SIM-utils-36] Netlist generated:C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Test/Test.sim/sim_1/synth/func/xsim/TOP_tb_func_synth.vhd
+INFO: [SIM-utils-54] Inspecting design source files for 'TOP_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Test/Test.sim/sim_1/synth/func/xsim'
+"xvhdl --incr --relax -prj TOP_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Test/Test.sim/sim_1/synth/func/xsim/TOP_tb_func_synth.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CLK_DIV'
+INFO: [VRFC 10-3107] analyzing entity 'COMPTEUR_TEMPO'
+INFO: [VRFC 10-3107] analyzing entity 'DCC_Compteur'
+INFO: [VRFC 10-3107] analyzing entity 'DCC_Compteur_0'
+INFO: [VRFC 10-3107] analyzing entity 'DCC_Compteur_1'
+INFO: [VRFC 10-3107] analyzing entity 'DCC_Compteur_2'
+INFO: [VRFC 10-3107] analyzing entity 'DDC_MAE'
+INFO: [VRFC 10-3107] analyzing entity 'DDC_MAE_3'
+INFO: [VRFC 10-3107] analyzing entity 'MAE_Compteur'
+INFO: [VRFC 10-3107] analyzing entity 'REGISTRE_DCC'
+INFO: [VRFC 10-3107] analyzing entity 'DCC_Bit0'
+INFO: [VRFC 10-3107] analyzing entity 'DCC_Bit1'
+INFO: [VRFC 10-3107] analyzing entity 'MAE'
+INFO: [VRFC 10-3107] analyzing entity 'TOP'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Test/Test.sim/sim_1/synth/func/xsim'
+"xelab -wto 85ecea3feec84314b39aa81f7dedd939 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TOP_tb_func_synth xil_defaultlib.TOP_tb -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 85ecea3feec84314b39aa81f7dedd939 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TOP_tb_func_synth xil_defaultlib.TOP_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0001")(0,3)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111111110111...]
+Compiling architecture fdce_v of entity unisim.FDCE [fdce_default]
+Compiling architecture lut1_v of entity unisim.LUT1 [\LUT1(init="0001")(0,3)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01010101101010000101...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="01101100")(0,7)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0110110011001100")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01111111111111011000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01111111111111011111...]
+Compiling architecture structure of entity xil_defaultlib.CLK_DIV [clk_div_default]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1101")(0,3)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="00101000")(0,7)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="00010100")(0,7)\]
+Compiling architecture carry4_v of entity unisim.CARRY4 [carry4_default]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="10000000")(0,7)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="10111010")(0,7)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1111000010001000")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000000010000000")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture structure of entity xil_defaultlib.COMPTEUR_TEMPO [compteur_tempo_default]
+Compiling architecture bufg_v of entity unisim.BUFG [bufg_default]
+Compiling architecture ibuf_v of entity unisim.IBUF [\IBUF(1,9)(1,1)(1,4)(1,7)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111111111111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111111111111...]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1110")(0,3)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111111111111...]
+Compiling architecture structure of entity xil_defaultlib.DCC_Compteur_1 [dcc_compteur_1_default]
+Compiling architecture structure of entity xil_defaultlib.DCC_Compteur_2 [dcc_compteur_2_default]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1111010001000100")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1000111110001000")(0...]
+Compiling architecture fdpe_v of entity unisim.FDPE [fdpe_default]
+Compiling architecture structure of entity xil_defaultlib.DDC_MAE_3 [ddc_mae_3_default]
+Compiling architecture structure of entity xil_defaultlib.DCC_Bit0 [dcc_bit0_default]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111011111111111111...]
+Compiling architecture structure of entity xil_defaultlib.DCC_Compteur [dcc_compteur_default]
+Compiling architecture structure of entity xil_defaultlib.DCC_Compteur_0 [dcc_compteur_0_default]
+Compiling architecture structure of entity xil_defaultlib.DDC_MAE [ddc_mae_default]
+Compiling architecture structure of entity xil_defaultlib.DCC_Bit1 [dcc_bit1_default]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10101111101011111010...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111000000000001000...]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0010")(0,3)\]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1000")(0,3)\]
+Compiling architecture structure of entity xil_defaultlib.MAE_Compteur [mae_compteur_default]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111111111111111111...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1011111110101010")(0...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="11111110")(0,7)\]
+Compiling architecture structure of entity xil_defaultlib.MAE [mae_default]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111110111111101111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10101111101000001100...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10111000111111111011...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="10111000")(0,7)\]
+Compiling architecture muxf8_v of entity unisim.MUXF8 [muxf8_default]
+Compiling architecture muxf7_v of entity unisim.MUXF7 [muxf7_default]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="00000100")(0,7)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1110101111111111")(0...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000001110...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111110101010111111...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000111111100000")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111111101010...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000111101000000")(0...]
+Compiling architecture ldce_v of entity unisim.LDCE [ldce_default]
+Compiling architecture structure of entity xil_defaultlib.REGISTRE_DCC [registre_dcc_default]
+Compiling architecture obuf_v of entity unisim.OBUF [\OBUF(1,9)(1,7)(1,4)\]
+Compiling architecture structure of entity xil_defaultlib.TOP [top_default]
+Compiling architecture behavioral of entity xil_defaultlib.top_tb
+Built simulation snapshot TOP_tb_func_synth
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 1832.660 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Test/Test.sim/sim_1/synth/func/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TOP_tb_func_synth -key {Post-Synthesis:sim_1:Functional:TOP_tb} -tclbatch {TOP_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source TOP_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TOP_tb_func_synth' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 1832.660 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Wed May 10 12:59:58 2023] Launched synth_1...
+Run output will be captured here: C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Test/Test.runs/synth_1/runme.log
+close_design
+launch_simulation -mode post-synthesis -type functional
+Command: launch_simulation -mode post-synthesis -type functional
+INFO: [Vivado 12-5682] Launching post-synthesis functional simulation in 'C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Test/Test.sim/sim_1/synth/func/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tcpg236-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1846.551 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 73 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1846.551 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'...
+INFO: [SIM-utils-26] write_vhdl -mode funcsim -nolib -force -file "C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Test/Test.sim/sim_1/synth/func/xsim/TOP_tb_func_synth.vhd"
+INFO: [SIM-utils-36] Netlist generated:C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Test/Test.sim/sim_1/synth/func/xsim/TOP_tb_func_synth.vhd
+INFO: [SIM-utils-54] Inspecting design source files for 'TOP_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Test/Test.sim/sim_1/synth/func/xsim'
+"xvhdl --incr --relax -prj TOP_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Test/Test.sim/sim_1/synth/func/xsim/TOP_tb_func_synth.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CLK_DIV'
+INFO: [VRFC 10-3107] analyzing entity 'COMPTEUR_TEMPO'
+INFO: [VRFC 10-3107] analyzing entity 'DCC_Compteur'
+INFO: [VRFC 10-3107] analyzing entity 'DCC_Compteur_0'
+INFO: [VRFC 10-3107] analyzing entity 'DCC_Compteur_1'
+INFO: [VRFC 10-3107] analyzing entity 'DCC_Compteur_2'
+INFO: [VRFC 10-3107] analyzing entity 'DDC_MAE'
+INFO: [VRFC 10-3107] analyzing entity 'DDC_MAE_3'
+INFO: [VRFC 10-3107] analyzing entity 'MAE_Compteur'
+INFO: [VRFC 10-3107] analyzing entity 'REGISTRE_DCC'
+INFO: [VRFC 10-3107] analyzing entity 'DCC_Bit0'
+INFO: [VRFC 10-3107] analyzing entity 'DCC_Bit1'
+INFO: [VRFC 10-3107] analyzing entity 'MAE'
+INFO: [VRFC 10-3107] analyzing entity 'TOP'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Test/Test.sim/sim_1/synth/func/xsim'
+"xelab -wto 85ecea3feec84314b39aa81f7dedd939 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TOP_tb_func_synth xil_defaultlib.TOP_tb -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 85ecea3feec84314b39aa81f7dedd939 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TOP_tb_func_synth xil_defaultlib.TOP_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0001")(0,3)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111111110111...]
+Compiling architecture fdce_v of entity unisim.FDCE [fdce_default]
+Compiling architecture lut1_v of entity unisim.LUT1 [\LUT1(init="0001")(0,3)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01010101101010000101...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="01101100")(0,7)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0110110011001100")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01111111111111011000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01111111111111011111...]
+Compiling architecture structure of entity xil_defaultlib.CLK_DIV [clk_div_default]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1101")(0,3)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="00101000")(0,7)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="00010100")(0,7)\]
+Compiling architecture carry4_v of entity unisim.CARRY4 [carry4_default]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="10000000")(0,7)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="10111010")(0,7)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1111000010001000")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000000010000000")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture structure of entity xil_defaultlib.COMPTEUR_TEMPO [compteur_tempo_default]
+Compiling architecture bufg_v of entity unisim.BUFG [bufg_default]
+Compiling architecture ibuf_v of entity unisim.IBUF [\IBUF(1,9)(1,1)(1,4)(1,7)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111111111111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111111111111...]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1110")(0,3)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111111111111...]
+Compiling architecture structure of entity xil_defaultlib.DCC_Compteur_1 [dcc_compteur_1_default]
+Compiling architecture structure of entity xil_defaultlib.DCC_Compteur_2 [dcc_compteur_2_default]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1111010001000100")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1000111110001000")(0...]
+Compiling architecture fdpe_v of entity unisim.FDPE [fdpe_default]
+Compiling architecture structure of entity xil_defaultlib.DDC_MAE_3 [ddc_mae_3_default]
+Compiling architecture structure of entity xil_defaultlib.DCC_Bit0 [dcc_bit0_default]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111011111111111111...]
+Compiling architecture structure of entity xil_defaultlib.DCC_Compteur [dcc_compteur_default]
+Compiling architecture structure of entity xil_defaultlib.DCC_Compteur_0 [dcc_compteur_0_default]
+Compiling architecture structure of entity xil_defaultlib.DDC_MAE [ddc_mae_default]
+Compiling architecture structure of entity xil_defaultlib.DCC_Bit1 [dcc_bit1_default]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10101111101011111010...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111000000000001000...]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0010")(0,3)\]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1000")(0,3)\]
+Compiling architecture structure of entity xil_defaultlib.MAE_Compteur [mae_compteur_default]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111111111111111111...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1011111110101010")(0...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="11111110")(0,7)\]
+Compiling architecture structure of entity xil_defaultlib.MAE [mae_default]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111110111111101111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10101111101000001100...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10111000111111111011...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="10111000")(0,7)\]
+Compiling architecture muxf8_v of entity unisim.MUXF8 [muxf8_default]
+Compiling architecture muxf7_v of entity unisim.MUXF7 [muxf7_default]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="00000100")(0,7)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1110101111111111")(0...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000001110...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111110101010111111...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000111111100000")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111111101010...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000111101000000")(0...]
+Compiling architecture ldce_v of entity unisim.LDCE [ldce_default]
+Compiling architecture structure of entity xil_defaultlib.REGISTRE_DCC [registre_dcc_default]
+Compiling architecture obuf_v of entity unisim.OBUF [\OBUF(1,9)(1,7)(1,4)\]
+Compiling architecture structure of entity xil_defaultlib.TOP [top_default]
+Compiling architecture behavioral of entity xil_defaultlib.top_tb
+Built simulation snapshot TOP_tb_func_synth
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1859.598 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Test/Test.sim/sim_1/synth/func/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TOP_tb_func_synth -key {Post-Synthesis:sim_1:Functional:TOP_tb} -tclbatch {TOP_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source TOP_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TOP_tb_func_synth' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 1875.043 ; gain = 28.492
+run 5 ms
+run: Time (s): cpu = 00:00:07 ; elapsed = 00:00:34 . Memory (MB): peak = 1923.691 ; gain = 48.410
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed May 10 13:03:02 2023...

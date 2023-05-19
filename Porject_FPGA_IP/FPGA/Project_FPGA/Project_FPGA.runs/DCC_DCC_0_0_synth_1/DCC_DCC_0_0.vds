@@ -1,0 +1,315 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed May 10 12:31:07 2023
+# Process ID: 18944
+# Current directory: C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.runs/DCC_DCC_0_0_synth_1
+# Command line: vivado.exe -log DCC_DCC_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source DCC_DCC_0_0.tcl
+# Log file: C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.runs/DCC_DCC_0_0_synth_1/DCC_DCC_0_0.vds
+# Journal file: C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.runs/DCC_DCC_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source DCC_DCC_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/ip_repo/SS_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/ip_repo/DCC_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+Command: synth_design -top DCC_DCC_0_0 -part xc7a35tcpg236-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 10340
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1015.035 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'DCC_DCC_0_0' [c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.gen/sources_1/bd/DCC/ip/DCC_DCC_0_0/synth/DCC_DCC_0_0.vhd:83]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'DCC_v1_0' declared at 'c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.gen/sources_1/bd/DCC/ipshared/8eea/hdl/DCC_v1_0.vhd:5' bound to instance 'U0' of component 'DCC_v1_0' [c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.gen/sources_1/bd/DCC/ip/DCC_DCC_0_0/synth/DCC_DCC_0_0.vhd:150]
+INFO: [Synth 8-638] synthesizing module 'DCC_v1_0' [c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.gen/sources_1/bd/DCC/ipshared/8eea/hdl/DCC_v1_0.vhd:50]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'DCC_v1_0_S00_AXI' declared at 'c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.gen/sources_1/bd/DCC/ipshared/8eea/hdl/DCC_v1_0_S00_AXI.vhd:5' bound to instance 'DCC_v1_0_S00_AXI_inst' of component 'DCC_v1_0_S00_AXI' [c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.gen/sources_1/bd/DCC/ipshared/8eea/hdl/DCC_v1_0.vhd:87]
+INFO: [Synth 8-638] synthesizing module 'DCC_v1_0_S00_AXI' [c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.gen/sources_1/bd/DCC/ipshared/8eea/hdl/DCC_v1_0_S00_AXI.vhd:87]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-226] default block is never used [c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.gen/sources_1/bd/DCC/ipshared/8eea/hdl/DCC_v1_0_S00_AXI.vhd:231]
+INFO: [Synth 8-226] default block is never used [c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.gen/sources_1/bd/DCC/ipshared/8eea/hdl/DCC_v1_0_S00_AXI.vhd:361]
+INFO: [Synth 8-638] synthesizing module 'TOP' [c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.gen/sources_1/bd/DCC/ipshared/8eea/src/TOP.vhd:43]
+INFO: [Synth 8-3491] module 'MAE' declared at 'c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.gen/sources_1/bd/DCC/ipshared/8eea/src/MAE.vhd:35' bound to instance 'MAE_0' of component 'MAE' [c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.gen/sources_1/bd/DCC/ipshared/8eea/src/TOP.vhd:131]
+INFO: [Synth 8-638] synthesizing module 'MAE' [c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.gen/sources_1/bd/DCC/ipshared/8eea/src/MAE.vhd:53]
+INFO: [Synth 8-3491] module 'MAE_Compteur' declared at 'c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.gen/sources_1/bd/DCC/ipshared/8eea/src/MAE_Compteur.vhd:34' bound to instance 'Counter_MAE' of component 'MAE_Compteur' [c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.gen/sources_1/bd/DCC/ipshared/8eea/src/MAE.vhd:78]
+INFO: [Synth 8-638] synthesizing module 'MAE_Compteur' [c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.gen/sources_1/bd/DCC/ipshared/8eea/src/MAE_Compteur.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'MAE_Compteur' (1#1) [c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.gen/sources_1/bd/DCC/ipshared/8eea/src/MAE_Compteur.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'MAE' (2#1) [c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.gen/sources_1/bd/DCC/ipshared/8eea/src/MAE.vhd:53]
+INFO: [Synth 8-3491] module 'REGISTRE_DCC' declared at 'c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.gen/sources_1/bd/DCC/ipshared/8eea/src/Registre_DCC.vhd:35' bound to instance 'REGISTRE_DCC_0' of component 'REGISTRE_DCC' [c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.gen/sources_1/bd/DCC/ipshared/8eea/src/TOP.vhd:148]
+INFO: [Synth 8-638] synthesizing module 'REGISTRE_DCC' [c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.gen/sources_1/bd/DCC/ipshared/8eea/src/Registre_DCC.vhd:44]
+WARNING: [Synth 8-614] signal 'Trame_DCC' is read in the process but is not in the sensitivity list [c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.gen/sources_1/bd/DCC/ipshared/8eea/src/Registre_DCC.vhd:62]
+INFO: [Synth 8-256] done synthesizing module 'REGISTRE_DCC' (3#1) [c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.gen/sources_1/bd/DCC/ipshared/8eea/src/Registre_DCC.vhd:44]
+INFO: [Synth 8-3491] module 'COMPTEUR_TEMPO' declared at 'c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.gen/sources_1/bd/DCC/ipshared/8eea/src/Compteur_Tempo.vhd:33' bound to instance 'COMPTEUR_TEMPO_0' of component 'COMPTEUR_TEMPO' [c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.gen/sources_1/bd/DCC/ipshared/8eea/src/TOP.vhd:156]
+INFO: [Synth 8-638] synthesizing module 'COMPTEUR_TEMPO' [c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.gen/sources_1/bd/DCC/ipshared/8eea/src/Compteur_Tempo.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'COMPTEUR_TEMPO' (4#1) [c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.gen/sources_1/bd/DCC/ipshared/8eea/src/Compteur_Tempo.vhd:42]
+INFO: [Synth 8-3491] module 'CLK_DIV' declared at 'c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.gen/sources_1/bd/DCC/ipshared/8eea/src/Diviseur_Horloge.vhd:18' bound to instance 'CLK_DIV_0' of component 'CLK_DIV' [c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.gen/sources_1/bd/DCC/ipshared/8eea/src/TOP.vhd:164]
+INFO: [Synth 8-638] synthesizing module 'CLK_DIV' [c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.gen/sources_1/bd/DCC/ipshared/8eea/src/Diviseur_Horloge.vhd:25]
+INFO: [Synth 8-256] done synthesizing module 'CLK_DIV' (5#1) [c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.gen/sources_1/bd/DCC/ipshared/8eea/src/Diviseur_Horloge.vhd:25]
+INFO: [Synth 8-3491] module 'DCC_Bit0' declared at 'c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.gen/sources_1/bd/DCC/ipshared/8eea/src/DCC_Bit0.vhd:34' bound to instance 'DCC_Bit0_0' of component 'DCC_Bit0' [c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.gen/sources_1/bd/DCC/ipshared/8eea/src/TOP.vhd:170]
+INFO: [Synth 8-638] synthesizing module 'DCC_Bit0' [c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.gen/sources_1/bd/DCC/ipshared/8eea/src/DCC_Bit0.vhd:44]
+INFO: [Synth 8-3491] module 'DCC_Compteur' declared at 'c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.gen/sources_1/bd/DCC/ipshared/8eea/src/DCC_Compteur.vhd:34' bound to instance 'Counter_Low' of component 'DCC_Compteur' [c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.gen/sources_1/bd/DCC/ipshared/8eea/src/DCC_Bit0.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'DCC_Compteur' [c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.gen/sources_1/bd/DCC/ipshared/8eea/src/DCC_Compteur.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'DCC_Compteur' (6#1) [c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.gen/sources_1/bd/DCC/ipshared/8eea/src/DCC_Compteur.vhd:43]
+INFO: [Synth 8-3491] module 'DCC_Compteur' declared at 'c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.gen/sources_1/bd/DCC/ipshared/8eea/src/DCC_Compteur.vhd:34' bound to instance 'Counter_High' of component 'DCC_Compteur' [c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.gen/sources_1/bd/DCC/ipshared/8eea/src/DCC_Bit0.vhd:93]
+INFO: [Synth 8-3491] module 'DDC_MAE' declared at 'c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.gen/sources_1/bd/DCC/ipshared/8eea/src/DDC_MAE.vhd:34' bound to instance 'MAE' of component 'DDC_MAE' [c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.gen/sources_1/bd/DCC/ipshared/8eea/src/DCC_Bit0.vhd:101]
+INFO: [Synth 8-638] synthesizing module 'DDC_MAE' [c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.gen/sources_1/bd/DCC/ipshared/8eea/src/DDC_MAE.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'DDC_MAE' (7#1) [c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.gen/sources_1/bd/DCC/ipshared/8eea/src/DDC_MAE.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'DCC_Bit0' (8#1) [c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.gen/sources_1/bd/DCC/ipshared/8eea/src/DCC_Bit0.vhd:44]
+INFO: [Synth 8-3491] module 'DCC_Bit1' declared at 'c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.gen/sources_1/bd/DCC/ipshared/8eea/src/DCC_Bit1.vhd:34' bound to instance 'DCC_Bit1_0' of component 'DCC_Bit1' [c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.gen/sources_1/bd/DCC/ipshared/8eea/src/TOP.vhd:179]
+INFO: [Synth 8-638] synthesizing module 'DCC_Bit1' [c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.gen/sources_1/bd/DCC/ipshared/8eea/src/DCC_Bit1.vhd:44]
+INFO: [Synth 8-3491] module 'DCC_Compteur' declared at 'c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.gen/sources_1/bd/DCC/ipshared/8eea/src/DCC_Compteur.vhd:34' bound to instance 'Counter_Low' of component 'DCC_Compteur' [c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.gen/sources_1/bd/DCC/ipshared/8eea/src/DCC_Bit1.vhd:84]
+INFO: [Synth 8-3491] module 'DCC_Compteur' declared at 'c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.gen/sources_1/bd/DCC/ipshared/8eea/src/DCC_Compteur.vhd:34' bound to instance 'Counter_High' of component 'DCC_Compteur' [c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.gen/sources_1/bd/DCC/ipshared/8eea/src/DCC_Bit1.vhd:92]
+INFO: [Synth 8-3491] module 'DDC_MAE' declared at 'c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.gen/sources_1/bd/DCC/ipshared/8eea/src/DDC_MAE.vhd:34' bound to instance 'MAE' of component 'DDC_MAE' [c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.gen/sources_1/bd/DCC/ipshared/8eea/src/DCC_Bit1.vhd:100]
+INFO: [Synth 8-256] done synthesizing module 'DCC_Bit1' (9#1) [c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.gen/sources_1/bd/DCC/ipshared/8eea/src/DCC_Bit1.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'TOP' (10#1) [c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.gen/sources_1/bd/DCC/ipshared/8eea/src/TOP.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'DCC_v1_0_S00_AXI' (11#1) [c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.gen/sources_1/bd/DCC/ipshared/8eea/hdl/DCC_v1_0_S00_AXI.vhd:87]
+INFO: [Synth 8-256] done synthesizing module 'DCC_v1_0' (12#1) [c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.gen/sources_1/bd/DCC/ipshared/8eea/hdl/DCC_v1_0.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'DCC_DCC_0_0' (13#1) [c:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.gen/sources_1/bd/DCC/ip/DCC_DCC_0_0/synth/DCC_DCC_0_0.vhd:83]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 1015.035 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 1015.035 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 1015.035 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 1015.035 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1065.047 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.054 . Memory (MB): peak = 1065.070 ; gain = 0.023
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:21 . Memory (MB): peak = 1065.070 ; gain = 50.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:21 . Memory (MB): peak = 1065.070 ; gain = 50.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:21 . Memory (MB): peak = 1065.070 ; gain = 50.035
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'EP_reg' in module 'MAE'
+INFO: [Synth 8-802] inferred FSM for state register 'EP_reg' in module 'DDC_MAE'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                        000000001 |                             0000
+                  charge |                        000000010 |                             0001
+                   shift |                        000000100 |                             0010
+                   send0 |                        000001000 |                             0011
+              send0_wait |                        000010000 |                             0100
+                   send1 |                        000100000 |                             0101
+              send1_wait |                        001000000 |                             0110
+                   tempo |                        010000000 |                             0111
+              tempo_wait |                        100000000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'EP_reg' using encoding 'one-hot' in module 'MAE'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              001 |                               00
+                 lvl_low |                              010 |                               01
+                lvl_high |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'EP_reg' using encoding 'one-hot' in module 'DDC_MAE'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:22 . Memory (MB): peak = 1065.070 ; gain = 50.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    6 Bit       Adders := 2     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               51 Bit    Registers := 1     
+	               32 Bit    Registers := 5     
+	                6 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input   51 Bit        Muxes := 2     
+	   2 Input   32 Bit        Muxes := 4     
+	   4 Input   32 Bit        Muxes := 5     
+	   9 Input    9 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 6     
+	   3 Input    6 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 2     
+	   3 Input    3 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 6     
+	   9 Input    1 Bit        Muxes := 3     
+	   2 Input    1 Bit        Muxes := 10    
+	   3 Input    1 Bit        Muxes := 8     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:26 . Memory (MB): peak = 1065.070 ; gain = 50.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:36 . Memory (MB): peak = 1065.070 ; gain = 50.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:36 . Memory (MB): peak = 1065.070 ; gain = 50.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:36 . Memory (MB): peak = 1072.578 ; gain = 57.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:41 . Memory (MB): peak = 1080.344 ; gain = 65.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:41 . Memory (MB): peak = 1080.344 ; gain = 65.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:42 . Memory (MB): peak = 1080.344 ; gain = 65.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:42 . Memory (MB): peak = 1080.344 ; gain = 65.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:42 . Memory (MB): peak = 1080.344 ; gain = 65.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:42 . Memory (MB): peak = 1080.344 ; gain = 65.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    48|
+|2     |LUT1   |     7|
+|3     |LUT2   |   147|
+|4     |LUT3   |    73|
+|5     |LUT4   |    35|
+|6     |LUT5   |     6|
+|7     |LUT6   |   130|
+|8     |MUXF7  |    17|
+|9     |MUXF8  |     8|
+|10    |FDCE   |   249|
+|11    |FDPE   |    58|
+|12    |FDRE   |   167|
+|13    |FDSE   |     3|
+|14    |LDC    |    51|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:42 . Memory (MB): peak = 1080.344 ; gain = 65.309
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:39 . Memory (MB): peak = 1080.344 ; gain = 15.273
+Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:42 . Memory (MB): peak = 1080.344 ; gain = 65.309
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1093.398 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 124 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1096.316 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 51 instances were transformed.
+  LDC => LDCE: 51 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+65 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:56 . Memory (MB): peak = 1096.316 ; gain = 81.281
+INFO: [Common 17-1381] The checkpoint 'C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.runs/DCC_DCC_0_0_synth_1/DCC_DCC_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP DCC_DCC_0_0, cache-ID = 4d1672d6c5a95016
+INFO: [Coretcl 2-1174] Renamed 16 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/marcs/OneDrive/Bureau/Desktop/FPGA/Project_FPGA/Project_FPGA.runs/DCC_DCC_0_0_synth_1/DCC_DCC_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file DCC_DCC_0_0_utilization_synth.rpt -pb DCC_DCC_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed May 10 12:32:17 2023...
