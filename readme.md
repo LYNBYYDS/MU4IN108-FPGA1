@@ -30,7 +30,7 @@ __Synthesize and Simulate:__
 
 ## Git Repository Directory
 ```
-FPGA1
+MU4IN108-FPGA1
 │   README.md
 │   FPGA_Project.pdf (Project Report)
 |   FPGA_handin_YongLI_MarcZHAN.zip (Resources handed in)
